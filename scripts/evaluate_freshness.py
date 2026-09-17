@@ -66,6 +66,39 @@ def digest(value):
     return hashlib.sha256(value if isinstance(value, bytes) else canonical(value).encode()).hexdigest()
 
 
+def record_effect_result(session, arm, result):
+    """Finish the synthetic effect using the protocol supported by each arm.
+
+    The frozen 0.4.0a2 comparison binary predates eligibility leases and its
+    strict decoder rejects the newer ``lease_token`` field.  Keep that wire
+    compatibility exception inside the historical benchmark arm; current
+    implementations still exercise the lease-aware reconciliation path.
+    """
+    if arm == 'baseline_a2':
+        return session._call('tool_finish', call_id='effect', result=result)
+    return session.reconcile_tool('effect', result)
+
+
+def run_synthetic_tool(session, arm, call_id, name, arguments, execute):
+    """Run a benchmark-only tool through the protocol available to ``arm``."""
+    if arm != 'baseline_a2':
+        return session.tool(call_id, name, arguments, execute)
+    call = session._call('tool_start', call_id=call_id, name=name, arguments=arguments)
+    if call['status'] == 'completed':
+        return call.get('result')
+    if not call['created']:
+        raise RuntimeError(f'historical tool {call_id!r} has an uncertain outcome')
+    result = execute()
+    return session._call('tool_finish', call_id=call_id, result=result).get('result')
+
+
+def commit_derived_snapshot(session, arm, evidence_id):
+    reply = {'text': 'derived approval from parent', 'snapshot': {'approval': True}}
+    if arm != 'baseline_a2':
+        reply['provenance'] = [{'evidence_id': evidence_id, 'kind': 'supports'}]
+    return session.commit(reply)
+
+
 def file_hash(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
@@ -111,7 +144,7 @@ def setup(h, database, scenario, arm):
         sql(database, 'DELETE FROM facts WHERE task_id=?', (child,))
     if scenario.name == 'prior_derived_snapshot':
         first = begin(h, Scenario('derivation', scope='lineage'), child, arm, request='derive')
-        first.commit({'text': 'derived approval from parent', 'snapshot': {'approval': True}})
+        commit_derived_snapshot(first, arm, parent_source)
         with TaskMemory(database) as memory:
             memory.set_fact(parent, 'approval', False, evidence_id=parent_source, retracted=True)
     session = begin(h, scenario, child, arm)
@@ -218,13 +251,17 @@ def run_case(binary, arm, scenario, lane):
 
             if scenario.name == 'own_tool_output':
                 before = epoch(database) if arm == 'global_change' else None
-                result = s.tool('observe', 'local_observer', {}, lambda: {'observation': 'unchanged'})
+                result = run_synthetic_tool(
+                    s, arm, 'observe', 'local_observer', {},
+                    lambda: {'observation': 'unchanged'})
                 if arm == 'global_change':
                     basis += epoch(database) - before
                 event('own_tool_completed', result=result)
 
             if scenario.phase == 'historical':
-                s.tool('effect', 'local_ledger', {}, lambda: ledger.append('original') or {'ok': True})
+                run_synthetic_tool(
+                    s, arm, 'effect', 'local_ledger', {},
+                    lambda: ledger.append('original') or {'ok': True})
                 original = s.commit({'text': 'historical completed reply'})
                 mutation()
                 replay = begin(h, scenario, ids['child'], arm)
@@ -255,7 +292,7 @@ def run_case(binary, arm, scenario, lane):
                         unsafe_effect = unsafe
                         ledger.append(dict(action='perform', semantic_unsafe=unsafe))
                         event('local_effect', semantic_unsafe=unsafe)
-                        result = s.reconcile_tool('effect', {'ok': True})
+                        result = record_effect_result(s, arm, {'ok': True})
                         event('result_recorded', status=result['status'])
                     else:
                         if scenario.phase in ('after_admission', 'during_tool'):
