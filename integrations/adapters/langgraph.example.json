@@ -1,0 +1,8 @@
+{
+  "cmp": {
+    "baseUrl": "https://cmp.example.invalid",
+    "path": "/v1/managed-turn",
+    "stateKeys": ["request_id", "generation", "task_id"],
+    "hooksRequired": ["before-model", "after-model", "before-tool", "after-tool", "commit"]
+  }
+}

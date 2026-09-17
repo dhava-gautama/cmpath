@@ -1,0 +1,12 @@
+{
+  "release": "0.4.0a3",
+  "python_tests": 91,
+  "go_race_tests": "passed",
+  "freshness_rows": 152,
+  "freshness_controls": "all passed",
+  "scope_supported_stale": "0/10 stale intents,0/10 unsafe actions,0/10 stale commits",
+  "scope_positive_controls": "3/3 useful actions",
+  "a3_binary_sha256": "367d7826ecd9ac40ab4b31d5a7267996aca881c503dc563a493dd6918f8bcf6b",
+  "wheel_sha256": "ee952fbe9bd66a4828a8063b767c7d49f767e118b4905ab987d889d98b571540",
+  "sdist_sha256": "8a93a5f07599ac5f2985fcbb0ef5986515d0bdefddcba00ab5b0c019cf1e046b"
+}

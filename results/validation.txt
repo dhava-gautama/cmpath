@@ -1,0 +1,47 @@
+test_labels_are_excluded_from_index_and_prompts (test_evaluation.EvaluationTests.test_labels_are_excluded_from_index_and_prompts) ... ok
+test_partial_recall_and_all_gold_are_distinct (test_evaluation.EvaluationTests.test_partial_recall_and_all_gold_are_distinct) ... ok
+test_end_to_end_cli_and_errors (test_memory.CLITests.test_end_to_end_cli_and_errors) ... ok
+test_ambiguous_alias_is_not_guessed (test_memory.MemoryTests.test_ambiguous_alias_is_not_guessed) ... ok
+test_archived_task_resumes_with_snapshot (test_memory.MemoryTests.test_archived_task_resumes_with_snapshot) ... ok
+test_backup_is_standalone_and_consistent (test_memory.MemoryTests.test_backup_is_standalone_and_consistent) ... ok
+test_backup_refuses_a_destination_with_live_journals (test_memory.MemoryTests.test_backup_refuses_a_destination_with_live_journals) ... ok
+test_commit_failure_rolls_back_source_and_index (test_memory.MemoryTests.test_commit_failure_rolls_back_source_and_index) ... ok
+test_conflicting_state_write (test_memory.MemoryTests.test_conflicting_state_write) ... ok
+test_context_is_read_only_and_query_is_complete (test_memory.MemoryTests.test_context_is_read_only_and_query_is_complete) ... ok
+test_context_payload_is_defensively_copied (test_memory.MemoryTests.test_context_payload_is_defensively_copied) ... ok
+test_counter_and_numeric_inputs_are_validated (test_memory.MemoryTests.test_counter_and_numeric_inputs_are_validated) ... ok
+test_custom_counter_covers_full_payload_and_reservation (test_memory.MemoryTests.test_custom_counter_covers_full_payload_and_reservation) ... ok
+test_databases_are_isolated (test_memory.MemoryTests.test_databases_are_isolated) ... ok
+test_default_context_excludes_sibling_evidence (test_memory.MemoryTests.test_default_context_excludes_sibling_evidence) ... ok
+test_delete_cascades_to_index_and_ids_are_not_reused (test_memory.MemoryTests.test_delete_cascades_to_index_and_ids_are_not_reused) ... ok
+test_delete_rejects_parent_with_dependents (test_memory.MemoryTests.test_delete_rejects_parent_with_dependents) ... ok
+test_fact_and_its_citation_are_admitted_together (test_memory.MemoryTests.test_fact_and_its_citation_are_admitted_together) ... ok
+test_fact_rejects_foreign_task_evidence (test_memory.MemoryTests.test_fact_rejects_foreign_task_evidence) ... ok
+test_fact_revisions_and_retraction_preserve_history (test_memory.MemoryTests.test_fact_revisions_and_retraction_preserve_history) ... ok
+test_impossible_budget_raises (test_memory.MemoryTests.test_impossible_budget_raises) ... ok
+test_invalid_json_is_rejected_before_writes (test_memory.MemoryTests.test_invalid_json_is_rejected_before_writes) ... ok
+test_large_atom_does_not_block_later_small_evidence (test_memory.MemoryTests.test_large_atom_does_not_block_later_small_evidence) ... ok
+test_message_and_fts_rollback_together (test_memory.MemoryTests.test_message_and_fts_rollback_together) ... ok
+test_multiple_parents_have_complete_lineage (test_memory.MemoryTests.test_multiple_parents_have_complete_lineage) ... ok
+test_nested_savepoint_failure_does_not_discard_outer_work (test_memory.MemoryTests.test_nested_savepoint_failure_does_not_discard_outer_work) ... ok
+test_randomized_interleavings_match_reference_state (test_memory.MemoryTests.test_randomized_interleavings_match_reference_state) ... ok
+test_reopen_preserves_all_state (test_memory.MemoryTests.test_reopen_preserves_all_state) ... ok
+test_resolution_does_not_resume (test_memory.MemoryTests.test_resolution_does_not_resume) ... ok
+test_same_fact_key_has_task_scope (test_memory.MemoryTests.test_same_fact_key_has_task_scope) ... ok
+test_shared_parent_remains_a_sibling_relation (test_memory.MemoryTests.test_shared_parent_remains_a_sibling_relation) ... ok
+test_snapshot_conflict_leaves_first_update (test_memory.MemoryTests.test_snapshot_conflict_leaves_first_update) ... ok
+test_stored_instructions_are_not_promoted_to_system (test_memory.MemoryTests.test_stored_instructions_are_not_promoted_to_system) ... ok
+test_two_connections_see_committed_writes (test_memory.MemoryTests.test_two_connections_see_committed_writes) ... ok
+test_unicode_and_literal_fts_query (test_memory.MemoryTests.test_unicode_and_literal_fts_query) ... ok
+test_unknown_database_is_not_modified (test_memory.MemoryTests.test_unknown_database_is_not_modified) ... ok
+test_unknown_explicit_id_is_not_fuzzy_matched (test_memory.MemoryTests.test_unknown_explicit_id_is_not_fuzzy_matched) ... ok
+test_unknown_parent_rolls_back_creation (test_memory.MemoryTests.test_unknown_parent_rolls_back_creation) ... ok
+test_unsupported_paraphrase_abstains (test_memory.MemoryTests.test_unsupported_paraphrase_abstains) ... ok
+test_existing_destination_is_not_overwritten (test_migration.MigrationTests.test_existing_destination_is_not_overwritten) ... ok
+test_failed_migration_leaves_no_partial_database (test_migration.MigrationTests.test_failed_migration_leaves_no_partial_database) ... ok
+test_migration_restores_archive_and_dependencies (test_migration.MigrationTests.test_migration_restores_archive_and_dependencies) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 0.413s
+
+OK

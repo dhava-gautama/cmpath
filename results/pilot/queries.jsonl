@@ -1,0 +1,40 @@
+{"case_id":"01-exact","task_id":1,"kind":"exact","query":"What is the procurement spending cap?"}
+{"case_id":"02-exact","task_id":2,"kind":"exact","query":"What is the procurement spending cap?"}
+{"case_id":"03-exact","task_id":3,"kind":"exact","query":"What is the procurement spending cap?"}
+{"case_id":"04-exact","task_id":4,"kind":"exact","query":"What is the procurement spending cap?"}
+{"case_id":"05-exact","task_id":5,"kind":"exact","query":"What is the procurement spending cap?"}
+{"case_id":"06-exact","task_id":6,"kind":"exact","query":"What is the procurement spending cap?"}
+{"case_id":"07-exact","task_id":7,"kind":"exact","query":"What is the procurement spending cap?"}
+{"case_id":"08-exact","task_id":8,"kind":"exact","query":"What is the procurement spending cap?"}
+{"case_id":"01-switch_resume","task_id":1,"kind":"switch_resume","query":"Return to this task. What is the next action before ordering?"}
+{"case_id":"02-switch_resume","task_id":2,"kind":"switch_resume","query":"Return to this task. What is the next action before ordering?"}
+{"case_id":"03-switch_resume","task_id":3,"kind":"switch_resume","query":"Return to this task. What is the next action before ordering?"}
+{"case_id":"04-switch_resume","task_id":4,"kind":"switch_resume","query":"Return to this task. What is the next action before ordering?"}
+{"case_id":"05-switch_resume","task_id":5,"kind":"switch_resume","query":"Return to this task. What is the next action before ordering?"}
+{"case_id":"06-switch_resume","task_id":6,"kind":"switch_resume","query":"Return to this task. What is the next action before ordering?"}
+{"case_id":"07-switch_resume","task_id":7,"kind":"switch_resume","query":"Return to this task. What is the next action before ordering?"}
+{"case_id":"08-switch_resume","task_id":8,"kind":"switch_resume","query":"Return to this task. What is the next action before ordering?"}
+{"case_id":"01-revised","task_id":1,"kind":"revised","query":"What is the revised delivery deadline?"}
+{"case_id":"02-revised","task_id":2,"kind":"revised","query":"What is the revised delivery deadline?"}
+{"case_id":"03-revised","task_id":3,"kind":"revised","query":"What is the revised delivery deadline?"}
+{"case_id":"04-revised","task_id":4,"kind":"revised","query":"What is the revised delivery deadline?"}
+{"case_id":"05-revised","task_id":5,"kind":"revised","query":"What is the revised delivery deadline?"}
+{"case_id":"06-revised","task_id":6,"kind":"revised","query":"What is the revised delivery deadline?"}
+{"case_id":"07-revised","task_id":7,"kind":"revised","query":"What is the revised delivery deadline?"}
+{"case_id":"08-revised","task_id":8,"kind":"revised","query":"What is the revised delivery deadline?"}
+{"case_id":"01-anchored_paraphrase","task_id":1,"kind":"anchored_paraphrase","query":"Who safeguards the access credential?"}
+{"case_id":"02-anchored_paraphrase","task_id":2,"kind":"anchored_paraphrase","query":"Who safeguards the access credential?"}
+{"case_id":"03-anchored_paraphrase","task_id":3,"kind":"anchored_paraphrase","query":"Who safeguards the access credential?"}
+{"case_id":"04-anchored_paraphrase","task_id":4,"kind":"anchored_paraphrase","query":"Who safeguards the access credential?"}
+{"case_id":"05-anchored_paraphrase","task_id":5,"kind":"anchored_paraphrase","query":"Who safeguards the access credential?"}
+{"case_id":"06-anchored_paraphrase","task_id":6,"kind":"anchored_paraphrase","query":"Who safeguards the access credential?"}
+{"case_id":"07-anchored_paraphrase","task_id":7,"kind":"anchored_paraphrase","query":"Who safeguards the access credential?"}
+{"case_id":"08-anchored_paraphrase","task_id":8,"kind":"anchored_paraphrase","query":"Who safeguards the access credential?"}
+{"case_id":"01-unanchored_paraphrase","task_id":1,"kind":"unanchored_paraphrase","query":"Who keeps the password?"}
+{"case_id":"02-unanchored_paraphrase","task_id":2,"kind":"unanchored_paraphrase","query":"Who keeps the password?"}
+{"case_id":"03-unanchored_paraphrase","task_id":3,"kind":"unanchored_paraphrase","query":"Who keeps the password?"}
+{"case_id":"04-unanchored_paraphrase","task_id":4,"kind":"unanchored_paraphrase","query":"Who keeps the password?"}
+{"case_id":"05-unanchored_paraphrase","task_id":5,"kind":"unanchored_paraphrase","query":"Who keeps the password?"}
+{"case_id":"06-unanchored_paraphrase","task_id":6,"kind":"unanchored_paraphrase","query":"Who keeps the password?"}
+{"case_id":"07-unanchored_paraphrase","task_id":7,"kind":"unanchored_paraphrase","query":"Who keeps the password?"}
+{"case_id":"08-unanchored_paraphrase","task_id":8,"kind":"unanchored_paraphrase","query":"Who keeps the password?"}

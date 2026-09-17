@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "cmpath-memory": {
+      "command": "wsl.exe",
+      "args": [
+        "bash",
+        "/mnt/h/rocket/cmp/cmpath/scripts/run_mcp_wsl.sh",
+        "/home/dhava/.local/share/cmpath/cursor.db"
+      ]
+    }
+  }
+}

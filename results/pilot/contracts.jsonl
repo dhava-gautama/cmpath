@@ -1,0 +1,8 @@
+{"check":"committed_replay_single_callback","cmp_pass":true,"baseline":"not_applicable_no_journal","model_calls":0}
+{"check":"snapshot_after_switch","cmp_pass":true,"baseline":"not_applicable_no_journal","model_calls":0}
+{"check":"kill_reopen_context_exact","cmp_pass":true,"baseline":"not_applicable_no_journal","model_calls":0}
+{"check":"snapshot_after_reopen","cmp_pass":true,"baseline":"not_applicable_no_journal","model_calls":0}
+{"check":"recovery_generation","cmp_pass":true,"baseline":"not_applicable_no_journal","model_calls":0}
+{"check":"uncertain_tool_blocked","cmp_pass":true,"baseline":"not_applicable_no_journal","model_calls":0}
+{"check":"reconciled_tool_replay","cmp_pass":true,"baseline":"not_applicable_no_journal","model_calls":0}
+{"check":"stale_generation_fenced","cmp_pass":true,"baseline":"not_applicable_no_journal","model_calls":0}

@@ -1,0 +1,25 @@
+# Merge this entry into ~/.hermes/config.yaml, adjusting paths for the host.
+mcp_servers:
+  cmpath-memory:
+    command: uv
+    args:
+      - run
+      - --project
+      - /absolute/path/to/cmpath
+      - --extra
+      - integrations
+      - cmpath-mcp
+      - --db
+      - /absolute/path/to/cmpath-memory.db
+    tools:
+      include:
+        - cmp_health
+        - cmp_create_task
+        - cmp_list_tasks
+        - cmp_get_task
+        - cmp_resolve_task
+        - cmp_append_evidence
+        - cmp_search
+        - cmp_context
+        - cmp_set_fact
+        - cmp_backup

@@ -1,0 +1,9 @@
+{
+  "go": "go version go1.27.1 linux/amd64",
+  "output": "/workspace/scratch/7bcbf4d97728/cmpath_pilot/native/bin",
+  "sha256": {
+    "cmpath-native": "0db824c739bee0b758676589b9798b93377a86a339452288947b13ed1400841a",
+    "cmpath-bench": "1cfec987ce9229de42a8a671fa28404fdc4fc3e12a2d2e11e145dea50cb44a0c",
+    "cmpath-embedded-example": "8c8cdabc280a8151177d277ae48dbf645b63fc0f8c48f39840ae17a6a6a253ff"
+  }
+}

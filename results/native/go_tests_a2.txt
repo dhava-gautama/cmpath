@@ -1,0 +1,50 @@
+?   	cmpath.local/native/cmd/cmpath-bench	[no test files]
+?   	cmpath.local/native/cmd/cmpath-native	[no test files]
+=== RUN   TestTaskGraphAndResolution
+--- PASS: TestTaskGraphAndResolution (0.02s)
+=== RUN   TestAppendBatchRollbackAndFullContent
+--- PASS: TestAppendBatchRollbackAndFullContent (0.01s)
+=== RUN   TestScopeSourcePairAndBudget
+--- PASS: TestScopeSourcePairAndBudget (0.01s)
+=== RUN   TestCustomCounterAndMandatorySnapshot
+--- PASS: TestCustomCounterAndMandatorySnapshot (0.02s)
+=== RUN   TestRunReplayAndAtomicSnapshot
+--- PASS: TestRunReplayAndAtomicSnapshot (0.01s)
+=== RUN   TestPendingReplayRequiresRecovery
+--- PASS: TestPendingReplayRequiresRecovery (0.01s)
+=== RUN   TestIndeterminateToolAndReconciliation
+--- PASS: TestIndeterminateToolAndReconciliation (0.01s)
+=== RUN   TestToolFailurePreservesIntent
+--- PASS: TestToolFailurePreservesIntent (0.01s)
+=== RUN   TestCommitRollbackOnInvalidFact
+--- PASS: TestCommitRollbackOnInvalidFact (0.01s)
+=== RUN   TestStaleSnapshotConflict
+--- PASS: TestStaleSnapshotConflict (0.01s)
+=== RUN   TestModelPayloadAuditAndBudget
+--- PASS: TestModelPayloadAuditAndBudget (0.01s)
+=== RUN   TestAbortPreservesHistory
+--- PASS: TestAbortPreservesHistory (0.01s)
+=== RUN   TestReopenKeepsExactContextAndLargeInteger
+--- PASS: TestReopenKeepsExactContextAndLargeInteger (0.01s)
+=== RUN   TestConcurrentBeginAcrossConnections
+--- PASS: TestConcurrentBeginAcrossConnections (0.07s)
+=== RUN   TestSlowCallbackDoesNotHoldTransaction
+--- PASS: TestSlowCallbackDoesNotHoldTransaction (0.02s)
+=== RUN   TestClosedEngine
+--- PASS: TestClosedEngine (0.00s)
+=== RUN   TestExportExactDeterministicAndNoOverwrite
+--- PASS: TestExportExactDeterministicAndNoOverwrite (1.82s)
+=== RUN   TestRetentionProtectsUncertainAndRejectsStale
+--- PASS: TestRetentionProtectsUncertainAndRejectsStale (0.03s)
+=== RUN   TestRetentionTimestampBoundaryAndRollback
+--- PASS: TestRetentionTimestampBoundaryAndRollback (0.01s)
+=== RUN   TestModelResponseOrderPreservationAndFencing
+--- PASS: TestModelResponseOrderPreservationAndFencing (0.01s)
+=== RUN   TestModelResponseValidationAndTerminalState
+--- PASS: TestModelResponseValidationAndTerminalState (0.01s)
+=== RUN   TestHarnessSchemaUpgradePreservesPendingRecords
+--- PASS: TestHarnessSchemaUpgradePreservesPendingRecords (0.01s)
+PASS
+ok  	cmpath.local/native/engine	3.269s
+?   	cmpath.local/native/examples/embedded	[no test files]
+?   	cmpath.local/native/internal/sqlite	[no test files]

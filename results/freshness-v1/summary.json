@@ -1,0 +1,526 @@
+{
+  "protocol": "freshness-v1",
+  "rows": 152,
+  "context_match": true,
+  "control_checks": {
+    "baseline_a2_historical_replay": true,
+    "scope_historical_replay": true,
+    "global_change_historical_replay": true,
+    "always_block_historical_replay": true,
+    "always_block_zero_new_effects": true,
+    "always_block_has_false_blocks": true,
+    "baseline_unchanged_is_useful": true,
+    "scope_unchanged_is_useful": true,
+    "scope_own_output_is_useful": true,
+    "scope_outside_write_is_useful": true,
+    "scope_after_admission_limit_exposed": true,
+    "scope_prior_derived_limit_exposed": true
+  },
+  "all_controls_pass": true,
+  "summaries": [
+    {
+      "arm": "always_block",
+      "group": "all",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 11,
+        "unsafe_action_numerator": 0,
+        "unsafe_action_denominator": 13,
+        "stale_commit_numerator": 0,
+        "stale_commit_denominator": 13,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 5,
+        "false_block_numerator": 5,
+        "false_block_denominator": 5,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 5
+      }
+    },
+    {
+      "arm": "always_block",
+      "group": "conservative_mismatch",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 0,
+        "unsafe_action_numerator": 0,
+        "unsafe_action_denominator": 0,
+        "stale_commit_numerator": 0,
+        "stale_commit_denominator": 0,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 2,
+        "false_block_numerator": 2,
+        "false_block_denominator": 2,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 2
+      }
+    },
+    {
+      "arm": "always_block",
+      "group": "historical_control",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 0,
+        "unsafe_action_numerator": 0,
+        "unsafe_action_denominator": 0,
+        "stale_commit_numerator": 0,
+        "stale_commit_denominator": 0,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 0,
+        "false_block_numerator": 0,
+        "false_block_denominator": 0,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 0
+      }
+    },
+    {
+      "arm": "always_block",
+      "group": "positive_control",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 0,
+        "unsafe_action_numerator": 0,
+        "unsafe_action_denominator": 0,
+        "stale_commit_numerator": 0,
+        "stale_commit_denominator": 0,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 3,
+        "false_block_numerator": 3,
+        "false_block_denominator": 3,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 3
+      }
+    },
+    {
+      "arm": "always_block",
+      "group": "supported_stale",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 10,
+        "unsafe_action_numerator": 0,
+        "unsafe_action_denominator": 10,
+        "stale_commit_numerator": 0,
+        "stale_commit_denominator": 10,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 0,
+        "false_block_numerator": 0,
+        "false_block_denominator": 0,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 0
+      }
+    },
+    {
+      "arm": "always_block",
+      "group": "toctou_limit",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 0,
+        "unsafe_action_numerator": 0,
+        "unsafe_action_denominator": 2,
+        "stale_commit_numerator": 0,
+        "stale_commit_denominator": 2,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 0,
+        "false_block_numerator": 0,
+        "false_block_denominator": 0,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 0
+      }
+    },
+    {
+      "arm": "always_block",
+      "group": "unsupported_semantic",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 1,
+        "unsafe_action_numerator": 0,
+        "unsafe_action_denominator": 1,
+        "stale_commit_numerator": 0,
+        "stale_commit_denominator": 1,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 0,
+        "false_block_numerator": 0,
+        "false_block_denominator": 0,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 0
+      }
+    },
+    {
+      "arm": "baseline_a2",
+      "group": "all",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 11,
+        "pre_admission_stale_intent_denominator": 11,
+        "unsafe_action_numerator": 13,
+        "unsafe_action_denominator": 13,
+        "stale_commit_numerator": 12,
+        "stale_commit_denominator": 13,
+        "useful_action_numerator": 5,
+        "useful_action_denominator": 5,
+        "false_block_numerator": 0,
+        "false_block_denominator": 5,
+        "safe_commit_numerator": 5,
+        "safe_commit_denominator": 5
+      }
+    },
+    {
+      "arm": "baseline_a2",
+      "group": "conservative_mismatch",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 0,
+        "unsafe_action_numerator": 0,
+        "unsafe_action_denominator": 0,
+        "stale_commit_numerator": 0,
+        "stale_commit_denominator": 0,
+        "useful_action_numerator": 2,
+        "useful_action_denominator": 2,
+        "false_block_numerator": 0,
+        "false_block_denominator": 2,
+        "safe_commit_numerator": 2,
+        "safe_commit_denominator": 2
+      }
+    },
+    {
+      "arm": "baseline_a2",
+      "group": "historical_control",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 0,
+        "unsafe_action_numerator": 0,
+        "unsafe_action_denominator": 0,
+        "stale_commit_numerator": 0,
+        "stale_commit_denominator": 0,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 0,
+        "false_block_numerator": 0,
+        "false_block_denominator": 0,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 0
+      }
+    },
+    {
+      "arm": "baseline_a2",
+      "group": "positive_control",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 0,
+        "unsafe_action_numerator": 0,
+        "unsafe_action_denominator": 0,
+        "stale_commit_numerator": 0,
+        "stale_commit_denominator": 0,
+        "useful_action_numerator": 3,
+        "useful_action_denominator": 3,
+        "false_block_numerator": 0,
+        "false_block_denominator": 3,
+        "safe_commit_numerator": 3,
+        "safe_commit_denominator": 3
+      }
+    },
+    {
+      "arm": "baseline_a2",
+      "group": "supported_stale",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 10,
+        "pre_admission_stale_intent_denominator": 10,
+        "unsafe_action_numerator": 10,
+        "unsafe_action_denominator": 10,
+        "stale_commit_numerator": 9,
+        "stale_commit_denominator": 10,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 0,
+        "false_block_numerator": 0,
+        "false_block_denominator": 0,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 0
+      }
+    },
+    {
+      "arm": "baseline_a2",
+      "group": "toctou_limit",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 0,
+        "unsafe_action_numerator": 2,
+        "unsafe_action_denominator": 2,
+        "stale_commit_numerator": 2,
+        "stale_commit_denominator": 2,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 0,
+        "false_block_numerator": 0,
+        "false_block_denominator": 0,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 0
+      }
+    },
+    {
+      "arm": "baseline_a2",
+      "group": "unsupported_semantic",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 1,
+        "pre_admission_stale_intent_denominator": 1,
+        "unsafe_action_numerator": 1,
+        "unsafe_action_denominator": 1,
+        "stale_commit_numerator": 1,
+        "stale_commit_denominator": 1,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 0,
+        "false_block_numerator": 0,
+        "false_block_denominator": 0,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 0
+      }
+    },
+    {
+      "arm": "global_change",
+      "group": "all",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 1,
+        "pre_admission_stale_intent_denominator": 11,
+        "unsafe_action_numerator": 3,
+        "unsafe_action_denominator": 13,
+        "stale_commit_numerator": 1,
+        "stale_commit_denominator": 13,
+        "useful_action_numerator": 2,
+        "useful_action_denominator": 5,
+        "false_block_numerator": 3,
+        "false_block_denominator": 5,
+        "safe_commit_numerator": 2,
+        "safe_commit_denominator": 5
+      }
+    },
+    {
+      "arm": "global_change",
+      "group": "conservative_mismatch",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 0,
+        "unsafe_action_numerator": 0,
+        "unsafe_action_denominator": 0,
+        "stale_commit_numerator": 0,
+        "stale_commit_denominator": 0,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 2,
+        "false_block_numerator": 2,
+        "false_block_denominator": 2,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 2
+      }
+    },
+    {
+      "arm": "global_change",
+      "group": "historical_control",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 0,
+        "unsafe_action_numerator": 0,
+        "unsafe_action_denominator": 0,
+        "stale_commit_numerator": 0,
+        "stale_commit_denominator": 0,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 0,
+        "false_block_numerator": 0,
+        "false_block_denominator": 0,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 0
+      }
+    },
+    {
+      "arm": "global_change",
+      "group": "positive_control",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 0,
+        "unsafe_action_numerator": 0,
+        "unsafe_action_denominator": 0,
+        "stale_commit_numerator": 0,
+        "stale_commit_denominator": 0,
+        "useful_action_numerator": 2,
+        "useful_action_denominator": 3,
+        "false_block_numerator": 1,
+        "false_block_denominator": 3,
+        "safe_commit_numerator": 2,
+        "safe_commit_denominator": 3
+      }
+    },
+    {
+      "arm": "global_change",
+      "group": "supported_stale",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 10,
+        "unsafe_action_numerator": 0,
+        "unsafe_action_denominator": 10,
+        "stale_commit_numerator": 0,
+        "stale_commit_denominator": 10,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 0,
+        "false_block_numerator": 0,
+        "false_block_denominator": 0,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 0
+      }
+    },
+    {
+      "arm": "global_change",
+      "group": "toctou_limit",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 0,
+        "unsafe_action_numerator": 2,
+        "unsafe_action_denominator": 2,
+        "stale_commit_numerator": 0,
+        "stale_commit_denominator": 2,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 0,
+        "false_block_numerator": 0,
+        "false_block_denominator": 0,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 0
+      }
+    },
+    {
+      "arm": "global_change",
+      "group": "unsupported_semantic",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 1,
+        "pre_admission_stale_intent_denominator": 1,
+        "unsafe_action_numerator": 1,
+        "unsafe_action_denominator": 1,
+        "stale_commit_numerator": 1,
+        "stale_commit_denominator": 1,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 0,
+        "false_block_numerator": 0,
+        "false_block_denominator": 0,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 0
+      }
+    },
+    {
+      "arm": "scope",
+      "group": "all",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 1,
+        "pre_admission_stale_intent_denominator": 11,
+        "unsafe_action_numerator": 3,
+        "unsafe_action_denominator": 13,
+        "stale_commit_numerator": 1,
+        "stale_commit_denominator": 13,
+        "useful_action_numerator": 3,
+        "useful_action_denominator": 5,
+        "false_block_numerator": 2,
+        "false_block_denominator": 5,
+        "safe_commit_numerator": 3,
+        "safe_commit_denominator": 5
+      }
+    },
+    {
+      "arm": "scope",
+      "group": "conservative_mismatch",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 0,
+        "unsafe_action_numerator": 0,
+        "unsafe_action_denominator": 0,
+        "stale_commit_numerator": 0,
+        "stale_commit_denominator": 0,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 2,
+        "false_block_numerator": 2,
+        "false_block_denominator": 2,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 2
+      }
+    },
+    {
+      "arm": "scope",
+      "group": "historical_control",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 0,
+        "unsafe_action_numerator": 0,
+        "unsafe_action_denominator": 0,
+        "stale_commit_numerator": 0,
+        "stale_commit_denominator": 0,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 0,
+        "false_block_numerator": 0,
+        "false_block_denominator": 0,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 0
+      }
+    },
+    {
+      "arm": "scope",
+      "group": "positive_control",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 0,
+        "unsafe_action_numerator": 0,
+        "unsafe_action_denominator": 0,
+        "stale_commit_numerator": 0,
+        "stale_commit_denominator": 0,
+        "useful_action_numerator": 3,
+        "useful_action_denominator": 3,
+        "false_block_numerator": 0,
+        "false_block_denominator": 3,
+        "safe_commit_numerator": 3,
+        "safe_commit_denominator": 3
+      }
+    },
+    {
+      "arm": "scope",
+      "group": "supported_stale",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 10,
+        "unsafe_action_numerator": 0,
+        "unsafe_action_denominator": 10,
+        "stale_commit_numerator": 0,
+        "stale_commit_denominator": 10,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 0,
+        "false_block_numerator": 0,
+        "false_block_denominator": 0,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 0
+      }
+    },
+    {
+      "arm": "scope",
+      "group": "toctou_limit",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 0,
+        "pre_admission_stale_intent_denominator": 0,
+        "unsafe_action_numerator": 2,
+        "unsafe_action_denominator": 2,
+        "stale_commit_numerator": 0,
+        "stale_commit_denominator": 2,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 0,
+        "false_block_numerator": 0,
+        "false_block_denominator": 0,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 0
+      }
+    },
+    {
+      "arm": "scope",
+      "group": "unsupported_semantic",
+      "metrics": {
+        "pre_admission_stale_intent_numerator": 1,
+        "pre_admission_stale_intent_denominator": 1,
+        "unsafe_action_numerator": 1,
+        "unsafe_action_denominator": 1,
+        "stale_commit_numerator": 1,
+        "stale_commit_denominator": 1,
+        "useful_action_numerator": 0,
+        "useful_action_denominator": 0,
+        "false_block_numerator": 0,
+        "false_block_denominator": 0,
+        "safe_commit_numerator": 0,
+        "safe_commit_denominator": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "cmpath-memory": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--project",
+        "/absolute/path/to/cmpath",
+        "--extra",
+        "integrations",
+        "cmpath-mcp",
+        "--db",
+        "/absolute/path/to/cmpath-memory.db"
+      ]
+    }
+  }
+}

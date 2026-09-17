@@ -1,0 +1,900 @@
+{"corpus_size": 1000, "hit_ids": [1], "kind": "selective", "method": "python_embedded", "query": "marker000000", "query_id": "selective-00", "search_ms": 0.054042}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-00", "search_ms": 0.782319}
+{"corpus_size": 1000, "hit_ids": [21], "kind": "selective", "method": "python_embedded", "query": "marker000020", "query_id": "selective-01", "search_ms": 0.050236}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-01", "search_ms": 0.770511}
+{"corpus_size": 1000, "hit_ids": [41], "kind": "selective", "method": "python_embedded", "query": "marker000040", "query_id": "selective-02", "search_ms": 0.050046}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-02", "search_ms": 0.765824}
+{"corpus_size": 1000, "hit_ids": [61], "kind": "selective", "method": "python_embedded", "query": "marker000060", "query_id": "selective-03", "search_ms": 0.048122}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-03", "search_ms": 0.750261}
+{"corpus_size": 1000, "hit_ids": [81], "kind": "selective", "method": "python_embedded", "query": "marker000080", "query_id": "selective-04", "search_ms": 0.043015}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-04", "search_ms": 1.759862}
+{"corpus_size": 1000, "hit_ids": [101], "kind": "selective", "method": "python_embedded", "query": "marker000100", "query_id": "selective-05", "search_ms": 0.092209}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-05", "search_ms": 1.063112}
+{"corpus_size": 1000, "hit_ids": [121], "kind": "selective", "method": "python_embedded", "query": "marker000120", "query_id": "selective-06", "search_ms": 0.076415}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-06", "search_ms": 0.787357}
+{"corpus_size": 1000, "hit_ids": [141], "kind": "selective", "method": "python_embedded", "query": "marker000140", "query_id": "selective-07", "search_ms": 0.057146}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-07", "search_ms": 0.878665}
+{"corpus_size": 1000, "hit_ids": [161], "kind": "selective", "method": "python_embedded", "query": "marker000160", "query_id": "selective-08", "search_ms": 0.075183}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-08", "search_ms": 1.517677}
+{"corpus_size": 1000, "hit_ids": [181], "kind": "selective", "method": "python_embedded", "query": "marker000180", "query_id": "selective-09", "search_ms": 0.071098}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-09", "search_ms": 0.774488}
+{"corpus_size": 1000, "hit_ids": [201], "kind": "selective", "method": "python_embedded", "query": "marker000200", "query_id": "selective-10", "search_ms": 0.054101}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-10", "search_ms": 0.804592}
+{"corpus_size": 1000, "hit_ids": [221], "kind": "selective", "method": "python_embedded", "query": "marker000220", "query_id": "selective-11", "search_ms": 0.092629}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-11", "search_ms": 0.877492}
+{"corpus_size": 1000, "hit_ids": [241], "kind": "selective", "method": "python_embedded", "query": "marker000240", "query_id": "selective-12", "search_ms": 0.099219}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-12", "search_ms": 0.780587}
+{"corpus_size": 1000, "hit_ids": [261], "kind": "selective", "method": "python_embedded", "query": "marker000260", "query_id": "selective-13", "search_ms": 0.052139}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-13", "search_ms": 0.774458}
+{"corpus_size": 1000, "hit_ids": [281], "kind": "selective", "method": "python_embedded", "query": "marker000280", "query_id": "selective-14", "search_ms": 0.055504}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-14", "search_ms": 0.765083}
+{"corpus_size": 1000, "hit_ids": [301], "kind": "selective", "method": "python_embedded", "query": "marker000300", "query_id": "selective-15", "search_ms": 0.048193}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-15", "search_ms": 0.864182}
+{"corpus_size": 1000, "hit_ids": [321], "kind": "selective", "method": "python_embedded", "query": "marker000320", "query_id": "selective-16", "search_ms": 0.064227}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-16", "search_ms": 0.828148}
+{"corpus_size": 1000, "hit_ids": [341], "kind": "selective", "method": "python_embedded", "query": "marker000340", "query_id": "selective-17", "search_ms": 0.059329}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-17", "search_ms": 0.784452}
+{"corpus_size": 1000, "hit_ids": [361], "kind": "selective", "method": "python_embedded", "query": "marker000360", "query_id": "selective-18", "search_ms": 0.055794}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-18", "search_ms": 0.742469}
+{"corpus_size": 1000, "hit_ids": [381], "kind": "selective", "method": "python_embedded", "query": "marker000380", "query_id": "selective-19", "search_ms": 0.041603}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-19", "search_ms": 0.764742}
+{"corpus_size": 1000, "hit_ids": [401], "kind": "selective", "method": "python_embedded", "query": "marker000400", "query_id": "selective-20", "search_ms": 0.045078}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-20", "search_ms": 0.858074}
+{"corpus_size": 1000, "hit_ids": [421], "kind": "selective", "method": "python_embedded", "query": "marker000420", "query_id": "selective-21", "search_ms": 0.068463}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-21", "search_ms": 0.770632}
+{"corpus_size": 1000, "hit_ids": [441], "kind": "selective", "method": "python_embedded", "query": "marker000440", "query_id": "selective-22", "search_ms": 0.051157}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-22", "search_ms": 0.769059}
+{"corpus_size": 1000, "hit_ids": [461], "kind": "selective", "method": "python_embedded", "query": "marker000460", "query_id": "selective-23", "search_ms": 0.049134}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-23", "search_ms": 0.761518}
+{"corpus_size": 1000, "hit_ids": [481], "kind": "selective", "method": "python_embedded", "query": "marker000480", "query_id": "selective-24", "search_ms": 0.053491}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-24", "search_ms": 0.832405}
+{"corpus_size": 1000, "hit_ids": [501], "kind": "selective", "method": "python_embedded", "query": "marker000500", "query_id": "selective-25", "search_ms": 0.06678}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-25", "search_ms": 0.77634}
+{"corpus_size": 1000, "hit_ids": [521], "kind": "selective", "method": "python_embedded", "query": "marker000520", "query_id": "selective-26", "search_ms": 0.048513}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-26", "search_ms": 0.765804}
+{"corpus_size": 1000, "hit_ids": [541], "kind": "selective", "method": "python_embedded", "query": "marker000540", "query_id": "selective-27", "search_ms": 0.051057}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-27", "search_ms": 0.760897}
+{"corpus_size": 1000, "hit_ids": [561], "kind": "selective", "method": "python_embedded", "query": "marker000560", "query_id": "selective-28", "search_ms": 0.047181}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-28", "search_ms": 0.763081}
+{"corpus_size": 1000, "hit_ids": [581], "kind": "selective", "method": "python_embedded", "query": "marker000580", "query_id": "selective-29", "search_ms": 0.047622}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-29", "search_ms": 0.875099}
+{"corpus_size": 1000, "hit_ids": [601], "kind": "selective", "method": "python_embedded", "query": "marker000600", "query_id": "selective-30", "search_ms": 0.070126}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-30", "search_ms": 0.768027}
+{"corpus_size": 1000, "hit_ids": [621], "kind": "selective", "method": "python_embedded", "query": "marker000620", "query_id": "selective-31", "search_ms": 0.052008}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-31", "search_ms": 0.744633}
+{"corpus_size": 1000, "hit_ids": [641], "kind": "selective", "method": "python_embedded", "query": "marker000640", "query_id": "selective-32", "search_ms": 0.042945}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-32", "search_ms": 0.767787}
+{"corpus_size": 1000, "hit_ids": [661], "kind": "selective", "method": "python_embedded", "query": "marker000660", "query_id": "selective-33", "search_ms": 0.05272}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-33", "search_ms": 1.014489}
+{"corpus_size": 1000, "hit_ids": [681], "kind": "selective", "method": "python_embedded", "query": "marker000680", "query_id": "selective-34", "search_ms": 0.081362}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-34", "search_ms": 0.917252}
+{"corpus_size": 1000, "hit_ids": [701], "kind": "selective", "method": "python_embedded", "query": "marker000700", "query_id": "selective-35", "search_ms": 0.068783}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-35", "search_ms": 0.772735}
+{"corpus_size": 1000, "hit_ids": [721], "kind": "selective", "method": "python_embedded", "query": "marker000720", "query_id": "selective-36", "search_ms": 0.055003}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-36", "search_ms": 0.780506}
+{"corpus_size": 1000, "hit_ids": [741], "kind": "selective", "method": "python_embedded", "query": "marker000740", "query_id": "selective-37", "search_ms": 0.052268}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-37", "search_ms": 0.835639}
+{"corpus_size": 1000, "hit_ids": [761], "kind": "selective", "method": "python_embedded", "query": "marker000760", "query_id": "selective-38", "search_ms": 0.067141}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-38", "search_ms": 0.873527}
+{"corpus_size": 1000, "hit_ids": [781], "kind": "selective", "method": "python_embedded", "query": "marker000780", "query_id": "selective-39", "search_ms": 0.069494}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-39", "search_ms": 0.778824}
+{"corpus_size": 1000, "hit_ids": [801], "kind": "selective", "method": "python_embedded", "query": "marker000800", "query_id": "selective-40", "search_ms": 0.054492}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-40", "search_ms": 0.759615}
+{"corpus_size": 1000, "hit_ids": [821], "kind": "selective", "method": "python_embedded", "query": "marker000820", "query_id": "selective-41", "search_ms": 0.042554}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-41", "search_ms": 0.790291}
+{"corpus_size": 1000, "hit_ids": [841], "kind": "selective", "method": "python_embedded", "query": "marker000840", "query_id": "selective-42", "search_ms": 0.044557}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-42", "search_ms": 0.766806}
+{"corpus_size": 1000, "hit_ids": [861], "kind": "selective", "method": "python_embedded", "query": "marker000860", "query_id": "selective-43", "search_ms": 0.048563}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-43", "search_ms": 0.866176}
+{"corpus_size": 1000, "hit_ids": [881], "kind": "selective", "method": "python_embedded", "query": "marker000880", "query_id": "selective-44", "search_ms": 0.068824}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-44", "search_ms": 0.796921}
+{"corpus_size": 1000, "hit_ids": [901], "kind": "selective", "method": "python_embedded", "query": "marker000900", "query_id": "selective-45", "search_ms": 0.053941}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-45", "search_ms": 0.773927}
+{"corpus_size": 1000, "hit_ids": [921], "kind": "selective", "method": "python_embedded", "query": "marker000920", "query_id": "selective-46", "search_ms": 0.05323}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-46", "search_ms": 0.770031}
+{"corpus_size": 1000, "hit_ids": [941], "kind": "selective", "method": "python_embedded", "query": "marker000940", "query_id": "selective-47", "search_ms": 0.050777}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-47", "search_ms": 0.753987}
+{"corpus_size": 1000, "hit_ids": [961], "kind": "selective", "method": "python_embedded", "query": "marker000960", "query_id": "selective-48", "search_ms": 0.044497}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-48", "search_ms": 0.98146}
+{"corpus_size": 1000, "hit_ids": [981], "kind": "selective", "method": "python_embedded", "query": "marker000980", "query_id": "selective-49", "search_ms": 0.069105}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-49", "search_ms": 0.781498}
+{"corpus_size": 1000, "hit_ids": [1], "kind": "selective", "method": "go_embedded", "query": "marker000000", "query_id": "selective-00", "search_ms": 0.053501}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-00", "search_ms": 0.894348}
+{"corpus_size": 1000, "hit_ids": [21], "kind": "selective", "method": "go_embedded", "query": "marker000020", "query_id": "selective-01", "search_ms": 0.065689}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-01", "search_ms": 0.860627}
+{"corpus_size": 1000, "hit_ids": [41], "kind": "selective", "method": "go_embedded", "query": "marker000040", "query_id": "selective-02", "search_ms": 0.074993}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-02", "search_ms": 0.918143}
+{"corpus_size": 1000, "hit_ids": [61], "kind": "selective", "method": "go_embedded", "query": "marker000060", "query_id": "selective-03", "search_ms": 0.069575}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-03", "search_ms": 0.839766}
+{"corpus_size": 1000, "hit_ids": [81], "kind": "selective", "method": "go_embedded", "query": "marker000080", "query_id": "selective-04", "search_ms": 0.061573}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-04", "search_ms": 0.913817}
+{"corpus_size": 1000, "hit_ids": [101], "kind": "selective", "method": "go_embedded", "query": "marker000100", "query_id": "selective-05", "search_ms": 0.072409}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-05", "search_ms": 0.841428}
+{"corpus_size": 1000, "hit_ids": [121], "kind": "selective", "method": "go_embedded", "query": "marker000120", "query_id": "selective-06", "search_ms": 0.05988}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-06", "search_ms": 0.847607}
+{"corpus_size": 1000, "hit_ids": [141], "kind": "selective", "method": "go_embedded", "query": "marker000140", "query_id": "selective-07", "search_ms": 0.058338}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-07", "search_ms": 0.833106}
+{"corpus_size": 1000, "hit_ids": [161], "kind": "selective", "method": "go_embedded", "query": "marker000160", "query_id": "selective-08", "search_ms": 0.056014}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-08", "search_ms": 0.874639}
+{"corpus_size": 1000, "hit_ids": [181], "kind": "selective", "method": "go_embedded", "query": "marker000180", "query_id": "selective-09", "search_ms": 0.06621}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-09", "search_ms": 0.85613}
+{"corpus_size": 1000, "hit_ids": [201], "kind": "selective", "method": "go_embedded", "query": "marker000200", "query_id": "selective-10", "search_ms": 0.058278}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-10", "search_ms": 0.833005}
+{"corpus_size": 1000, "hit_ids": [221], "kind": "selective", "method": "go_embedded", "query": "marker000220", "query_id": "selective-11", "search_ms": 0.052839}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-11", "search_ms": 0.831403}
+{"corpus_size": 1000, "hit_ids": [241], "kind": "selective", "method": "go_embedded", "query": "marker000240", "query_id": "selective-12", "search_ms": 0.057737}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-12", "search_ms": 0.809169}
+{"corpus_size": 1000, "hit_ids": [261], "kind": "selective", "method": "go_embedded", "query": "marker000260", "query_id": "selective-13", "search_ms": 0.047111}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-13", "search_ms": 0.857523}
+{"corpus_size": 1000, "hit_ids": [281], "kind": "selective", "method": "go_embedded", "query": "marker000280", "query_id": "selective-14", "search_ms": 0.067221}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-14", "search_ms": 0.833656}
+{"corpus_size": 1000, "hit_ids": [301], "kind": "selective", "method": "go_embedded", "query": "marker000300", "query_id": "selective-15", "search_ms": 0.055524}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-15", "search_ms": 0.830111}
+{"corpus_size": 1000, "hit_ids": [321], "kind": "selective", "method": "go_embedded", "query": "marker000320", "query_id": "selective-16", "search_ms": 0.064056}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-16", "search_ms": 1.276224}
+{"corpus_size": 1000, "hit_ids": [341], "kind": "selective", "method": "go_embedded", "query": "marker000340", "query_id": "selective-17", "search_ms": 0.110957}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-17", "search_ms": 0.860577}
+{"corpus_size": 1000, "hit_ids": [361], "kind": "selective", "method": "go_embedded", "query": "marker000360", "query_id": "selective-18", "search_ms": 0.05975}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-18", "search_ms": 0.963262}
+{"corpus_size": 1000, "hit_ids": [381], "kind": "selective", "method": "go_embedded", "query": "marker000380", "query_id": "selective-19", "search_ms": 0.129114}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-19", "search_ms": 0.824463}
+{"corpus_size": 1000, "hit_ids": [401], "kind": "selective", "method": "go_embedded", "query": "marker000400", "query_id": "selective-20", "search_ms": 0.054352}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-20", "search_ms": 0.840186}
+{"corpus_size": 1000, "hit_ids": [421], "kind": "selective", "method": "go_embedded", "query": "marker000420", "query_id": "selective-21", "search_ms": 0.061533}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-21", "search_ms": 0.871573}
+{"corpus_size": 1000, "hit_ids": [441], "kind": "selective", "method": "go_embedded", "query": "marker000440", "query_id": "selective-22", "search_ms": 0.063606}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-22", "search_ms": 0.817793}
+{"corpus_size": 1000, "hit_ids": [461], "kind": "selective", "method": "go_embedded", "query": "marker000460", "query_id": "selective-23", "search_ms": 0.064557}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-23", "search_ms": 0.827317}
+{"corpus_size": 1000, "hit_ids": [481], "kind": "selective", "method": "go_embedded", "query": "marker000480", "query_id": "selective-24", "search_ms": 0.062093}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-24", "search_ms": 0.880106}
+{"corpus_size": 1000, "hit_ids": [501], "kind": "selective", "method": "go_embedded", "query": "marker000500", "query_id": "selective-25", "search_ms": 0.05932}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-25", "search_ms": 0.867147}
+{"corpus_size": 1000, "hit_ids": [521], "kind": "selective", "method": "go_embedded", "query": "marker000520", "query_id": "selective-26", "search_ms": 0.069054}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-26", "search_ms": 0.834577}
+{"corpus_size": 1000, "hit_ids": [541], "kind": "selective", "method": "go_embedded", "query": "marker000540", "query_id": "selective-27", "search_ms": 0.05979}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-27", "search_ms": 0.946927}
+{"corpus_size": 1000, "hit_ids": [561], "kind": "selective", "method": "go_embedded", "query": "marker000560", "query_id": "selective-28", "search_ms": 0.075113}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-28", "search_ms": 0.854058}
+{"corpus_size": 1000, "hit_ids": [581], "kind": "selective", "method": "go_embedded", "query": "marker000580", "query_id": "selective-29", "search_ms": 0.061443}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-29", "search_ms": 0.959166}
+{"corpus_size": 1000, "hit_ids": [601], "kind": "selective", "method": "go_embedded", "query": "marker000600", "query_id": "selective-30", "search_ms": 0.07288}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-30", "search_ms": 0.929331}
+{"corpus_size": 1000, "hit_ids": [621], "kind": "selective", "method": "go_embedded", "query": "marker000620", "query_id": "selective-31", "search_ms": 0.06646}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-31", "search_ms": 1.156513}
+{"corpus_size": 1000, "hit_ids": [641], "kind": "selective", "method": "go_embedded", "query": "marker000640", "query_id": "selective-32", "search_ms": 0.078979}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-32", "search_ms": 0.863892}
+{"corpus_size": 1000, "hit_ids": [661], "kind": "selective", "method": "go_embedded", "query": "marker000660", "query_id": "selective-33", "search_ms": 0.065559}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-33", "search_ms": 0.973157}
+{"corpus_size": 1000, "hit_ids": [681], "kind": "selective", "method": "go_embedded", "query": "marker000680", "query_id": "selective-34", "search_ms": 0.073911}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-34", "search_ms": 0.913897}
+{"corpus_size": 1000, "hit_ids": [701], "kind": "selective", "method": "go_embedded", "query": "marker000700", "query_id": "selective-35", "search_ms": 0.075854}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-35", "search_ms": 0.847918}
+{"corpus_size": 1000, "hit_ids": [721], "kind": "selective", "method": "go_embedded", "query": "marker000720", "query_id": "selective-36", "search_ms": 0.071198}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-36", "search_ms": 0.853497}
+{"corpus_size": 1000, "hit_ids": [741], "kind": "selective", "method": "go_embedded", "query": "marker000740", "query_id": "selective-37", "search_ms": 0.145539}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-37", "search_ms": 0.894689}
+{"corpus_size": 1000, "hit_ids": [761], "kind": "selective", "method": "go_embedded", "query": "marker000760", "query_id": "selective-38", "search_ms": 0.07316}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-38", "search_ms": 0.831764}
+{"corpus_size": 1000, "hit_ids": [781], "kind": "selective", "method": "go_embedded", "query": "marker000780", "query_id": "selective-39", "search_ms": 0.064717}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-39", "search_ms": 0.843041}
+{"corpus_size": 1000, "hit_ids": [801], "kind": "selective", "method": "go_embedded", "query": "marker000800", "query_id": "selective-40", "search_ms": 0.061673}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-40", "search_ms": 0.842229}
+{"corpus_size": 1000, "hit_ids": [821], "kind": "selective", "method": "go_embedded", "query": "marker000820", "query_id": "selective-41", "search_ms": 0.05967}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-41", "search_ms": 0.809159}
+{"corpus_size": 1000, "hit_ids": [841], "kind": "selective", "method": "go_embedded", "query": "marker000840", "query_id": "selective-42", "search_ms": 0.053691}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-42", "search_ms": 0.850802}
+{"corpus_size": 1000, "hit_ids": [861], "kind": "selective", "method": "go_embedded", "query": "marker000860", "query_id": "selective-43", "search_ms": 0.061703}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-43", "search_ms": 0.997234}
+{"corpus_size": 1000, "hit_ids": [881], "kind": "selective", "method": "go_embedded", "query": "marker000880", "query_id": "selective-44", "search_ms": 0.065228}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-44", "search_ms": 0.887307}
+{"corpus_size": 1000, "hit_ids": [901], "kind": "selective", "method": "go_embedded", "query": "marker000900", "query_id": "selective-45", "search_ms": 0.069956}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-45", "search_ms": 0.830181}
+{"corpus_size": 1000, "hit_ids": [921], "kind": "selective", "method": "go_embedded", "query": "marker000920", "query_id": "selective-46", "search_ms": 0.057476}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-46", "search_ms": 0.921659}
+{"corpus_size": 1000, "hit_ids": [941], "kind": "selective", "method": "go_embedded", "query": "marker000940", "query_id": "selective-47", "search_ms": 0.076695}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-47", "search_ms": 0.843051}
+{"corpus_size": 1000, "hit_ids": [961], "kind": "selective", "method": "go_embedded", "query": "marker000960", "query_id": "selective-48", "search_ms": 0.064647}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-48", "search_ms": 0.847617}
+{"corpus_size": 1000, "hit_ids": [981], "kind": "selective", "method": "go_embedded", "query": "marker000980", "query_id": "selective-49", "search_ms": 0.062765}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-49", "search_ms": 0.983523}
+{"corpus_size": 1000, "hit_ids": [1], "kind": "selective", "method": "python_go_bridge", "query": "marker000000", "query_id": "selective-00", "search_ms": 0.297328}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-00", "search_ms": 1.219438}
+{"corpus_size": 1000, "hit_ids": [21], "kind": "selective", "method": "python_go_bridge", "query": "marker000020", "query_id": "selective-01", "search_ms": 0.355972}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-01", "search_ms": 1.15497}
+{"corpus_size": 1000, "hit_ids": [41], "kind": "selective", "method": "python_go_bridge", "query": "marker000040", "query_id": "selective-02", "search_ms": 0.341364}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-02", "search_ms": 1.217665}
+{"corpus_size": 1000, "hit_ids": [61], "kind": "selective", "method": "python_go_bridge", "query": "marker000060", "query_id": "selective-03", "search_ms": 0.375366}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-03", "search_ms": 1.12787}
+{"corpus_size": 1000, "hit_ids": [81], "kind": "selective", "method": "python_go_bridge", "query": "marker000080", "query_id": "selective-04", "search_ms": 0.348275}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-04", "search_ms": 1.195222}
+{"corpus_size": 1000, "hit_ids": [101], "kind": "selective", "method": "python_go_bridge", "query": "marker000100", "query_id": "selective-05", "search_ms": 0.354925}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-05", "search_ms": 1.191707}
+{"corpus_size": 1000, "hit_ids": [121], "kind": "selective", "method": "python_go_bridge", "query": "marker000120", "query_id": "selective-06", "search_ms": 0.348134}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-06", "search_ms": 1.220229}
+{"corpus_size": 1000, "hit_ids": [141], "kind": "selective", "method": "python_go_bridge", "query": "marker000140", "query_id": "selective-07", "search_ms": 0.36506}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-07", "search_ms": 1.188251}
+{"corpus_size": 1000, "hit_ids": [161], "kind": "selective", "method": "python_go_bridge", "query": "marker000160", "query_id": "selective-08", "search_ms": 0.346132}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-08", "search_ms": 1.367501}
+{"corpus_size": 1000, "hit_ids": [181], "kind": "selective", "method": "python_go_bridge", "query": "marker000180", "query_id": "selective-09", "search_ms": 0.429453}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-09", "search_ms": 1.715726}
+{"corpus_size": 1000, "hit_ids": [201], "kind": "selective", "method": "python_go_bridge", "query": "marker000200", "query_id": "selective-10", "search_ms": 0.446003}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-10", "search_ms": 1.26068}
+{"corpus_size": 1000, "hit_ids": [221], "kind": "selective", "method": "python_go_bridge", "query": "marker000220", "query_id": "selective-11", "search_ms": 0.367134}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-11", "search_ms": 1.421132}
+{"corpus_size": 1000, "hit_ids": [241], "kind": "selective", "method": "python_go_bridge", "query": "marker000240", "query_id": "selective-12", "search_ms": 0.433739}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-12", "search_ms": 1.240539}
+{"corpus_size": 1000, "hit_ids": [261], "kind": "selective", "method": "python_go_bridge", "query": "marker000260", "query_id": "selective-13", "search_ms": 0.341404}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-13", "search_ms": 1.193939}
+{"corpus_size": 1000, "hit_ids": [281], "kind": "selective", "method": "python_go_bridge", "query": "marker000280", "query_id": "selective-14", "search_ms": 0.329386}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-14", "search_ms": 1.203774}
+{"corpus_size": 1000, "hit_ids": [301], "kind": "selective", "method": "python_go_bridge", "query": "marker000300", "query_id": "selective-15", "search_ms": 0.353162}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-15", "search_ms": 1.269463}
+{"corpus_size": 1000, "hit_ids": [321], "kind": "selective", "method": "python_go_bridge", "query": "marker000320", "query_id": "selective-16", "search_ms": 0.376818}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-16", "search_ms": 1.190114}
+{"corpus_size": 1000, "hit_ids": [341], "kind": "selective", "method": "python_go_bridge", "query": "marker000340", "query_id": "selective-17", "search_ms": 0.359862}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-17", "search_ms": 1.732451}
+{"corpus_size": 1000, "hit_ids": [361], "kind": "selective", "method": "python_go_bridge", "query": "marker000360", "query_id": "selective-18", "search_ms": 0.356537}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-18", "search_ms": 1.347441}
+{"corpus_size": 1000, "hit_ids": [381], "kind": "selective", "method": "python_go_bridge", "query": "marker000380", "query_id": "selective-19", "search_ms": 0.326202}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-19", "search_ms": 1.191786}
+{"corpus_size": 1000, "hit_ids": [401], "kind": "selective", "method": "python_go_bridge", "query": "marker000400", "query_id": "selective-20", "search_ms": 0.320203}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-20", "search_ms": 1.146107}
+{"corpus_size": 1000, "hit_ids": [421], "kind": "selective", "method": "python_go_bridge", "query": "marker000420", "query_id": "selective-21", "search_ms": 0.308314}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-21", "search_ms": 1.347862}
+{"corpus_size": 1000, "hit_ids": [441], "kind": "selective", "method": "python_go_bridge", "query": "marker000440", "query_id": "selective-22", "search_ms": 0.26542}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-22", "search_ms": 1.362904}
+{"corpus_size": 1000, "hit_ids": [461], "kind": "selective", "method": "python_go_bridge", "query": "marker000460", "query_id": "selective-23", "search_ms": 0.356758}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-23", "search_ms": 1.982879}
+{"corpus_size": 1000, "hit_ids": [481], "kind": "selective", "method": "python_go_bridge", "query": "marker000480", "query_id": "selective-24", "search_ms": 0.379462}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-24", "search_ms": 1.233439}
+{"corpus_size": 1000, "hit_ids": [501], "kind": "selective", "method": "python_go_bridge", "query": "marker000500", "query_id": "selective-25", "search_ms": 0.337689}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-25", "search_ms": 1.215482}
+{"corpus_size": 1000, "hit_ids": [521], "kind": "selective", "method": "python_go_bridge", "query": "marker000520", "query_id": "selective-26", "search_ms": 0.310668}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-26", "search_ms": 1.070984}
+{"corpus_size": 1000, "hit_ids": [541], "kind": "selective", "method": "python_go_bridge", "query": "marker000540", "query_id": "selective-27", "search_ms": 0.307864}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-27", "search_ms": 1.119257}
+{"corpus_size": 1000, "hit_ids": [561], "kind": "selective", "method": "python_go_bridge", "query": "marker000560", "query_id": "selective-28", "search_ms": 0.252721}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-28", "search_ms": 1.188782}
+{"corpus_size": 1000, "hit_ids": [581], "kind": "selective", "method": "python_go_bridge", "query": "marker000580", "query_id": "selective-29", "search_ms": 0.275145}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-29", "search_ms": 1.047208}
+{"corpus_size": 1000, "hit_ids": [601], "kind": "selective", "method": "python_go_bridge", "query": "marker000600", "query_id": "selective-30", "search_ms": 0.307434}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-30", "search_ms": 1.173068}
+{"corpus_size": 1000, "hit_ids": [621], "kind": "selective", "method": "python_go_bridge", "query": "marker000620", "query_id": "selective-31", "search_ms": 0.476278}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-31", "search_ms": 1.03533}
+{"corpus_size": 1000, "hit_ids": [641], "kind": "selective", "method": "python_go_bridge", "query": "marker000640", "query_id": "selective-32", "search_ms": 0.433944}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-32", "search_ms": 1.156202}
+{"corpus_size": 1000, "hit_ids": [661], "kind": "selective", "method": "python_go_bridge", "query": "marker000660", "query_id": "selective-33", "search_ms": 0.29221}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-33", "search_ms": 1.200299}
+{"corpus_size": 1000, "hit_ids": [681], "kind": "selective", "method": "python_go_bridge", "query": "marker000680", "query_id": "selective-34", "search_ms": 0.279611}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-34", "search_ms": 1.062452}
+{"corpus_size": 1000, "hit_ids": [701], "kind": "selective", "method": "python_go_bridge", "query": "marker000700", "query_id": "selective-35", "search_ms": 0.289887}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-35", "search_ms": 1.077734}
+{"corpus_size": 1000, "hit_ids": [721], "kind": "selective", "method": "python_go_bridge", "query": "marker000720", "query_id": "selective-36", "search_ms": 0.349346}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-36", "search_ms": 1.115337}
+{"corpus_size": 1000, "hit_ids": [741], "kind": "selective", "method": "python_go_bridge", "query": "marker000740", "query_id": "selective-37", "search_ms": 0.361425}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-37", "search_ms": 1.082211}
+{"corpus_size": 1000, "hit_ids": [761], "kind": "selective", "method": "python_go_bridge", "query": "marker000760", "query_id": "selective-38", "search_ms": 0.407965}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-38", "search_ms": 1.129733}
+{"corpus_size": 1000, "hit_ids": [781], "kind": "selective", "method": "python_go_bridge", "query": "marker000780", "query_id": "selective-39", "search_ms": 0.301614}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-39", "search_ms": 1.275022}
+{"corpus_size": 1000, "hit_ids": [801], "kind": "selective", "method": "python_go_bridge", "query": "marker000800", "query_id": "selective-40", "search_ms": 0.292662}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-40", "search_ms": 1.267365}
+{"corpus_size": 1000, "hit_ids": [821], "kind": "selective", "method": "python_go_bridge", "query": "marker000820", "query_id": "selective-41", "search_ms": 0.392952}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-41", "search_ms": 1.191316}
+{"corpus_size": 1000, "hit_ids": [841], "kind": "selective", "method": "python_go_bridge", "query": "marker000840", "query_id": "selective-42", "search_ms": 0.317048}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-42", "search_ms": 1.236223}
+{"corpus_size": 1000, "hit_ids": [861], "kind": "selective", "method": "python_go_bridge", "query": "marker000860", "query_id": "selective-43", "search_ms": 0.416388}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-43", "search_ms": 1.28709}
+{"corpus_size": 1000, "hit_ids": [881], "kind": "selective", "method": "python_go_bridge", "query": "marker000880", "query_id": "selective-44", "search_ms": 0.343037}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-44", "search_ms": 1.149472}
+{"corpus_size": 1000, "hit_ids": [901], "kind": "selective", "method": "python_go_bridge", "query": "marker000900", "query_id": "selective-45", "search_ms": 0.360152}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-45", "search_ms": 1.191235}
+{"corpus_size": 1000, "hit_ids": [921], "kind": "selective", "method": "python_go_bridge", "query": "marker000920", "query_id": "selective-46", "search_ms": 0.382552}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-46", "search_ms": 1.186639}
+{"corpus_size": 1000, "hit_ids": [941], "kind": "selective", "method": "python_go_bridge", "query": "marker000940", "query_id": "selective-47", "search_ms": 0.403227}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-47", "search_ms": 1.176513}
+{"corpus_size": 1000, "hit_ids": [961], "kind": "selective", "method": "python_go_bridge", "query": "marker000960", "query_id": "selective-48", "search_ms": 0.309807}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-48", "search_ms": 1.29339}
+{"corpus_size": 1000, "hit_ids": [981], "kind": "selective", "method": "python_go_bridge", "query": "marker000980", "query_id": "selective-49", "search_ms": 0.330098}
+{"corpus_size": 1000, "hit_ids": [1000, 999, 998, 997, 996, 995, 994, 993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-49", "search_ms": 1.211716}
+{"corpus_size": 10000, "hit_ids": [1], "kind": "selective", "method": "go_embedded", "query": "marker000000", "query_id": "selective-00", "search_ms": 0.088583}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-00", "search_ms": 8.995038}
+{"corpus_size": 10000, "hit_ids": [201], "kind": "selective", "method": "go_embedded", "query": "marker000200", "query_id": "selective-01", "search_ms": 0.134603}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-01", "search_ms": 10.227145}
+{"corpus_size": 10000, "hit_ids": [401], "kind": "selective", "method": "go_embedded", "query": "marker000400", "query_id": "selective-02", "search_ms": 0.08637}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-02", "search_ms": 9.365346}
+{"corpus_size": 10000, "hit_ids": [601], "kind": "selective", "method": "go_embedded", "query": "marker000600", "query_id": "selective-03", "search_ms": 0.093431}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-03", "search_ms": 8.118187}
+{"corpus_size": 10000, "hit_ids": [801], "kind": "selective", "method": "go_embedded", "query": "marker000800", "query_id": "selective-04", "search_ms": 0.079419}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-04", "search_ms": 8.093669}
+{"corpus_size": 10000, "hit_ids": [1001], "kind": "selective", "method": "go_embedded", "query": "marker001000", "query_id": "selective-05", "search_ms": 0.121873}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-05", "search_ms": 8.518969}
+{"corpus_size": 10000, "hit_ids": [1201], "kind": "selective", "method": "go_embedded", "query": "marker001200", "query_id": "selective-06", "search_ms": 0.145549}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-06", "search_ms": 8.165568}
+{"corpus_size": 10000, "hit_ids": [1401], "kind": "selective", "method": "go_embedded", "query": "marker001400", "query_id": "selective-07", "search_ms": 0.091018}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-07", "search_ms": 7.652063}
+{"corpus_size": 10000, "hit_ids": [1601], "kind": "selective", "method": "go_embedded", "query": "marker001600", "query_id": "selective-08", "search_ms": 0.080882}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-08", "search_ms": 8.245728}
+{"corpus_size": 10000, "hit_ids": [1801], "kind": "selective", "method": "go_embedded", "query": "marker001800", "query_id": "selective-09", "search_ms": 0.123897}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-09", "search_ms": 8.210951}
+{"corpus_size": 10000, "hit_ids": [2001], "kind": "selective", "method": "go_embedded", "query": "marker002000", "query_id": "selective-10", "search_ms": 0.125359}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-10", "search_ms": 8.243044}
+{"corpus_size": 10000, "hit_ids": [2201], "kind": "selective", "method": "go_embedded", "query": "marker002200", "query_id": "selective-11", "search_ms": 0.081543}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-11", "search_ms": 8.027429}
+{"corpus_size": 10000, "hit_ids": [2401], "kind": "selective", "method": "go_embedded", "query": "marker002400", "query_id": "selective-12", "search_ms": 0.096265}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-12", "search_ms": 7.884274}
+{"corpus_size": 10000, "hit_ids": [2601], "kind": "selective", "method": "go_embedded", "query": "marker002600", "query_id": "selective-13", "search_ms": 0.077376}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-13", "search_ms": 7.694708}
+{"corpus_size": 10000, "hit_ids": [2801], "kind": "selective", "method": "go_embedded", "query": "marker002800", "query_id": "selective-14", "search_ms": 0.080462}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-14", "search_ms": 8.003474}
+{"corpus_size": 10000, "hit_ids": [3001], "kind": "selective", "method": "go_embedded", "query": "marker003000", "query_id": "selective-15", "search_ms": 0.089475}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-15", "search_ms": 8.003353}
+{"corpus_size": 10000, "hit_ids": [3201], "kind": "selective", "method": "go_embedded", "query": "marker003200", "query_id": "selective-16", "search_ms": 0.081833}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-16", "search_ms": 9.146576}
+{"corpus_size": 10000, "hit_ids": [3401], "kind": "selective", "method": "go_embedded", "query": "marker003400", "query_id": "selective-17", "search_ms": 0.111659}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-17", "search_ms": 7.911474}
+{"corpus_size": 10000, "hit_ids": [3601], "kind": "selective", "method": "go_embedded", "query": "marker003600", "query_id": "selective-18", "search_ms": 0.101423}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-18", "search_ms": 7.714007}
+{"corpus_size": 10000, "hit_ids": [3801], "kind": "selective", "method": "go_embedded", "query": "marker003800", "query_id": "selective-19", "search_ms": 0.083376}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-19", "search_ms": 8.058506}
+{"corpus_size": 10000, "hit_ids": [4001], "kind": "selective", "method": "go_embedded", "query": "marker004000", "query_id": "selective-20", "search_ms": 0.11305}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-20", "search_ms": 7.850052}
+{"corpus_size": 10000, "hit_ids": [4201], "kind": "selective", "method": "go_embedded", "query": "marker004200", "query_id": "selective-21", "search_ms": 0.142215}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-21", "search_ms": 7.615809}
+{"corpus_size": 10000, "hit_ids": [4401], "kind": "selective", "method": "go_embedded", "query": "marker004400", "query_id": "selective-22", "search_ms": 0.079971}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-22", "search_ms": 7.754678}
+{"corpus_size": 10000, "hit_ids": [4601], "kind": "selective", "method": "go_embedded", "query": "marker004600", "query_id": "selective-23", "search_ms": 0.07919}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-23", "search_ms": 7.879215}
+{"corpus_size": 10000, "hit_ids": [4801], "kind": "selective", "method": "go_embedded", "query": "marker004800", "query_id": "selective-24", "search_ms": 0.085059}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-24", "search_ms": 8.070735}
+{"corpus_size": 10000, "hit_ids": [5001], "kind": "selective", "method": "go_embedded", "query": "marker005000", "query_id": "selective-25", "search_ms": 0.150967}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-25", "search_ms": 8.784571}
+{"corpus_size": 10000, "hit_ids": [5201], "kind": "selective", "method": "go_embedded", "query": "marker005200", "query_id": "selective-26", "search_ms": 0.104377}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-26", "search_ms": 7.735229}
+{"corpus_size": 10000, "hit_ids": [5401], "kind": "selective", "method": "go_embedded", "query": "marker005400", "query_id": "selective-27", "search_ms": 0.098028}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-27", "search_ms": 7.548597}
+{"corpus_size": 10000, "hit_ids": [5601], "kind": "selective", "method": "go_embedded", "query": "marker005600", "query_id": "selective-28", "search_ms": 0.092149}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-28", "search_ms": 7.714808}
+{"corpus_size": 10000, "hit_ids": [5801], "kind": "selective", "method": "go_embedded", "query": "marker005800", "query_id": "selective-29", "search_ms": 0.080411}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-29", "search_ms": 7.821729}
+{"corpus_size": 10000, "hit_ids": [6001], "kind": "selective", "method": "go_embedded", "query": "marker006000", "query_id": "selective-30", "search_ms": 0.075434}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-30", "search_ms": 8.02784}
+{"corpus_size": 10000, "hit_ids": [6201], "kind": "selective", "method": "go_embedded", "query": "marker006200", "query_id": "selective-31", "search_ms": 0.088864}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-31", "search_ms": 7.794368}
+{"corpus_size": 10000, "hit_ids": [6401], "kind": "selective", "method": "go_embedded", "query": "marker006400", "query_id": "selective-32", "search_ms": 0.085639}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-32", "search_ms": 7.695729}
+{"corpus_size": 10000, "hit_ids": [6601], "kind": "selective", "method": "go_embedded", "query": "marker006600", "query_id": "selective-33", "search_ms": 0.083866}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-33", "search_ms": 7.921149}
+{"corpus_size": 10000, "hit_ids": [6801], "kind": "selective", "method": "go_embedded", "query": "marker006800", "query_id": "selective-34", "search_ms": 0.086641}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-34", "search_ms": 8.069703}
+{"corpus_size": 10000, "hit_ids": [7001], "kind": "selective", "method": "go_embedded", "query": "marker007000", "query_id": "selective-35", "search_ms": 0.084067}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-35", "search_ms": 8.514473}
+{"corpus_size": 10000, "hit_ids": [7201], "kind": "selective", "method": "go_embedded", "query": "marker007200", "query_id": "selective-36", "search_ms": 0.090496}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-36", "search_ms": 8.052607}
+{"corpus_size": 10000, "hit_ids": [7401], "kind": "selective", "method": "go_embedded", "query": "marker007400", "query_id": "selective-37", "search_ms": 0.09258}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-37", "search_ms": 7.890282}
+{"corpus_size": 10000, "hit_ids": [7601], "kind": "selective", "method": "go_embedded", "query": "marker007600", "query_id": "selective-38", "search_ms": 0.079599}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-38", "search_ms": 9.69981}
+{"corpus_size": 10000, "hit_ids": [7801], "kind": "selective", "method": "go_embedded", "query": "marker007800", "query_id": "selective-39", "search_ms": 0.115043}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-39", "search_ms": 7.988601}
+{"corpus_size": 10000, "hit_ids": [8001], "kind": "selective", "method": "go_embedded", "query": "marker008000", "query_id": "selective-40", "search_ms": 0.088714}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-40", "search_ms": 8.450207}
+{"corpus_size": 10000, "hit_ids": [8201], "kind": "selective", "method": "go_embedded", "query": "marker008200", "query_id": "selective-41", "search_ms": 0.090306}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-41", "search_ms": 7.940278}
+{"corpus_size": 10000, "hit_ids": [8401], "kind": "selective", "method": "go_embedded", "query": "marker008400", "query_id": "selective-42", "search_ms": 0.088223}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-42", "search_ms": 8.821146}
+{"corpus_size": 10000, "hit_ids": [8601], "kind": "selective", "method": "go_embedded", "query": "marker008600", "query_id": "selective-43", "search_ms": 0.095714}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-43", "search_ms": 7.905866}
+{"corpus_size": 10000, "hit_ids": [8801], "kind": "selective", "method": "go_embedded", "query": "marker008800", "query_id": "selective-44", "search_ms": 0.077707}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-44", "search_ms": 8.070845}
+{"corpus_size": 10000, "hit_ids": [9001], "kind": "selective", "method": "go_embedded", "query": "marker009000", "query_id": "selective-45", "search_ms": 0.102164}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-45", "search_ms": 8.294151}
+{"corpus_size": 10000, "hit_ids": [9201], "kind": "selective", "method": "go_embedded", "query": "marker009200", "query_id": "selective-46", "search_ms": 0.083757}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-46", "search_ms": 7.873537}
+{"corpus_size": 10000, "hit_ids": [9401], "kind": "selective", "method": "go_embedded", "query": "marker009400", "query_id": "selective-47", "search_ms": 0.085188}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-47", "search_ms": 8.387622}
+{"corpus_size": 10000, "hit_ids": [9601], "kind": "selective", "method": "go_embedded", "query": "marker009600", "query_id": "selective-48", "search_ms": 0.101943}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-48", "search_ms": 8.357848}
+{"corpus_size": 10000, "hit_ids": [9801], "kind": "selective", "method": "go_embedded", "query": "marker009800", "query_id": "selective-49", "search_ms": 0.088975}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-49", "search_ms": 8.602617}
+{"corpus_size": 10000, "hit_ids": [1], "kind": "selective", "method": "python_go_bridge", "query": "marker000000", "query_id": "selective-00", "search_ms": 0.406904}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-00", "search_ms": 9.156932}
+{"corpus_size": 10000, "hit_ids": [201], "kind": "selective", "method": "python_go_bridge", "query": "marker000200", "query_id": "selective-01", "search_ms": 0.385902}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-01", "search_ms": 9.802785}
+{"corpus_size": 10000, "hit_ids": [401], "kind": "selective", "method": "python_go_bridge", "query": "marker000400", "query_id": "selective-02", "search_ms": 0.372992}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-02", "search_ms": 8.700894}
+{"corpus_size": 10000, "hit_ids": [601], "kind": "selective", "method": "python_go_bridge", "query": "marker000600", "query_id": "selective-03", "search_ms": 0.378381}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-03", "search_ms": 10.798926}
+{"corpus_size": 10000, "hit_ids": [801], "kind": "selective", "method": "python_go_bridge", "query": "marker000800", "query_id": "selective-04", "search_ms": 0.381134}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-04", "search_ms": 8.445499}
+{"corpus_size": 10000, "hit_ids": [1001], "kind": "selective", "method": "python_go_bridge", "query": "marker001000", "query_id": "selective-05", "search_ms": 0.422437}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-05", "search_ms": 10.262778}
+{"corpus_size": 10000, "hit_ids": [1201], "kind": "selective", "method": "python_go_bridge", "query": "marker001200", "query_id": "selective-06", "search_ms": 0.348506}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-06", "search_ms": 8.51875}
+{"corpus_size": 10000, "hit_ids": [1401], "kind": "selective", "method": "python_go_bridge", "query": "marker001400", "query_id": "selective-07", "search_ms": 0.416112}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-07", "search_ms": 8.818402}
+{"corpus_size": 10000, "hit_ids": [1601], "kind": "selective", "method": "python_go_bridge", "query": "marker001600", "query_id": "selective-08", "search_ms": 0.402176}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-08", "search_ms": 8.500122}
+{"corpus_size": 10000, "hit_ids": [1801], "kind": "selective", "method": "python_go_bridge", "query": "marker001800", "query_id": "selective-09", "search_ms": 0.324459}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-09", "search_ms": 8.176654}
+{"corpus_size": 10000, "hit_ids": [2001], "kind": "selective", "method": "python_go_bridge", "query": "marker002000", "query_id": "selective-10", "search_ms": 0.455206}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-10", "search_ms": 8.441173}
+{"corpus_size": 10000, "hit_ids": [2201], "kind": "selective", "method": "python_go_bridge", "query": "marker002200", "query_id": "selective-11", "search_ms": 0.339853}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-11", "search_ms": 8.185582}
+{"corpus_size": 10000, "hit_ids": [2401], "kind": "selective", "method": "python_go_bridge", "query": "marker002400", "query_id": "selective-12", "search_ms": 0.393173}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-12", "search_ms": 8.831962}
+{"corpus_size": 10000, "hit_ids": [2601], "kind": "selective", "method": "python_go_bridge", "query": "marker002600", "query_id": "selective-13", "search_ms": 0.413584}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-13", "search_ms": 8.940596}
+{"corpus_size": 10000, "hit_ids": [2801], "kind": "selective", "method": "python_go_bridge", "query": "marker002800", "query_id": "selective-14", "search_ms": 0.423788}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-14", "search_ms": 8.709267}
+{"corpus_size": 10000, "hit_ids": [3001], "kind": "selective", "method": "python_go_bridge", "query": "marker003000", "query_id": "selective-15", "search_ms": 0.419072}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-15", "search_ms": 8.602406}
+{"corpus_size": 10000, "hit_ids": [3201], "kind": "selective", "method": "python_go_bridge", "query": "marker003200", "query_id": "selective-16", "search_ms": 0.433434}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-16", "search_ms": 10.140615}
+{"corpus_size": 10000, "hit_ids": [3401], "kind": "selective", "method": "python_go_bridge", "query": "marker003400", "query_id": "selective-17", "search_ms": 0.415887}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-17", "search_ms": 9.416623}
+{"corpus_size": 10000, "hit_ids": [3601], "kind": "selective", "method": "python_go_bridge", "query": "marker003600", "query_id": "selective-18", "search_ms": 0.593625}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-18", "search_ms": 8.565009}
+{"corpus_size": 10000, "hit_ids": [3801], "kind": "selective", "method": "python_go_bridge", "query": "marker003800", "query_id": "selective-19", "search_ms": 0.362937}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-19", "search_ms": 8.899664}
+{"corpus_size": 10000, "hit_ids": [4001], "kind": "selective", "method": "python_go_bridge", "query": "marker004000", "query_id": "selective-20", "search_ms": 0.411501}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-20", "search_ms": 8.737209}
+{"corpus_size": 10000, "hit_ids": [4201], "kind": "selective", "method": "python_go_bridge", "query": "marker004200", "query_id": "selective-21", "search_ms": 0.438141}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-21", "search_ms": 8.827496}
+{"corpus_size": 10000, "hit_ids": [4401], "kind": "selective", "method": "python_go_bridge", "query": "marker004400", "query_id": "selective-22", "search_ms": 0.369597}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-22", "search_ms": 8.866634}
+{"corpus_size": 10000, "hit_ids": [4601], "kind": "selective", "method": "python_go_bridge", "query": "marker004600", "query_id": "selective-23", "search_ms": 0.386673}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-23", "search_ms": 8.975999}
+{"corpus_size": 10000, "hit_ids": [4801], "kind": "selective", "method": "python_go_bridge", "query": "marker004800", "query_id": "selective-24", "search_ms": 0.473864}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-24", "search_ms": 8.85731}
+{"corpus_size": 10000, "hit_ids": [5001], "kind": "selective", "method": "python_go_bridge", "query": "marker005000", "query_id": "selective-25", "search_ms": 0.362967}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-25", "search_ms": 8.547464}
+{"corpus_size": 10000, "hit_ids": [5201], "kind": "selective", "method": "python_go_bridge", "query": "marker005200", "query_id": "selective-26", "search_ms": 0.392752}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-26", "search_ms": 9.190432}
+{"corpus_size": 10000, "hit_ids": [5401], "kind": "selective", "method": "python_go_bridge", "query": "marker005400", "query_id": "selective-27", "search_ms": 0.483954}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-27", "search_ms": 10.44909}
+{"corpus_size": 10000, "hit_ids": [5601], "kind": "selective", "method": "python_go_bridge", "query": "marker005600", "query_id": "selective-28", "search_ms": 0.386743}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-28", "search_ms": 8.561274}
+{"corpus_size": 10000, "hit_ids": [5801], "kind": "selective", "method": "python_go_bridge", "query": "marker005800", "query_id": "selective-29", "search_ms": 0.512353}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-29", "search_ms": 10.473997}
+{"corpus_size": 10000, "hit_ids": [6001], "kind": "selective", "method": "python_go_bridge", "query": "marker006000", "query_id": "selective-30", "search_ms": 0.394465}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-30", "search_ms": 9.320293}
+{"corpus_size": 10000, "hit_ids": [6201], "kind": "selective", "method": "python_go_bridge", "query": "marker006200", "query_id": "selective-31", "search_ms": 0.407113}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-31", "search_ms": 8.94984}
+{"corpus_size": 10000, "hit_ids": [6401], "kind": "selective", "method": "python_go_bridge", "query": "marker006400", "query_id": "selective-32", "search_ms": 0.446853}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-32", "search_ms": 8.735106}
+{"corpus_size": 10000, "hit_ids": [6601], "kind": "selective", "method": "python_go_bridge", "query": "marker006600", "query_id": "selective-33", "search_ms": 0.457079}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-33", "search_ms": 8.825623}
+{"corpus_size": 10000, "hit_ids": [6801], "kind": "selective", "method": "python_go_bridge", "query": "marker006800", "query_id": "selective-34", "search_ms": 0.427505}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-34", "search_ms": 8.639422}
+{"corpus_size": 10000, "hit_ids": [7001], "kind": "selective", "method": "python_go_bridge", "query": "marker007000", "query_id": "selective-35", "search_ms": 0.372441}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-35", "search_ms": 8.840255}
+{"corpus_size": 10000, "hit_ids": [7201], "kind": "selective", "method": "python_go_bridge", "query": "marker007200", "query_id": "selective-36", "search_ms": 0.393193}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-36", "search_ms": 9.838589}
+{"corpus_size": 10000, "hit_ids": [7401], "kind": "selective", "method": "python_go_bridge", "query": "marker007400", "query_id": "selective-37", "search_ms": 0.413193}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-37", "search_ms": 8.883224}
+{"corpus_size": 10000, "hit_ids": [7601], "kind": "selective", "method": "python_go_bridge", "query": "marker007600", "query_id": "selective-38", "search_ms": 0.378029}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-38", "search_ms": 9.955421}
+{"corpus_size": 10000, "hit_ids": [7801], "kind": "selective", "method": "python_go_bridge", "query": "marker007800", "query_id": "selective-39", "search_ms": 0.359351}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-39", "search_ms": 8.354392}
+{"corpus_size": 10000, "hit_ids": [8001], "kind": "selective", "method": "python_go_bridge", "query": "marker008000", "query_id": "selective-40", "search_ms": 0.388195}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-40", "search_ms": 9.717928}
+{"corpus_size": 10000, "hit_ids": [8201], "kind": "selective", "method": "python_go_bridge", "query": "marker008200", "query_id": "selective-41", "search_ms": 0.440103}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-41", "search_ms": 8.688956}
+{"corpus_size": 10000, "hit_ids": [8401], "kind": "selective", "method": "python_go_bridge", "query": "marker008400", "query_id": "selective-42", "search_ms": 0.421716}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-42", "search_ms": 8.734305}
+{"corpus_size": 10000, "hit_ids": [8601], "kind": "selective", "method": "python_go_bridge", "query": "marker008600", "query_id": "selective-43", "search_ms": 0.394935}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-43", "search_ms": 8.752211}
+{"corpus_size": 10000, "hit_ids": [8801], "kind": "selective", "method": "python_go_bridge", "query": "marker008800", "query_id": "selective-44", "search_ms": 0.361655}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-44", "search_ms": 8.444278}
+{"corpus_size": 10000, "hit_ids": [9001], "kind": "selective", "method": "python_go_bridge", "query": "marker009000", "query_id": "selective-45", "search_ms": 0.367243}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-45", "search_ms": 8.605151}
+{"corpus_size": 10000, "hit_ids": [9201], "kind": "selective", "method": "python_go_bridge", "query": "marker009200", "query_id": "selective-46", "search_ms": 0.380333}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-46", "search_ms": 8.256835}
+{"corpus_size": 10000, "hit_ids": [9401], "kind": "selective", "method": "python_go_bridge", "query": "marker009400", "query_id": "selective-47", "search_ms": 0.396768}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-47", "search_ms": 8.725953}
+{"corpus_size": 10000, "hit_ids": [9601], "kind": "selective", "method": "python_go_bridge", "query": "marker009600", "query_id": "selective-48", "search_ms": 0.359422}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-48", "search_ms": 8.673573}
+{"corpus_size": 10000, "hit_ids": [9801], "kind": "selective", "method": "python_go_bridge", "query": "marker009800", "query_id": "selective-49", "search_ms": 0.351449}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-49", "search_ms": 8.920766}
+{"corpus_size": 10000, "hit_ids": [1], "kind": "selective", "method": "python_embedded", "query": "marker000000", "query_id": "selective-00", "search_ms": 0.08624}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-00", "search_ms": 7.568497}
+{"corpus_size": 10000, "hit_ids": [201], "kind": "selective", "method": "python_embedded", "query": "marker000200", "query_id": "selective-01", "search_ms": 0.083776}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-01", "search_ms": 8.051425}
+{"corpus_size": 10000, "hit_ids": [401], "kind": "selective", "method": "python_embedded", "query": "marker000400", "query_id": "selective-02", "search_ms": 0.130146}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-02", "search_ms": 7.318411}
+{"corpus_size": 10000, "hit_ids": [601], "kind": "selective", "method": "python_embedded", "query": "marker000600", "query_id": "selective-03", "search_ms": 0.153141}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-03", "search_ms": 7.897233}
+{"corpus_size": 10000, "hit_ids": [801], "kind": "selective", "method": "python_embedded", "query": "marker000800", "query_id": "selective-04", "search_ms": 0.094132}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-04", "search_ms": 7.31809}
+{"corpus_size": 10000, "hit_ids": [1001], "kind": "selective", "method": "python_embedded", "query": "marker001000", "query_id": "selective-05", "search_ms": 0.089185}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-05", "search_ms": 7.316848}
+{"corpus_size": 10000, "hit_ids": [1201], "kind": "selective", "method": "python_embedded", "query": "marker001200", "query_id": "selective-06", "search_ms": 0.0733}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-06", "search_ms": 7.627737}
+{"corpus_size": 10000, "hit_ids": [1401], "kind": "selective", "method": "python_embedded", "query": "marker001400", "query_id": "selective-07", "search_ms": 0.121834}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-07", "search_ms": 7.222846}
+{"corpus_size": 10000, "hit_ids": [1601], "kind": "selective", "method": "python_embedded", "query": "marker001600", "query_id": "selective-08", "search_ms": 0.070045}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-08", "search_ms": 7.773056}
+{"corpus_size": 10000, "hit_ids": [1801], "kind": "selective", "method": "python_embedded", "query": "marker001800", "query_id": "selective-09", "search_ms": 0.082184}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-09", "search_ms": 7.548838}
+{"corpus_size": 10000, "hit_ids": [2001], "kind": "selective", "method": "python_embedded", "query": "marker002000", "query_id": "selective-10", "search_ms": 0.095644}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-10", "search_ms": 7.545122}
+{"corpus_size": 10000, "hit_ids": [2201], "kind": "selective", "method": "python_embedded", "query": "marker002200", "query_id": "selective-11", "search_ms": 0.080582}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-11", "search_ms": 7.642709}
+{"corpus_size": 10000, "hit_ids": [2401], "kind": "selective", "method": "python_embedded", "query": "marker002400", "query_id": "selective-12", "search_ms": 0.08624}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-12", "search_ms": 7.968961}
+{"corpus_size": 10000, "hit_ids": [2601], "kind": "selective", "method": "python_embedded", "query": "marker002600", "query_id": "selective-13", "search_ms": 0.10008}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-13", "search_ms": 7.615068}
+{"corpus_size": 10000, "hit_ids": [2801], "kind": "selective", "method": "python_embedded", "query": "marker002800", "query_id": "selective-14", "search_ms": 0.128574}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-14", "search_ms": 7.843612}
+{"corpus_size": 10000, "hit_ids": [3001], "kind": "selective", "method": "python_embedded", "query": "marker003000", "query_id": "selective-15", "search_ms": 0.151448}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-15", "search_ms": 7.300664}
+{"corpus_size": 10000, "hit_ids": [3201], "kind": "selective", "method": "python_embedded", "query": "marker003200", "query_id": "selective-16", "search_ms": 0.074792}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-16", "search_ms": 7.456539}
+{"corpus_size": 10000, "hit_ids": [3401], "kind": "selective", "method": "python_embedded", "query": "marker003400", "query_id": "selective-17", "search_ms": 0.103476}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-17", "search_ms": 7.180373}
+{"corpus_size": 10000, "hit_ids": [3601], "kind": "selective", "method": "python_embedded", "query": "marker003600", "query_id": "selective-18", "search_ms": 0.065008}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-18", "search_ms": 7.340975}
+{"corpus_size": 10000, "hit_ids": [3801], "kind": "selective", "method": "python_embedded", "query": "marker003800", "query_id": "selective-19", "search_ms": 0.077066}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-19", "search_ms": 9.596665}
+{"corpus_size": 10000, "hit_ids": [4001], "kind": "selective", "method": "python_embedded", "query": "marker004000", "query_id": "selective-20", "search_ms": 0.107562}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-20", "search_ms": 7.409849}
+{"corpus_size": 10000, "hit_ids": [4201], "kind": "selective", "method": "python_embedded", "query": "marker004200", "query_id": "selective-21", "search_ms": 0.080361}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-21", "search_ms": 7.35796}
+{"corpus_size": 10000, "hit_ids": [4401], "kind": "selective", "method": "python_embedded", "query": "marker004400", "query_id": "selective-22", "search_ms": 0.0864}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-22", "search_ms": 7.350869}
+{"corpus_size": 10000, "hit_ids": [4601], "kind": "selective", "method": "python_embedded", "query": "marker004600", "query_id": "selective-23", "search_ms": 0.080491}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-23", "search_ms": 7.322417}
+{"corpus_size": 10000, "hit_ids": [4801], "kind": "selective", "method": "python_embedded", "query": "marker004800", "query_id": "selective-24", "search_ms": 0.084888}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-24", "search_ms": 8.337377}
+{"corpus_size": 10000, "hit_ids": [5001], "kind": "selective", "method": "python_embedded", "query": "marker005000", "query_id": "selective-25", "search_ms": 0.101843}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-25", "search_ms": 7.726386}
+{"corpus_size": 10000, "hit_ids": [5201], "kind": "selective", "method": "python_embedded", "query": "marker005200", "query_id": "selective-26", "search_ms": 0.153701}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-26", "search_ms": 7.675859}
+{"corpus_size": 10000, "hit_ids": [5401], "kind": "selective", "method": "python_embedded", "query": "marker005400", "query_id": "selective-27", "search_ms": 0.082364}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-27", "search_ms": 7.600125}
+{"corpus_size": 10000, "hit_ids": [5601], "kind": "selective", "method": "python_embedded", "query": "marker005600", "query_id": "selective-28", "search_ms": 0.076485}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-28", "search_ms": 7.427936}
+{"corpus_size": 10000, "hit_ids": [5801], "kind": "selective", "method": "python_embedded", "query": "marker005800", "query_id": "selective-29", "search_ms": 0.077026}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-29", "search_ms": 7.297338}
+{"corpus_size": 10000, "hit_ids": [6001], "kind": "selective", "method": "python_embedded", "query": "marker006000", "query_id": "selective-30", "search_ms": 0.076665}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-30", "search_ms": 7.205691}
+{"corpus_size": 10000, "hit_ids": [6201], "kind": "selective", "method": "python_embedded", "query": "marker006200", "query_id": "selective-31", "search_ms": 0.094853}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-31", "search_ms": 7.176847}
+{"corpus_size": 10000, "hit_ids": [6401], "kind": "selective", "method": "python_embedded", "query": "marker006400", "query_id": "selective-32", "search_ms": 0.076154}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-32", "search_ms": 7.637892}
+{"corpus_size": 10000, "hit_ids": [6601], "kind": "selective", "method": "python_embedded", "query": "marker006600", "query_id": "selective-33", "search_ms": 0.07995}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-33", "search_ms": 8.00146}
+{"corpus_size": 10000, "hit_ids": [6801], "kind": "selective", "method": "python_embedded", "query": "marker006800", "query_id": "selective-34", "search_ms": 0.094042}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-34", "search_ms": 7.697332}
+{"corpus_size": 10000, "hit_ids": [7001], "kind": "selective", "method": "python_embedded", "query": "marker007000", "query_id": "selective-35", "search_ms": 0.121603}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-35", "search_ms": 7.693586}
+{"corpus_size": 10000, "hit_ids": [7201], "kind": "selective", "method": "python_embedded", "query": "marker007200", "query_id": "selective-36", "search_ms": 0.145088}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-36", "search_ms": 7.750212}
+{"corpus_size": 10000, "hit_ids": [7401], "kind": "selective", "method": "python_embedded", "query": "marker007400", "query_id": "selective-37", "search_ms": 0.08638}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-37", "search_ms": 7.786756}
+{"corpus_size": 10000, "hit_ids": [7601], "kind": "selective", "method": "python_embedded", "query": "marker007600", "query_id": "selective-38", "search_ms": 0.08011}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-38", "search_ms": 7.933908}
+{"corpus_size": 10000, "hit_ids": [7801], "kind": "selective", "method": "python_embedded", "query": "marker007800", "query_id": "selective-39", "search_ms": 0.089545}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-39", "search_ms": 7.5171}
+{"corpus_size": 10000, "hit_ids": [8001], "kind": "selective", "method": "python_embedded", "query": "marker008000", "query_id": "selective-40", "search_ms": 0.080422}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-40", "search_ms": 7.78858}
+{"corpus_size": 10000, "hit_ids": [8201], "kind": "selective", "method": "python_embedded", "query": "marker008200", "query_id": "selective-41", "search_ms": 0.080782}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-41", "search_ms": 7.114112}
+{"corpus_size": 10000, "hit_ids": [8401], "kind": "selective", "method": "python_embedded", "query": "marker008400", "query_id": "selective-42", "search_ms": 0.068333}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-42", "search_ms": 7.506293}
+{"corpus_size": 10000, "hit_ids": [8601], "kind": "selective", "method": "python_embedded", "query": "marker008600", "query_id": "selective-43", "search_ms": 0.078358}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-43", "search_ms": 7.172581}
+{"corpus_size": 10000, "hit_ids": [8801], "kind": "selective", "method": "python_embedded", "query": "marker008800", "query_id": "selective-44", "search_ms": 0.103666}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-44", "search_ms": 8.496096}
+{"corpus_size": 10000, "hit_ids": [9001], "kind": "selective", "method": "python_embedded", "query": "marker009000", "query_id": "selective-45", "search_ms": 0.096235}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-45", "search_ms": 7.754548}
+{"corpus_size": 10000, "hit_ids": [9201], "kind": "selective", "method": "python_embedded", "query": "marker009200", "query_id": "selective-46", "search_ms": 0.091298}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-46", "search_ms": 7.780618}
+{"corpus_size": 10000, "hit_ids": [9401], "kind": "selective", "method": "python_embedded", "query": "marker009400", "query_id": "selective-47", "search_ms": 0.089305}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-47", "search_ms": 7.554566}
+{"corpus_size": 10000, "hit_ids": [9601], "kind": "selective", "method": "python_embedded", "query": "marker009600", "query_id": "selective-48", "search_ms": 0.104608}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-48", "search_ms": 7.428907}
+{"corpus_size": 10000, "hit_ids": [9801], "kind": "selective", "method": "python_embedded", "query": "marker009800", "query_id": "selective-49", "search_ms": 0.078548}
+{"corpus_size": 10000, "hit_ids": [10000, 9999, 9998, 9997, 9996, 9995, 9994, 9993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-49", "search_ms": 7.396929}
+{"corpus_size": 50000, "hit_ids": [1], "kind": "selective", "method": "python_go_bridge", "query": "marker000000", "query_id": "selective-00", "search_ms": 0.673163}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-00", "search_ms": 45.87502}
+{"corpus_size": 50000, "hit_ids": [1001], "kind": "selective", "method": "python_go_bridge", "query": "marker001000", "query_id": "selective-01", "search_ms": 0.613243}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-01", "search_ms": 48.456886}
+{"corpus_size": 50000, "hit_ids": [2001], "kind": "selective", "method": "python_go_bridge", "query": "marker002000", "query_id": "selective-02", "search_ms": 0.701426}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-02", "search_ms": 42.511727}
+{"corpus_size": 50000, "hit_ids": [3001], "kind": "selective", "method": "python_go_bridge", "query": "marker003000", "query_id": "selective-03", "search_ms": 0.614655}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-03", "search_ms": 45.079422}
+{"corpus_size": 50000, "hit_ids": [4001], "kind": "selective", "method": "python_go_bridge", "query": "marker004000", "query_id": "selective-04", "search_ms": 0.774836}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-04", "search_ms": 44.36609}
+{"corpus_size": 50000, "hit_ids": [5001], "kind": "selective", "method": "python_go_bridge", "query": "marker005000", "query_id": "selective-05", "search_ms": 0.556497}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-05", "search_ms": 43.670282}
+{"corpus_size": 50000, "hit_ids": [6001], "kind": "selective", "method": "python_go_bridge", "query": "marker006000", "query_id": "selective-06", "search_ms": 0.698642}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-06", "search_ms": 43.159633}
+{"corpus_size": 50000, "hit_ids": [7001], "kind": "selective", "method": "python_go_bridge", "query": "marker007000", "query_id": "selective-07", "search_ms": 0.739903}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-07", "search_ms": 48.714754}
+{"corpus_size": 50000, "hit_ids": [8001], "kind": "selective", "method": "python_go_bridge", "query": "marker008000", "query_id": "selective-08", "search_ms": 0.874166}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-08", "search_ms": 44.931414}
+{"corpus_size": 50000, "hit_ids": [9001], "kind": "selective", "method": "python_go_bridge", "query": "marker009000", "query_id": "selective-09", "search_ms": 0.609428}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-09", "search_ms": 45.414081}
+{"corpus_size": 50000, "hit_ids": [10001], "kind": "selective", "method": "python_go_bridge", "query": "marker010000", "query_id": "selective-10", "search_ms": 0.662497}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-10", "search_ms": 43.419604}
+{"corpus_size": 50000, "hit_ids": [11001], "kind": "selective", "method": "python_go_bridge", "query": "marker011000", "query_id": "selective-11", "search_ms": 0.732272}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-11", "search_ms": 42.588844}
+{"corpus_size": 50000, "hit_ids": [12001], "kind": "selective", "method": "python_go_bridge", "query": "marker012000", "query_id": "selective-12", "search_ms": 0.539572}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-12", "search_ms": 45.294261}
+{"corpus_size": 50000, "hit_ids": [13001], "kind": "selective", "method": "python_go_bridge", "query": "marker013000", "query_id": "selective-13", "search_ms": 0.704721}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-13", "search_ms": 48.15393}
+{"corpus_size": 50000, "hit_ids": [14001], "kind": "selective", "method": "python_go_bridge", "query": "marker014000", "query_id": "selective-14", "search_ms": 0.835167}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-14", "search_ms": 45.325673}
+{"corpus_size": 50000, "hit_ids": [15001], "kind": "selective", "method": "python_go_bridge", "query": "marker015000", "query_id": "selective-15", "search_ms": 0.825348}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-15", "search_ms": 46.835767}
+{"corpus_size": 50000, "hit_ids": [16001], "kind": "selective", "method": "python_go_bridge", "query": "marker016000", "query_id": "selective-16", "search_ms": 0.792313}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-16", "search_ms": 52.739615}
+{"corpus_size": 50000, "hit_ids": [17001], "kind": "selective", "method": "python_go_bridge", "query": "marker017000", "query_id": "selective-17", "search_ms": 0.707424}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-17", "search_ms": 43.580831}
+{"corpus_size": 50000, "hit_ids": [18001], "kind": "selective", "method": "python_go_bridge", "query": "marker018000", "query_id": "selective-18", "search_ms": 0.612752}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-18", "search_ms": 43.679856}
+{"corpus_size": 50000, "hit_ids": [19001], "kind": "selective", "method": "python_go_bridge", "query": "marker019000", "query_id": "selective-19", "search_ms": 0.60458}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-19", "search_ms": 42.243804}
+{"corpus_size": 50000, "hit_ids": [20001], "kind": "selective", "method": "python_go_bridge", "query": "marker020000", "query_id": "selective-20", "search_ms": 0.622547}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-20", "search_ms": 48.255153}
+{"corpus_size": 50000, "hit_ids": [21001], "kind": "selective", "method": "python_go_bridge", "query": "marker021000", "query_id": "selective-21", "search_ms": 0.782237}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-21", "search_ms": 42.473094}
+{"corpus_size": 50000, "hit_ids": [22001], "kind": "selective", "method": "python_go_bridge", "query": "marker022000", "query_id": "selective-22", "search_ms": 0.658752}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-22", "search_ms": 47.467778}
+{"corpus_size": 50000, "hit_ids": [23001], "kind": "selective", "method": "python_go_bridge", "query": "marker023000", "query_id": "selective-23", "search_ms": 0.684921}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-23", "search_ms": 44.72556}
+{"corpus_size": 50000, "hit_ids": [24001], "kind": "selective", "method": "python_go_bridge", "query": "marker024000", "query_id": "selective-24", "search_ms": 0.798872}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-24", "search_ms": 44.411057}
+{"corpus_size": 50000, "hit_ids": [25001], "kind": "selective", "method": "python_go_bridge", "query": "marker025000", "query_id": "selective-25", "search_ms": 0.57181}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-25", "search_ms": 47.577042}
+{"corpus_size": 50000, "hit_ids": [26001], "kind": "selective", "method": "python_go_bridge", "query": "marker026000", "query_id": "selective-26", "search_ms": 1.745678}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-26", "search_ms": 45.347059}
+{"corpus_size": 50000, "hit_ids": [27001], "kind": "selective", "method": "python_go_bridge", "query": "marker027000", "query_id": "selective-27", "search_ms": 1.000566}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-27", "search_ms": 44.48632}
+{"corpus_size": 50000, "hit_ids": [28001], "kind": "selective", "method": "python_go_bridge", "query": "marker028000", "query_id": "selective-28", "search_ms": 0.715367}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-28", "search_ms": 44.902707}
+{"corpus_size": 50000, "hit_ids": [29001], "kind": "selective", "method": "python_go_bridge", "query": "marker029000", "query_id": "selective-29", "search_ms": 0.50544}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-29", "search_ms": 44.813227}
+{"corpus_size": 50000, "hit_ids": [30001], "kind": "selective", "method": "python_go_bridge", "query": "marker030000", "query_id": "selective-30", "search_ms": 0.508636}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-30", "search_ms": 44.868896}
+{"corpus_size": 50000, "hit_ids": [31001], "kind": "selective", "method": "python_go_bridge", "query": "marker031000", "query_id": "selective-31", "search_ms": 0.588015}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-31", "search_ms": 46.12075}
+{"corpus_size": 50000, "hit_ids": [32001], "kind": "selective", "method": "python_go_bridge", "query": "marker032000", "query_id": "selective-32", "search_ms": 0.670099}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-32", "search_ms": 43.94128}
+{"corpus_size": 50000, "hit_ids": [33001], "kind": "selective", "method": "python_go_bridge", "query": "marker033000", "query_id": "selective-33", "search_ms": 0.53178}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-33", "search_ms": 41.413225}
+{"corpus_size": 50000, "hit_ids": [34001], "kind": "selective", "method": "python_go_bridge", "query": "marker034000", "query_id": "selective-34", "search_ms": 0.525831}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-34", "search_ms": 41.763261}
+{"corpus_size": 50000, "hit_ids": [35001], "kind": "selective", "method": "python_go_bridge", "query": "marker035000", "query_id": "selective-35", "search_ms": 0.604079}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-35", "search_ms": 43.053573}
+{"corpus_size": 50000, "hit_ids": [36001], "kind": "selective", "method": "python_go_bridge", "query": "marker036000", "query_id": "selective-36", "search_ms": 0.673714}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-36", "search_ms": 43.532614}
+{"corpus_size": 50000, "hit_ids": [37001], "kind": "selective", "method": "python_go_bridge", "query": "marker037000", "query_id": "selective-37", "search_ms": 0.609202}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-37", "search_ms": 42.274561}
+{"corpus_size": 50000, "hit_ids": [38001], "kind": "selective", "method": "python_go_bridge", "query": "marker038000", "query_id": "selective-38", "search_ms": 0.632492}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-38", "search_ms": 42.131015}
+{"corpus_size": 50000, "hit_ids": [39001], "kind": "selective", "method": "python_go_bridge", "query": "marker039000", "query_id": "selective-39", "search_ms": 0.605341}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-39", "search_ms": 40.893392}
+{"corpus_size": 50000, "hit_ids": [40001], "kind": "selective", "method": "python_go_bridge", "query": "marker040000", "query_id": "selective-40", "search_ms": 0.595606}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-40", "search_ms": 42.178556}
+{"corpus_size": 50000, "hit_ids": [41001], "kind": "selective", "method": "python_go_bridge", "query": "marker041000", "query_id": "selective-41", "search_ms": 0.581845}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-41", "search_ms": 42.179698}
+{"corpus_size": 50000, "hit_ids": [42001], "kind": "selective", "method": "python_go_bridge", "query": "marker042000", "query_id": "selective-42", "search_ms": 0.581104}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-42", "search_ms": 42.313891}
+{"corpus_size": 50000, "hit_ids": [43001], "kind": "selective", "method": "python_go_bridge", "query": "marker043000", "query_id": "selective-43", "search_ms": 0.539472}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-43", "search_ms": 43.77626}
+{"corpus_size": 50000, "hit_ids": [44001], "kind": "selective", "method": "python_go_bridge", "query": "marker044000", "query_id": "selective-44", "search_ms": 0.61787}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-44", "search_ms": 40.778709}
+{"corpus_size": 50000, "hit_ids": [45001], "kind": "selective", "method": "python_go_bridge", "query": "marker045000", "query_id": "selective-45", "search_ms": 0.628446}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-45", "search_ms": 44.019197}
+{"corpus_size": 50000, "hit_ids": [46001], "kind": "selective", "method": "python_go_bridge", "query": "marker046000", "query_id": "selective-46", "search_ms": 0.55139}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "benchmark", "query_id": "broad-46", "search_ms": 43.973929}
+{"corpus_size": 50000, "hit_ids": [47001], "kind": "selective", "method": "python_go_bridge", "query": "marker047000", "query_id": "selective-47", "search_ms": 0.570078}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "corpus", "query_id": "broad-47", "search_ms": 41.746486}
+{"corpus_size": 50000, "hit_ids": [48001], "kind": "selective", "method": "python_go_bridge", "query": "marker048000", "query_id": "selective-48", "search_ms": 0.658061}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "shared", "query_id": "broad-48", "search_ms": 42.828665}
+{"corpus_size": 50000, "hit_ids": [49001], "kind": "selective", "method": "python_go_bridge", "query": "marker049000", "query_id": "selective-49", "search_ms": 0.801036}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_go_bridge", "query": "evidence", "query_id": "broad-49", "search_ms": 42.779771}
+{"corpus_size": 50000, "hit_ids": [1], "kind": "selective", "method": "python_embedded", "query": "marker000000", "query_id": "selective-00", "search_ms": 0.215794}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-00", "search_ms": 41.65641}
+{"corpus_size": 50000, "hit_ids": [1001], "kind": "selective", "method": "python_embedded", "query": "marker001000", "query_id": "selective-01", "search_ms": 0.207162}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-01", "search_ms": 41.023818}
+{"corpus_size": 50000, "hit_ids": [2001], "kind": "selective", "method": "python_embedded", "query": "marker002000", "query_id": "selective-02", "search_ms": 0.191778}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-02", "search_ms": 39.907478}
+{"corpus_size": 50000, "hit_ids": [3001], "kind": "selective", "method": "python_embedded", "query": "marker003000", "query_id": "selective-03", "search_ms": 0.183366}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-03", "search_ms": 41.167525}
+{"corpus_size": 50000, "hit_ids": [4001], "kind": "selective", "method": "python_embedded", "query": "marker004000", "query_id": "selective-04", "search_ms": 0.215524}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-04", "search_ms": 46.760583}
+{"corpus_size": 50000, "hit_ids": [5001], "kind": "selective", "method": "python_embedded", "query": "marker005000", "query_id": "selective-05", "search_ms": 0.209425}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-05", "search_ms": 42.960003}
+{"corpus_size": 50000, "hit_ids": [6001], "kind": "selective", "method": "python_embedded", "query": "marker006000", "query_id": "selective-06", "search_ms": 0.184057}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-06", "search_ms": 42.277125}
+{"corpus_size": 50000, "hit_ids": [7001], "kind": "selective", "method": "python_embedded", "query": "marker007000", "query_id": "selective-07", "search_ms": 0.193611}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-07", "search_ms": 42.666451}
+{"corpus_size": 50000, "hit_ids": [8001], "kind": "selective", "method": "python_embedded", "query": "marker008000", "query_id": "selective-08", "search_ms": 0.197487}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-08", "search_ms": 42.272358}
+{"corpus_size": 50000, "hit_ids": [9001], "kind": "selective", "method": "python_embedded", "query": "marker009000", "query_id": "selective-09", "search_ms": 0.198489}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-09", "search_ms": 39.121845}
+{"corpus_size": 50000, "hit_ids": [10001], "kind": "selective", "method": "python_embedded", "query": "marker010000", "query_id": "selective-10", "search_ms": 0.169825}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-10", "search_ms": 39.980608}
+{"corpus_size": 50000, "hit_ids": [11001], "kind": "selective", "method": "python_embedded", "query": "marker011000", "query_id": "selective-11", "search_ms": 0.172539}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-11", "search_ms": 39.629159}
+{"corpus_size": 50000, "hit_ids": [12001], "kind": "selective", "method": "python_embedded", "query": "marker012000", "query_id": "selective-12", "search_ms": 0.154433}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-12", "search_ms": 41.736251}
+{"corpus_size": 50000, "hit_ids": [13001], "kind": "selective", "method": "python_embedded", "query": "marker013000", "query_id": "selective-13", "search_ms": 0.195113}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-13", "search_ms": 39.735889}
+{"corpus_size": 50000, "hit_ids": [14001], "kind": "selective", "method": "python_embedded", "query": "marker014000", "query_id": "selective-14", "search_ms": 0.260902}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-14", "search_ms": 41.055346}
+{"corpus_size": 50000, "hit_ids": [15001], "kind": "selective", "method": "python_embedded", "query": "marker015000", "query_id": "selective-15", "search_ms": 0.239631}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-15", "search_ms": 40.881975}
+{"corpus_size": 50000, "hit_ids": [16001], "kind": "selective", "method": "python_embedded", "query": "marker016000", "query_id": "selective-16", "search_ms": 0.183035}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-16", "search_ms": 40.106318}
+{"corpus_size": 50000, "hit_ids": [17001], "kind": "selective", "method": "python_embedded", "query": "marker017000", "query_id": "selective-17", "search_ms": 0.215504}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-17", "search_ms": 42.139939}
+{"corpus_size": 50000, "hit_ids": [18001], "kind": "selective", "method": "python_embedded", "query": "marker018000", "query_id": "selective-18", "search_ms": 0.276186}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-18", "search_ms": 41.969151}
+{"corpus_size": 50000, "hit_ids": [19001], "kind": "selective", "method": "python_embedded", "query": "marker019000", "query_id": "selective-19", "search_ms": 0.191348}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-19", "search_ms": 38.949095}
+{"corpus_size": 50000, "hit_ids": [20001], "kind": "selective", "method": "python_embedded", "query": "marker020000", "query_id": "selective-20", "search_ms": 0.157717}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-20", "search_ms": 38.884148}
+{"corpus_size": 50000, "hit_ids": [21001], "kind": "selective", "method": "python_embedded", "query": "marker021000", "query_id": "selective-21", "search_ms": 0.16661}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-21", "search_ms": 39.347846}
+{"corpus_size": 50000, "hit_ids": [22001], "kind": "selective", "method": "python_embedded", "query": "marker022000", "query_id": "selective-22", "search_ms": 0.161353}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-22", "search_ms": 45.444192}
+{"corpus_size": 50000, "hit_ids": [23001], "kind": "selective", "method": "python_embedded", "query": "marker023000", "query_id": "selective-23", "search_ms": 0.235425}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-23", "search_ms": 41.259774}
+{"corpus_size": 50000, "hit_ids": [24001], "kind": "selective", "method": "python_embedded", "query": "marker024000", "query_id": "selective-24", "search_ms": 0.200572}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-24", "search_ms": 42.054569}
+{"corpus_size": 50000, "hit_ids": [25001], "kind": "selective", "method": "python_embedded", "query": "marker025000", "query_id": "selective-25", "search_ms": 0.198438}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-25", "search_ms": 42.262384}
+{"corpus_size": 50000, "hit_ids": [26001], "kind": "selective", "method": "python_embedded", "query": "marker026000", "query_id": "selective-26", "search_ms": 0.215084}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-26", "search_ms": 39.037634}
+{"corpus_size": 50000, "hit_ids": [27001], "kind": "selective", "method": "python_embedded", "query": "marker027000", "query_id": "selective-27", "search_ms": 0.159721}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-27", "search_ms": 41.17142}
+{"corpus_size": 50000, "hit_ids": [28001], "kind": "selective", "method": "python_embedded", "query": "marker028000", "query_id": "selective-28", "search_ms": 0.167483}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-28", "search_ms": 38.970993}
+{"corpus_size": 50000, "hit_ids": [29001], "kind": "selective", "method": "python_embedded", "query": "marker029000", "query_id": "selective-29", "search_ms": 0.193882}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-29", "search_ms": 43.142601}
+{"corpus_size": 50000, "hit_ids": [30001], "kind": "selective", "method": "python_embedded", "query": "marker030000", "query_id": "selective-30", "search_ms": 0.185039}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-30", "search_ms": 38.964443}
+{"corpus_size": 50000, "hit_ids": [31001], "kind": "selective", "method": "python_embedded", "query": "marker031000", "query_id": "selective-31", "search_ms": 0.180532}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-31", "search_ms": 38.807097}
+{"corpus_size": 50000, "hit_ids": [32001], "kind": "selective", "method": "python_embedded", "query": "marker032000", "query_id": "selective-32", "search_ms": 0.17899}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-32", "search_ms": 38.639373}
+{"corpus_size": 50000, "hit_ids": [33001], "kind": "selective", "method": "python_embedded", "query": "marker033000", "query_id": "selective-33", "search_ms": 0.195575}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-33", "search_ms": 37.537753}
+{"corpus_size": 50000, "hit_ids": [34001], "kind": "selective", "method": "python_embedded", "query": "marker034000", "query_id": "selective-34", "search_ms": 0.165068}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-34", "search_ms": 37.502059}
+{"corpus_size": 50000, "hit_ids": [35001], "kind": "selective", "method": "python_embedded", "query": "marker035000", "query_id": "selective-35", "search_ms": 0.155214}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-35", "search_ms": 37.320696}
+{"corpus_size": 50000, "hit_ids": [36001], "kind": "selective", "method": "python_embedded", "query": "marker036000", "query_id": "selective-36", "search_ms": 0.175334}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-36", "search_ms": 37.843754}
+{"corpus_size": 50000, "hit_ids": [37001], "kind": "selective", "method": "python_embedded", "query": "marker037000", "query_id": "selective-37", "search_ms": 0.167493}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-37", "search_ms": 37.691775}
+{"corpus_size": 50000, "hit_ids": [38001], "kind": "selective", "method": "python_embedded", "query": "marker038000", "query_id": "selective-38", "search_ms": 0.188854}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-38", "search_ms": 37.875182}
+{"corpus_size": 50000, "hit_ids": [39001], "kind": "selective", "method": "python_embedded", "query": "marker039000", "query_id": "selective-39", "search_ms": 0.183126}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-39", "search_ms": 37.619936}
+{"corpus_size": 50000, "hit_ids": [40001], "kind": "selective", "method": "python_embedded", "query": "marker040000", "query_id": "selective-40", "search_ms": 0.189615}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-40", "search_ms": 39.186358}
+{"corpus_size": 50000, "hit_ids": [41001], "kind": "selective", "method": "python_embedded", "query": "marker041000", "query_id": "selective-41", "search_ms": 0.191939}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-41", "search_ms": 37.979018}
+{"corpus_size": 50000, "hit_ids": [42001], "kind": "selective", "method": "python_embedded", "query": "marker042000", "query_id": "selective-42", "search_ms": 0.158689}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-42", "search_ms": 37.63589}
+{"corpus_size": 50000, "hit_ids": [43001], "kind": "selective", "method": "python_embedded", "query": "marker043000", "query_id": "selective-43", "search_ms": 0.164048}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-43", "search_ms": 37.658325}
+{"corpus_size": 50000, "hit_ids": [44001], "kind": "selective", "method": "python_embedded", "query": "marker044000", "query_id": "selective-44", "search_ms": 0.162145}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-44", "search_ms": 37.61525}
+{"corpus_size": 50000, "hit_ids": [45001], "kind": "selective", "method": "python_embedded", "query": "marker045000", "query_id": "selective-45", "search_ms": 0.345671}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-45", "search_ms": 38.727106}
+{"corpus_size": 50000, "hit_ids": [46001], "kind": "selective", "method": "python_embedded", "query": "marker046000", "query_id": "selective-46", "search_ms": 0.191909}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "benchmark", "query_id": "broad-46", "search_ms": 38.556729}
+{"corpus_size": 50000, "hit_ids": [47001], "kind": "selective", "method": "python_embedded", "query": "marker047000", "query_id": "selective-47", "search_ms": 0.168654}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "corpus", "query_id": "broad-47", "search_ms": 37.470932}
+{"corpus_size": 50000, "hit_ids": [48001], "kind": "selective", "method": "python_embedded", "query": "marker048000", "query_id": "selective-48", "search_ms": 0.144979}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "shared", "query_id": "broad-48", "search_ms": 38.830622}
+{"corpus_size": 50000, "hit_ids": [49001], "kind": "selective", "method": "python_embedded", "query": "marker049000", "query_id": "selective-49", "search_ms": 0.169345}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "python_embedded", "query": "evidence", "query_id": "broad-49", "search_ms": 41.21801}
+{"corpus_size": 50000, "hit_ids": [1], "kind": "selective", "method": "go_embedded", "query": "marker000000", "query_id": "selective-00", "search_ms": 0.230858}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-00", "search_ms": 42.884913}
+{"corpus_size": 50000, "hit_ids": [1001], "kind": "selective", "method": "go_embedded", "query": "marker001000", "query_id": "selective-01", "search_ms": 0.221885}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-01", "search_ms": 41.327736}
+{"corpus_size": 50000, "hit_ids": [2001], "kind": "selective", "method": "go_embedded", "query": "marker002000", "query_id": "selective-02", "search_ms": 0.210738}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-02", "search_ms": 44.1365}
+{"corpus_size": 50000, "hit_ids": [3001], "kind": "selective", "method": "go_embedded", "query": "marker003000", "query_id": "selective-03", "search_ms": 0.242435}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-03", "search_ms": 41.471122}
+{"corpus_size": 50000, "hit_ids": [4001], "kind": "selective", "method": "go_embedded", "query": "marker004000", "query_id": "selective-04", "search_ms": 0.158739}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-04", "search_ms": 40.769976}
+{"corpus_size": 50000, "hit_ids": [5001], "kind": "selective", "method": "go_embedded", "query": "marker005000", "query_id": "selective-05", "search_ms": 0.168524}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-05", "search_ms": 39.961196}
+{"corpus_size": 50000, "hit_ids": [6001], "kind": "selective", "method": "go_embedded", "query": "marker006000", "query_id": "selective-06", "search_ms": 0.239811}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-06", "search_ms": 41.360821}
+{"corpus_size": 50000, "hit_ids": [7001], "kind": "selective", "method": "go_embedded", "query": "marker007000", "query_id": "selective-07", "search_ms": 0.256126}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-07", "search_ms": 42.963827}
+{"corpus_size": 50000, "hit_ids": [8001], "kind": "selective", "method": "go_embedded", "query": "marker008000", "query_id": "selective-08", "search_ms": 0.230006}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-08", "search_ms": 41.730177}
+{"corpus_size": 50000, "hit_ids": [9001], "kind": "selective", "method": "go_embedded", "query": "marker009000", "query_id": "selective-09", "search_ms": 0.169175}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-09", "search_ms": 42.665828}
+{"corpus_size": 50000, "hit_ids": [10001], "kind": "selective", "method": "go_embedded", "query": "marker010000", "query_id": "selective-10", "search_ms": 0.169595}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-10", "search_ms": 42.845414}
+{"corpus_size": 50000, "hit_ids": [11001], "kind": "selective", "method": "go_embedded", "query": "marker011000", "query_id": "selective-11", "search_ms": 0.161653}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-11", "search_ms": 40.953902}
+{"corpus_size": 50000, "hit_ids": [12001], "kind": "selective", "method": "go_embedded", "query": "marker012000", "query_id": "selective-12", "search_ms": 0.173712}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-12", "search_ms": 46.497709}
+{"corpus_size": 50000, "hit_ids": [13001], "kind": "selective", "method": "go_embedded", "query": "marker013000", "query_id": "selective-13", "search_ms": 0.177488}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-13", "search_ms": 40.498115}
+{"corpus_size": 50000, "hit_ids": [14001], "kind": "selective", "method": "go_embedded", "query": "marker014000", "query_id": "selective-14", "search_ms": 0.256306}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-14", "search_ms": 41.800989}
+{"corpus_size": 50000, "hit_ids": [15001], "kind": "selective", "method": "go_embedded", "query": "marker015000", "query_id": "selective-15", "search_ms": 0.202365}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-15", "search_ms": 42.742859}
+{"corpus_size": 50000, "hit_ids": [16001], "kind": "selective", "method": "go_embedded", "query": "marker016000", "query_id": "selective-16", "search_ms": 0.239892}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-16", "search_ms": 49.346503}
+{"corpus_size": 50000, "hit_ids": [17001], "kind": "selective", "method": "go_embedded", "query": "marker017000", "query_id": "selective-17", "search_ms": 0.163797}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-17", "search_ms": 46.442601}
+{"corpus_size": 50000, "hit_ids": [18001], "kind": "selective", "method": "go_embedded", "query": "marker018000", "query_id": "selective-18", "search_ms": 0.204418}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-18", "search_ms": 42.431079}
+{"corpus_size": 50000, "hit_ids": [19001], "kind": "selective", "method": "go_embedded", "query": "marker019000", "query_id": "selective-19", "search_ms": 0.216016}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-19", "search_ms": 44.557389}
+{"corpus_size": 50000, "hit_ids": [20001], "kind": "selective", "method": "go_embedded", "query": "marker020000", "query_id": "selective-20", "search_ms": 0.19866}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-20", "search_ms": 41.973058}
+{"corpus_size": 50000, "hit_ids": [21001], "kind": "selective", "method": "go_embedded", "query": "marker021000", "query_id": "selective-21", "search_ms": 0.15275}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-21", "search_ms": 41.926489}
+{"corpus_size": 50000, "hit_ids": [22001], "kind": "selective", "method": "go_embedded", "query": "marker022000", "query_id": "selective-22", "search_ms": 0.394284}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-22", "search_ms": 42.734757}
+{"corpus_size": 50000, "hit_ids": [23001], "kind": "selective", "method": "go_embedded", "query": "marker023000", "query_id": "selective-23", "search_ms": 0.287298}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-23", "search_ms": 42.5382}
+{"corpus_size": 50000, "hit_ids": [24001], "kind": "selective", "method": "go_embedded", "query": "marker024000", "query_id": "selective-24", "search_ms": 0.155714}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-24", "search_ms": 40.966711}
+{"corpus_size": 50000, "hit_ids": [25001], "kind": "selective", "method": "go_embedded", "query": "marker025000", "query_id": "selective-25", "search_ms": 0.189891}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-25", "search_ms": 43.162832}
+{"corpus_size": 50000, "hit_ids": [26001], "kind": "selective", "method": "go_embedded", "query": "marker026000", "query_id": "selective-26", "search_ms": 0.172961}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-26", "search_ms": 43.949082}
+{"corpus_size": 50000, "hit_ids": [27001], "kind": "selective", "method": "go_embedded", "query": "marker027000", "query_id": "selective-27", "search_ms": 0.176907}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-27", "search_ms": 40.769534}
+{"corpus_size": 50000, "hit_ids": [28001], "kind": "selective", "method": "go_embedded", "query": "marker028000", "query_id": "selective-28", "search_ms": 0.152459}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-28", "search_ms": 40.493784}
+{"corpus_size": 50000, "hit_ids": [29001], "kind": "selective", "method": "go_embedded", "query": "marker029000", "query_id": "selective-29", "search_ms": 0.228164}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-29", "search_ms": 41.517982}
+{"corpus_size": 50000, "hit_ids": [30001], "kind": "selective", "method": "go_embedded", "query": "marker030000", "query_id": "selective-30", "search_ms": 0.221123}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-30", "search_ms": 44.04359}
+{"corpus_size": 50000, "hit_ids": [31001], "kind": "selective", "method": "go_embedded", "query": "marker031000", "query_id": "selective-31", "search_ms": 0.289537}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-31", "search_ms": 42.539953}
+{"corpus_size": 50000, "hit_ids": [32001], "kind": "selective", "method": "go_embedded", "query": "marker032000", "query_id": "selective-32", "search_ms": 0.291399}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-32", "search_ms": 42.342225}
+{"corpus_size": 50000, "hit_ids": [33001], "kind": "selective", "method": "go_embedded", "query": "marker033000", "query_id": "selective-33", "search_ms": 0.228855}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-33", "search_ms": 43.639851}
+{"corpus_size": 50000, "hit_ids": [34001], "kind": "selective", "method": "go_embedded", "query": "marker034000", "query_id": "selective-34", "search_ms": 0.228395}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-34", "search_ms": 40.860732}
+{"corpus_size": 50000, "hit_ids": [35001], "kind": "selective", "method": "go_embedded", "query": "marker035000", "query_id": "selective-35", "search_ms": 0.211979}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-35", "search_ms": 42.474965}
+{"corpus_size": 50000, "hit_ids": [36001], "kind": "selective", "method": "go_embedded", "query": "marker036000", "query_id": "selective-36", "search_ms": 0.200562}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-36", "search_ms": 42.638662}
+{"corpus_size": 50000, "hit_ids": [37001], "kind": "selective", "method": "go_embedded", "query": "marker037000", "query_id": "selective-37", "search_ms": 0.16611}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-37", "search_ms": 40.732138}
+{"corpus_size": 50000, "hit_ids": [38001], "kind": "selective", "method": "go_embedded", "query": "marker038000", "query_id": "selective-38", "search_ms": 0.181994}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-38", "search_ms": 40.234939}
+{"corpus_size": 50000, "hit_ids": [39001], "kind": "selective", "method": "go_embedded", "query": "marker039000", "query_id": "selective-39", "search_ms": 0.135634}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-39", "search_ms": 40.362581}
+{"corpus_size": 50000, "hit_ids": [40001], "kind": "selective", "method": "go_embedded", "query": "marker040000", "query_id": "selective-40", "search_ms": 0.142214}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-40", "search_ms": 46.966967}
+{"corpus_size": 50000, "hit_ids": [41001], "kind": "selective", "method": "go_embedded", "query": "marker041000", "query_id": "selective-41", "search_ms": 0.201794}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-41", "search_ms": 42.444279}
+{"corpus_size": 50000, "hit_ids": [42001], "kind": "selective", "method": "go_embedded", "query": "marker042000", "query_id": "selective-42", "search_ms": 0.170127}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-42", "search_ms": 43.208781}
+{"corpus_size": 50000, "hit_ids": [43001], "kind": "selective", "method": "go_embedded", "query": "marker043000", "query_id": "selective-43", "search_ms": 0.181744}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-43", "search_ms": 40.532287}
+{"corpus_size": 50000, "hit_ids": [44001], "kind": "selective", "method": "go_embedded", "query": "marker044000", "query_id": "selective-44", "search_ms": 0.144397}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-44", "search_ms": 40.405276}
+{"corpus_size": 50000, "hit_ids": [45001], "kind": "selective", "method": "go_embedded", "query": "marker045000", "query_id": "selective-45", "search_ms": 0.150046}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-45", "search_ms": 39.967425}
+{"corpus_size": 50000, "hit_ids": [46001], "kind": "selective", "method": "go_embedded", "query": "marker046000", "query_id": "selective-46", "search_ms": 0.14602}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "benchmark", "query_id": "broad-46", "search_ms": 41.339768}
+{"corpus_size": 50000, "hit_ids": [47001], "kind": "selective", "method": "go_embedded", "query": "marker047000", "query_id": "selective-47", "search_ms": 0.249246}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "corpus", "query_id": "broad-47", "search_ms": 41.208146}
+{"corpus_size": 50000, "hit_ids": [48001], "kind": "selective", "method": "go_embedded", "query": "marker048000", "query_id": "selective-48", "search_ms": 0.166}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "shared", "query_id": "broad-48", "search_ms": 41.199903}
+{"corpus_size": 50000, "hit_ids": [49001], "kind": "selective", "method": "go_embedded", "query": "marker049000", "query_id": "selective-49", "search_ms": 0.158379}
+{"corpus_size": 50000, "hit_ids": [50000, 49999, 49998, 49997, 49996, 49995, 49994, 49993], "kind": "broad", "method": "go_embedded", "query": "evidence", "query_id": "broad-49", "search_ms": 43.10189}

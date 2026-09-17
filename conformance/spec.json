@@ -1,0 +1,39 @@
+{
+  "name": "cmp-adapter-conformance",
+  "version": 1,
+  "offline": true,
+  "error_codes": [
+    "auth",
+    "body_limit",
+    "budget",
+    "busy",
+    "conflict",
+    "fenced",
+    "in_progress",
+    "indeterminate_model",
+    "indeterminate_tool",
+    "invalid",
+    "not_found",
+    "provenance_required",
+    "stale_context",
+    "state"
+  ],
+  "limits": {
+    "native_frame_bytes": 16777216,
+    "provider_response_bytes": 8388608,
+    "document_bytes": 1048576,
+    "read_lines": 200,
+    "listed_files": 500
+  },
+  "cases": [
+    {"id": "request-identity", "must": ["same input replays", "different input conflicts"]},
+    {"id": "source-citations", "must": ["stable Tn:Mm citations", "scoped derived state has supports provenance"]},
+    {"id": "stale-generations", "must": ["recovered generation fences old writes"]},
+    {"id": "model-checkpoint-recovery", "must": ["full request saved before dispatch", "saved response reused"]},
+    {"id": "tool-eligibility-leases", "must": ["intent precedes effect", "lease revalidates scope and expiry"]},
+    {"id": "no-silent-retry", "must": ["pending and unknown outcomes stop"]},
+    {"id": "auth-failure", "must": ["401/403 are surfaced once", "secrets are not persisted"]},
+    {"id": "body-limits", "must": ["oversized requests and responses are bounded"]},
+    {"id": "storage-safety", "must": ["missing reads do not create", "backup is standalone", "paths stay rooted"]}
+  ]
+}

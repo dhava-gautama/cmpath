@@ -1,0 +1,444 @@
+{
+  "protocol": "research/NATIVE_PROTOCOL.md",
+  "utc_started": "2026-09-11T03:40:18Z",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "python_sqlite": "3.53.1",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "cpu_count": 9,
+    "binary_sha256": {
+      "cmpath-native": "96555696aeb0602506d0607f195259dd839a656cc4b4792f8920aa97c8f88a0b",
+      "cmpath-bench": "bd6bc4a4e9d94cba9fb92e52fa05fac13a324ea03313d0b8a079f5e3a09a4c2d"
+    },
+    "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+    "go": "go1.27.1",
+    "gomaxprocs": 8
+  },
+  "search_warmups_per_method_size": 10,
+  "lifecycle_warmups_per_method": 5,
+  "model_calls": 0,
+  "method_order": [
+    {
+      "corpus_size": 1000,
+      "methods": [
+        "python_embedded",
+        "go_embedded",
+        "python_go_bridge"
+      ]
+    },
+    {
+      "corpus_size": 10000,
+      "methods": [
+        "go_embedded",
+        "python_go_bridge",
+        "python_embedded"
+      ]
+    },
+    {
+      "corpus_size": 50000,
+      "methods": [
+        "python_go_bridge",
+        "python_embedded",
+        "go_embedded"
+      ]
+    }
+  ],
+  "native_info": [
+    {
+      "method": "go_embedded",
+      "corpus_size": 1000,
+      "base_schema": 1,
+      "cmp_model_calls": 0,
+      "cmp_tool_calls": 0,
+      "cmp_turns": 0,
+      "harness_schema": 1,
+      "messages": 1000,
+      "sqlite": "3.53.4",
+      "tasks": 1,
+      "version": "0.4.0a1"
+    },
+    {
+      "method": "python_go_bridge",
+      "corpus_size": 1000,
+      "base_schema": 1,
+      "cmp_model_calls": 0,
+      "cmp_tool_calls": 0,
+      "cmp_turns": 0,
+      "harness_schema": 1,
+      "messages": 1000,
+      "sqlite": "3.53.4",
+      "tasks": 1,
+      "version": "0.4.0a1"
+    },
+    {
+      "method": "go_embedded",
+      "corpus_size": 10000,
+      "base_schema": 1,
+      "cmp_model_calls": 0,
+      "cmp_tool_calls": 0,
+      "cmp_turns": 0,
+      "harness_schema": 1,
+      "messages": 10000,
+      "sqlite": "3.53.4",
+      "tasks": 1,
+      "version": "0.4.0a1"
+    },
+    {
+      "method": "python_go_bridge",
+      "corpus_size": 10000,
+      "base_schema": 1,
+      "cmp_model_calls": 0,
+      "cmp_tool_calls": 0,
+      "cmp_turns": 0,
+      "harness_schema": 1,
+      "messages": 10000,
+      "sqlite": "3.53.4",
+      "tasks": 1,
+      "version": "0.4.0a1"
+    },
+    {
+      "method": "python_go_bridge",
+      "corpus_size": 50000,
+      "base_schema": 1,
+      "cmp_model_calls": 0,
+      "cmp_tool_calls": 0,
+      "cmp_turns": 0,
+      "harness_schema": 1,
+      "messages": 50000,
+      "sqlite": "3.53.4",
+      "tasks": 1,
+      "version": "0.4.0a1"
+    },
+    {
+      "method": "go_embedded",
+      "corpus_size": 50000,
+      "base_schema": 1,
+      "cmp_model_calls": 0,
+      "cmp_tool_calls": 0,
+      "cmp_turns": 0,
+      "harness_schema": 1,
+      "messages": 50000,
+      "sqlite": "3.53.4",
+      "tasks": 1,
+      "version": "0.4.0a1"
+    },
+    {
+      "method": "go_embedded",
+      "experiment": "lifecycle",
+      "base_schema": 1,
+      "cmp_model_calls": 0,
+      "cmp_tool_calls": 0,
+      "cmp_turns": 105,
+      "harness_schema": 1,
+      "messages": 210,
+      "sqlite": "3.53.4",
+      "tasks": 1,
+      "version": "0.4.0a1"
+    },
+    {
+      "method": "python_go_bridge",
+      "experiment": "lifecycle",
+      "base_schema": 1,
+      "cmp_model_calls": 0,
+      "cmp_tool_calls": 0,
+      "cmp_turns": 105,
+      "harness_schema": 1,
+      "messages": 210,
+      "sqlite": "3.53.4",
+      "tasks": 1,
+      "version": "0.4.0a1"
+    }
+  ],
+  "search_summary": [
+    {
+      "corpus_size": 1000,
+      "method": "python_embedded",
+      "kind": "all",
+      "n": 100,
+      "median_ms": 0.420844,
+      "p95_ms": 0.917252
+    },
+    {
+      "corpus_size": 1000,
+      "method": "python_embedded",
+      "kind": "selective",
+      "n": 50,
+      "median_ms": 0.053716,
+      "p95_ms": 0.092209
+    },
+    {
+      "corpus_size": 1000,
+      "method": "python_embedded",
+      "kind": "broad",
+      "n": 50,
+      "median_ms": 0.779665,
+      "p95_ms": 1.063112
+    },
+    {
+      "corpus_size": 1000,
+      "method": "go_embedded",
+      "kind": "all",
+      "n": 100,
+      "median_ms": 0.47734899999999997,
+      "p95_ms": 0.963262
+    },
+    {
+      "corpus_size": 1000,
+      "method": "go_embedded",
+      "kind": "selective",
+      "n": 50,
+      "median_ms": 0.0643065,
+      "p95_ms": 0.110957
+    },
+    {
+      "corpus_size": 1000,
+      "method": "go_embedded",
+      "kind": "broad",
+      "n": 50,
+      "median_ms": 0.855094,
+      "p95_ms": 0.997234
+    },
+    {
+      "corpus_size": 1000,
+      "method": "python_go_bridge",
+      "kind": "all",
+      "n": 100,
+      "median_ms": 0.755804,
+      "p95_ms": 1.362904
+    },
+    {
+      "corpus_size": 1000,
+      "method": "python_go_bridge",
+      "kind": "selective",
+      "n": 50,
+      "median_ms": 0.34820450000000003,
+      "p95_ms": 0.433944
+    },
+    {
+      "corpus_size": 1000,
+      "method": "python_go_bridge",
+      "kind": "broad",
+      "n": 50,
+      "median_ms": 1.1945805,
+      "p95_ms": 1.715726
+    },
+    {
+      "corpus_size": 10000,
+      "method": "python_embedded",
+      "kind": "all",
+      "n": 100,
+      "median_ms": 3.6339065,
+      "p95_ms": 7.968961
+    },
+    {
+      "corpus_size": 10000,
+      "method": "python_embedded",
+      "kind": "selective",
+      "n": 50,
+      "median_ms": 0.08631,
+      "p95_ms": 0.151448
+    },
+    {
+      "corpus_size": 10000,
+      "method": "python_embedded",
+      "kind": "broad",
+      "n": 50,
+      "median_ms": 7.5615315,
+      "p95_ms": 8.337377
+    },
+    {
+      "corpus_size": 10000,
+      "method": "go_embedded",
+      "kind": "all",
+      "n": 100,
+      "median_ms": 3.849782,
+      "p95_ms": 8.821146
+    },
+    {
+      "corpus_size": 10000,
+      "method": "go_embedded",
+      "kind": "selective",
+      "n": 50,
+      "median_ms": 0.0889195,
+      "p95_ms": 0.142215
+    },
+    {
+      "corpus_size": 10000,
+      "method": "go_embedded",
+      "kind": "broad",
+      "n": 50,
+      "median_ms": 8.0402235,
+      "p95_ms": 9.365346
+    },
+    {
+      "corpus_size": 10000,
+      "method": "python_go_bridge",
+      "kind": "all",
+      "n": 100,
+      "median_ms": 4.385139499999999,
+      "p95_ms": 9.955421
+    },
+    {
+      "corpus_size": 10000,
+      "method": "python_go_bridge",
+      "kind": "selective",
+      "n": 50,
+      "median_ms": 0.3947,
+      "p95_ms": 0.483954
+    },
+    {
+      "corpus_size": 10000,
+      "method": "python_go_bridge",
+      "kind": "broad",
+      "n": 50,
+      "median_ms": 8.8220125,
+      "p95_ms": 10.44909
+    },
+    {
+      "corpus_size": 50000,
+      "method": "python_embedded",
+      "kind": "all",
+      "n": 100,
+      "median_ms": 18.8331835,
+      "p95_ms": 42.277125
+    },
+    {
+      "corpus_size": 50000,
+      "method": "python_embedded",
+      "kind": "selective",
+      "n": 50,
+      "median_ms": 0.18694650000000002,
+      "p95_ms": 0.260902
+    },
+    {
+      "corpus_size": 50000,
+      "method": "python_embedded",
+      "kind": "broad",
+      "n": 50,
+      "median_ms": 39.488502499999996,
+      "p95_ms": 43.142601
+    },
+    {
+      "corpus_size": 50000,
+      "method": "go_embedded",
+      "kind": "all",
+      "n": 100,
+      "median_ms": 20.17774,
+      "p95_ms": 44.1365
+    },
+    {
+      "corpus_size": 50000,
+      "method": "go_embedded",
+      "kind": "selective",
+      "n": 50,
+      "median_ms": 0.1942755,
+      "p95_ms": 0.289537
+    },
+    {
+      "corpus_size": 50000,
+      "method": "go_embedded",
+      "kind": "broad",
+      "n": 50,
+      "median_ms": 42.1576415,
+      "p95_ms": 46.497709
+    },
+    {
+      "corpus_size": 50000,
+      "method": "python_go_bridge",
+      "kind": "all",
+      "n": 100,
+      "median_ms": 21.2621935,
+      "p95_ms": 47.577042
+    },
+    {
+      "corpus_size": 50000,
+      "method": "python_go_bridge",
+      "kind": "selective",
+      "n": 50,
+      "median_ms": 0.630469,
+      "p95_ms": 0.874166
+    },
+    {
+      "corpus_size": 50000,
+      "method": "python_go_bridge",
+      "kind": "broad",
+      "n": 50,
+      "median_ms": 43.9576045,
+      "p95_ms": 48.456886
+    }
+  ],
+  "agreement": [
+    {
+      "corpus_size": 1000,
+      "method": "go_embedded",
+      "exact_ordered_matches": 100,
+      "queries": 100,
+      "mismatched_query_ids": []
+    },
+    {
+      "corpus_size": 1000,
+      "method": "python_go_bridge",
+      "exact_ordered_matches": 100,
+      "queries": 100,
+      "mismatched_query_ids": []
+    },
+    {
+      "corpus_size": 10000,
+      "method": "go_embedded",
+      "exact_ordered_matches": 100,
+      "queries": 100,
+      "mismatched_query_ids": []
+    },
+    {
+      "corpus_size": 10000,
+      "method": "python_go_bridge",
+      "exact_ordered_matches": 100,
+      "queries": 100,
+      "mismatched_query_ids": []
+    },
+    {
+      "corpus_size": 50000,
+      "method": "go_embedded",
+      "exact_ordered_matches": 100,
+      "queries": 100,
+      "mismatched_query_ids": []
+    },
+    {
+      "corpus_size": 50000,
+      "method": "python_go_bridge",
+      "exact_ordered_matches": 100,
+      "queries": 100,
+      "mismatched_query_ids": []
+    }
+  ],
+  "lifecycle_summary": [
+    {
+      "method": "go_embedded",
+      "n": 100,
+      "median_ms": 1.4273509999999998,
+      "p95_ms": 1.960791
+    },
+    {
+      "method": "python_go_bridge",
+      "n": 100,
+      "median_ms": 2.2630014999999997,
+      "p95_ms": 2.994153
+    }
+  ],
+  "protocol_sha256": "2704cc5de362ecffe3dcfc8e407e748fe067bfbd0c0f02ed18d8687512fea76b",
+  "actual_counts": {
+    "corpus_sizes": [
+      1000,
+      10000,
+      50000
+    ],
+    "search_timed": 900,
+    "search_warmup": 90,
+    "lifecycle_timed": 200,
+    "lifecycle_warmup": 10,
+    "lifecycle_begin_calls": 210,
+    "lifecycle_commit_calls": 210,
+    "model_calls": 0
+  }
+}

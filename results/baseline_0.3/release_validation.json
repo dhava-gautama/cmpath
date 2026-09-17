@@ -1,0 +1,18 @@
+{
+  "release": "0.3.0rc1",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+  "checks": {
+    "isolated_wheel_install": true,
+    "installed_import_outside_source_tree": true,
+    "console_entrypoint": true,
+    "cli_persistent_state_fact_context_and_backup": true,
+    "installed_example": true,
+    "reader_help_without_network": true,
+    "source_distribution_rebuild": true,
+    "rebuilt_runtime_identical": true
+  },
+  "wheel_sha256": "73677ef1452f28b9c59200f93b18ca81d53b5081ac35b8e19e2672aaccef757e",
+  "source_sha256": "711be41b17d5a9ba081086ae116c76f2142a8fbead745f229090e3e9716bf372",
+  "model_calls": 0
+}

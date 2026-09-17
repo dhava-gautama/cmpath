@@ -1,0 +1,21 @@
+include LICENSE NOTICE.md README.md PAPER.md NATIVE_ARCHITECTURE.md PILOT_RESULTS.md LIVE_RESULTS.md CHANGELOG.md CONTRIBUTING.md CITATION.cff
+recursive-include docs *.md
+recursive-include examples *.py
+recursive-include tests *.py
+recursive-include scripts *.py *.mjs *.sh
+graft integrations
+graft conformance
+graft portable-kimi-hermes
+include .kimi-code/mcp.json .cursor/mcp.json
+recursive-include research *.md *.json *.bib
+recursive-include figures *.png *.pdf
+recursive-include results *.json *.jsonl *.md *.txt
+graft native
+prune native/bin
+# A prior Windows build was accidentally written from native/ with a relative
+# ``native/bin`` output, creating this nested release-only tree.  Native
+# executables are distributed separately; neither form belongs in the sdist.
+prune native/native
+exclude research/original_cmpath.zip
+exclude results/build.txt results/release_validation.json
+global-exclude __pycache__ *.pyc *.db *.db-wal *.db-shm

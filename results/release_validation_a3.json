@@ -1,0 +1,28 @@
+{
+  "release": "0.4.0a3",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+  "checks": {
+    "isolated_wheel_install": true,
+    "installed_import_outside_source_tree": true,
+    "console_entrypoint": true,
+    "cli_persistent_state_fact_context_and_backup": true,
+    "installed_example": true,
+    "reader_help_without_network": true,
+    "installed_native_bridge_and_embedded_real_tool": true,
+    "committed_replay_does_not_reread_changed_input": true,
+    "native_journal_survives_legacy_sqlite_backup": true,
+    "native_chat_help_without_network": true,
+    "installed_agent_inspect_without_provider": true,
+    "installed_maintenance_export_plan_and_retire": true,
+    "source_distribution_rebuild": true,
+    "rebuilt_runtime_identical": true,
+    "vendored_native_source_rebuild_without_dependency_downloads": true,
+    "rebuilt_native_real_tool_replay_and_backup": true
+  },
+  "wheel_sha256": "ee952fbe9bd66a4828a8063b767c7d49f767e118b4905ab987d889d98b571540",
+  "source_sha256": "8a93a5f07599ac5f2985fcbb0ef5986515d0bdefddcba00ab5b0c019cf1e046b",
+  "native_sha256": "367d7826ecd9ac40ab4b31d5a7267996aca881c503dc563a493dd6918f8bcf6b",
+  "embedded_example_sha256": "11531fc643682e7db8891ee4f75f6be8fc3166efe8509b647c626d5fb68d1556",
+  "model_calls": 0
+}

@@ -1,0 +1,123 @@
+{
+  "measurement": "local Python-to-Go bridge lifecycle latency",
+  "groups": [
+    {
+      "arm": "a2_snapshot",
+      "scope_tasks": 1,
+      "n": 15,
+      "median_ms": {
+        "begin_ms": 0.73188,
+        "tool_roundtrip_ms": 0.818688,
+        "commit_ms": 0.578434,
+        "total_ms": 2.213626
+      },
+      "initial_append_batch_ms": 2.841442
+    },
+    {
+      "arm": "a3_snapshot",
+      "scope_tasks": 1,
+      "n": 15,
+      "median_ms": {
+        "begin_ms": 0.820812,
+        "tool_roundtrip_ms": 0.883223,
+        "commit_ms": 0.613235,
+        "total_ms": 2.238463
+      },
+      "initial_append_batch_ms": 3.429811
+    },
+    {
+      "arm": "a3_scope",
+      "scope_tasks": 1,
+      "n": 15,
+      "median_ms": {
+        "begin_ms": 0.785339,
+        "tool_roundtrip_ms": 0.817977,
+        "commit_ms": 0.573366,
+        "total_ms": 2.145415
+      },
+      "initial_append_batch_ms": 3.486134
+    },
+    {
+      "arm": "a2_snapshot",
+      "scope_tasks": 4,
+      "n": 15,
+      "median_ms": {
+        "begin_ms": 0.721084,
+        "tool_roundtrip_ms": 0.69801,
+        "commit_ms": 0.512817,
+        "total_ms": 1.926453
+      },
+      "initial_append_batch_ms": 12.107449
+    },
+    {
+      "arm": "a3_snapshot",
+      "scope_tasks": 4,
+      "n": 15,
+      "median_ms": {
+        "begin_ms": 0.773311,
+        "tool_roundtrip_ms": 0.814051,
+        "commit_ms": 0.597071,
+        "total_ms": 2.230782
+      },
+      "initial_append_batch_ms": 13.637412
+    },
+    {
+      "arm": "a3_scope",
+      "scope_tasks": 4,
+      "n": 15,
+      "median_ms": {
+        "begin_ms": 0.879548,
+        "tool_roundtrip_ms": 0.828703,
+        "commit_ms": 0.619494,
+        "total_ms": 2.39904
+      },
+      "initial_append_batch_ms": 14.121867
+    },
+    {
+      "arm": "a2_snapshot",
+      "scope_tasks": 16,
+      "n": 15,
+      "median_ms": {
+        "begin_ms": 0.978634,
+        "tool_roundtrip_ms": 0.809365,
+        "commit_ms": 0.553667,
+        "total_ms": 2.366412
+      },
+      "initial_append_batch_ms": 46.151707
+    },
+    {
+      "arm": "a3_snapshot",
+      "scope_tasks": 16,
+      "n": 15,
+      "median_ms": {
+        "begin_ms": 0.943372,
+        "tool_roundtrip_ms": 0.777567,
+        "commit_ms": 0.574558,
+        "total_ms": 2.35221
+      },
+      "initial_append_batch_ms": 54.192392
+    },
+    {
+      "arm": "a3_scope",
+      "scope_tasks": 16,
+      "n": 15,
+      "median_ms": {
+        "begin_ms": 1.330813,
+        "tool_roundtrip_ms": 0.811617,
+        "commit_ms": 0.624341,
+        "total_ms": 2.813462
+      },
+      "initial_append_batch_ms": 58.052738
+    }
+  ],
+  "warmup_per_group": 5,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+  "model_calls": 0,
+  "limits": "One serial run; rotated arm order by scope size, uncontrolled OS caches; no inference latency or production-load claim. Initial ingestion timed once per group, not repeated statistics. Callback returns a deterministic local value. Scope size and corpus size both grow; these are workload points, not isolated asymptotic proof.",
+  "sha256": {
+    "scripts/measure_freshness_cost.py": "84a6620fda5739ceb19828c83680ecbed3180030d9abd25452341c54fe23631d",
+    "native/bin/cmpath-native": "367d7826ecd9ac40ab4b31d5a7267996aca881c503dc563a493dd6918f8bcf6b",
+    "native/bin/baseline-0.4.0a2/cmpath-native": "0db824c739bee0b758676589b9798b93377a86a339452288947b13ed1400841a"
+  }
+}

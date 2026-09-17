@@ -1,0 +1,320 @@
+{"seed": 0, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 0, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 0, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 0, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 0, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 0, "category": "resume_snapshot", "success": true}
+{"seed": 0, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 227, "budget_ok": true}
+{"seed": 0, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1277, "budget_ok": true}
+{"seed": 1, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 1, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 1, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 1, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 1, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 1, "category": "resume_snapshot", "success": true}
+{"seed": 1, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 226, "budget_ok": true}
+{"seed": 1, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1276, "budget_ok": true}
+{"seed": 2, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 2, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 2, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 2, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 2, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 2, "category": "resume_snapshot", "success": true}
+{"seed": 2, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 226, "budget_ok": true}
+{"seed": 2, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1276, "budget_ok": true}
+{"seed": 3, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 3, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 3, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 3, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 3, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 3, "category": "resume_snapshot", "success": true}
+{"seed": 3, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 226, "budget_ok": true}
+{"seed": 3, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1276, "budget_ok": true}
+{"seed": 4, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 4, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 4, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 4, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 4, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 4, "category": "resume_snapshot", "success": true}
+{"seed": 4, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 227, "budget_ok": true}
+{"seed": 4, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1275, "budget_ok": true}
+{"seed": 5, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 5, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 5, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 5, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 5, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 5, "category": "resume_snapshot", "success": true}
+{"seed": 5, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 228, "budget_ok": true}
+{"seed": 5, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1279, "budget_ok": true}
+{"seed": 6, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 6, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 6, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 6, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 6, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 6, "category": "resume_snapshot", "success": true}
+{"seed": 6, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 227, "budget_ok": true}
+{"seed": 6, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1276, "budget_ok": true}
+{"seed": 7, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 7, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 7, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 7, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 7, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 7, "category": "resume_snapshot", "success": true}
+{"seed": 7, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 227, "budget_ok": true}
+{"seed": 7, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1276, "budget_ok": true}
+{"seed": 8, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 8, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 8, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 8, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 8, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 8, "category": "resume_snapshot", "success": true}
+{"seed": 8, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 227, "budget_ok": true}
+{"seed": 8, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1277, "budget_ok": true}
+{"seed": 9, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 9, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 9, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 9, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 9, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 9, "category": "resume_snapshot", "success": true}
+{"seed": 9, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 229, "budget_ok": true}
+{"seed": 9, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1277, "budget_ok": true}
+{"seed": 10, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 10, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 10, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 10, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 10, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 10, "category": "resume_snapshot", "success": true}
+{"seed": 10, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 230, "budget_ok": true}
+{"seed": 10, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1278, "budget_ok": true}
+{"seed": 11, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 11, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 11, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 11, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 11, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 11, "category": "resume_snapshot", "success": true}
+{"seed": 11, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 226, "budget_ok": true}
+{"seed": 11, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1275, "budget_ok": true}
+{"seed": 12, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 12, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 12, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 12, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 12, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 12, "category": "resume_snapshot", "success": true}
+{"seed": 12, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 226, "budget_ok": true}
+{"seed": 12, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1277, "budget_ok": true}
+{"seed": 13, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 13, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 13, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 13, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 13, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 13, "category": "resume_snapshot", "success": true}
+{"seed": 13, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 227, "budget_ok": true}
+{"seed": 13, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1278, "budget_ok": true}
+{"seed": 14, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 14, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 14, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 14, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 14, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 14, "category": "resume_snapshot", "success": true}
+{"seed": 14, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 226, "budget_ok": true}
+{"seed": 14, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1276, "budget_ok": true}
+{"seed": 15, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 15, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 15, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 15, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 15, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 15, "category": "resume_snapshot", "success": true}
+{"seed": 15, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 227, "budget_ok": true}
+{"seed": 15, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1277, "budget_ok": true}
+{"seed": 16, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 16, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 16, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 16, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 16, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 16, "category": "resume_snapshot", "success": true}
+{"seed": 16, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 228, "budget_ok": true}
+{"seed": 16, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1275, "budget_ok": true}
+{"seed": 17, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 17, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 17, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 17, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 17, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 17, "category": "resume_snapshot", "success": true}
+{"seed": 17, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 227, "budget_ok": true}
+{"seed": 17, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1277, "budget_ok": true}
+{"seed": 18, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 18, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 18, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 18, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 18, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 18, "category": "resume_snapshot", "success": true}
+{"seed": 18, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 228, "budget_ok": true}
+{"seed": 18, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1277, "budget_ok": true}
+{"seed": 19, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 19, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 19, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 19, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 19, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 19, "category": "resume_snapshot", "success": true}
+{"seed": 19, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 228, "budget_ok": true}
+{"seed": 19, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1281, "budget_ok": true}
+{"seed": 20, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 20, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 20, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 20, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 20, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 20, "category": "resume_snapshot", "success": true}
+{"seed": 20, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 229, "budget_ok": true}
+{"seed": 20, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1274, "budget_ok": true}
+{"seed": 21, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 21, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 21, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 21, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 21, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 21, "category": "resume_snapshot", "success": true}
+{"seed": 21, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 230, "budget_ok": true}
+{"seed": 21, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1278, "budget_ok": true}
+{"seed": 22, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 22, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 22, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 22, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 22, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 22, "category": "resume_snapshot", "success": true}
+{"seed": 22, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 227, "budget_ok": true}
+{"seed": 22, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1278, "budget_ok": true}
+{"seed": 23, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 23, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 23, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 23, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 23, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 23, "category": "resume_snapshot", "success": true}
+{"seed": 23, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 226, "budget_ok": true}
+{"seed": 23, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1276, "budget_ok": true}
+{"seed": 24, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 24, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 24, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 24, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 24, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 24, "category": "resume_snapshot", "success": true}
+{"seed": 24, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 227, "budget_ok": true}
+{"seed": 24, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1278, "budget_ok": true}
+{"seed": 25, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 25, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 25, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 25, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 25, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 25, "category": "resume_snapshot", "success": true}
+{"seed": 25, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 226, "budget_ok": true}
+{"seed": 25, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1276, "budget_ok": true}
+{"seed": 26, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 26, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 26, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 26, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 26, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 26, "category": "resume_snapshot", "success": true}
+{"seed": 26, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 227, "budget_ok": true}
+{"seed": 26, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1279, "budget_ok": true}
+{"seed": 27, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 27, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 27, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 27, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 27, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 27, "category": "resume_snapshot", "success": true}
+{"seed": 27, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 227, "budget_ok": true}
+{"seed": 27, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1278, "budget_ok": true}
+{"seed": 28, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 28, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 28, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 28, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 28, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 28, "category": "resume_snapshot", "success": true}
+{"seed": 28, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 228, "budget_ok": true}
+{"seed": 28, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1279, "budget_ok": true}
+{"seed": 29, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 29, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 29, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 29, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 29, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 29, "category": "resume_snapshot", "success": true}
+{"seed": 29, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 227, "budget_ok": true}
+{"seed": 29, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1276, "budget_ok": true}
+{"seed": 30, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 30, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 30, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 30, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 30, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 30, "category": "resume_snapshot", "success": true}
+{"seed": 30, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 227, "budget_ok": true}
+{"seed": 30, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1276, "budget_ok": true}
+{"seed": 31, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 31, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 31, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 31, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 31, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 31, "category": "resume_snapshot", "success": true}
+{"seed": 31, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 229, "budget_ok": true}
+{"seed": 31, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1280, "budget_ok": true}
+{"seed": 32, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 32, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 32, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 32, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 32, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 32, "category": "resume_snapshot", "success": true}
+{"seed": 32, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 230, "budget_ok": true}
+{"seed": 32, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1278, "budget_ok": true}
+{"seed": 33, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 33, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 33, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 33, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 33, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 33, "category": "resume_snapshot", "success": true}
+{"seed": 33, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 227, "budget_ok": true}
+{"seed": 33, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1277, "budget_ok": true}
+{"seed": 34, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 34, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 34, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 34, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 34, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 34, "category": "resume_snapshot", "success": true}
+{"seed": 34, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 226, "budget_ok": true}
+{"seed": 34, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1277, "budget_ok": true}
+{"seed": 35, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 35, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 35, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 35, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 35, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 35, "category": "resume_snapshot", "success": true}
+{"seed": 35, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 226, "budget_ok": true}
+{"seed": 35, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1277, "budget_ok": true}
+{"seed": 36, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 36, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 36, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 36, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 36, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 36, "category": "resume_snapshot", "success": true}
+{"seed": 36, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 227, "budget_ok": true}
+{"seed": 36, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1278, "budget_ok": true}
+{"seed": 37, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 37, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 37, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 37, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 37, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 37, "category": "resume_snapshot", "success": true}
+{"seed": 37, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 227, "budget_ok": true}
+{"seed": 37, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1277, "budget_ok": true}
+{"seed": 38, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 38, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 38, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 38, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 38, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 38, "category": "resume_snapshot", "success": true}
+{"seed": 38, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 227, "budget_ok": true}
+{"seed": 38, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1276, "budget_ok": true}
+{"seed": 39, "category": "explicit_id", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 39, "category": "registered_alias", "answerable": true, "resolution": "resolved", "resolved": true, "correct_resolution": true, "false_resolution": false, "state_unchanged": true}
+{"seed": 39, "category": "unregistered_paraphrase", "answerable": true, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 39, "category": "ambiguous_alias", "answerable": false, "resolution": "ambiguous", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 39, "category": "absent_id", "answerable": false, "resolution": "not_found", "resolved": false, "correct_resolution": false, "false_resolution": false, "state_unchanged": true}
+{"seed": 39, "category": "resume_snapshot", "success": true}
+{"seed": 39, "category": "context_task", "latest_revision_present": true, "unrelated_evidence": 0, "budget_units": 228, "budget_ok": true}
+{"seed": 39, "category": "context_all", "latest_revision_present": true, "unrelated_evidence": 22, "budget_units": 1278, "budget_ok": true}

@@ -1,0 +1,323 @@
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/setuptools/config/_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated
+!!
+
+        ********************************************************************************
+        Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+        By 2027-Feb-18, you need to update your project and remove deprecated calls
+        or your builds will no longer be supported.
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  corresp(dist, value, root_dir)
+running sdist
+running egg_info
+writing src/cmpath.egg-info/PKG-INFO
+writing dependency_links to src/cmpath.egg-info/dependency_links.txt
+writing entry points to src/cmpath.egg-info/entry_points.txt
+writing requirements to src/cmpath.egg-info/requires.txt
+writing top-level names to src/cmpath.egg-info/top_level.txt
+reading manifest file 'src/cmpath.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no files found matching '*.bib' under directory 'research'
+warning: no previously-included files found matching 'research/original_cmpath.zip'
+warning: no previously-included files matching '__pycache__' found anywhere in distribution
+warning: no previously-included files matching '*.pyc' found anywhere in distribution
+warning: no previously-included files matching '*.db' found anywhere in distribution
+warning: no previously-included files matching '*.db-wal' found anywhere in distribution
+warning: no previously-included files matching '*.db-shm' found anywhere in distribution
+adding license file 'LICENSE'
+adding license file 'NOTICE.md'
+writing manifest file 'src/cmpath.egg-info/SOURCES.txt'
+running check
+creating cmpath-0.4.0a2
+creating cmpath-0.4.0a2/docs
+creating cmpath-0.4.0a2/examples
+creating cmpath-0.4.0a2/figures
+creating cmpath-0.4.0a2/native
+creating cmpath-0.4.0a2/native/cmd/cmpath-bench
+creating cmpath-0.4.0a2/native/cmd/cmpath-native
+creating cmpath-0.4.0a2/native/engine
+creating cmpath-0.4.0a2/native/examples/embedded
+creating cmpath-0.4.0a2/native/internal/sqlite
+creating cmpath-0.4.0a2/native/third_party
+creating cmpath-0.4.0a2/native/vendor
+creating cmpath-0.4.0a2/native/vendor/golang.org/x/text
+creating cmpath-0.4.0a2/native/vendor/golang.org/x/text/cases
+creating cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal
+creating cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal/language
+creating cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal/language/compact
+creating cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal/tag
+creating cmpath-0.4.0a2/native/vendor/golang.org/x/text/language
+creating cmpath-0.4.0a2/native/vendor/golang.org/x/text/transform
+creating cmpath-0.4.0a2/native/vendor/golang.org/x/text/unicode/norm
+creating cmpath-0.4.0a2/research
+creating cmpath-0.4.0a2/results
+creating cmpath-0.4.0a2/results/baseline_0.3
+creating cmpath-0.4.0a2/results/baseline_0.4.0a1
+creating cmpath-0.4.0a2/results/native
+creating cmpath-0.4.0a2/results/operations
+creating cmpath-0.4.0a2/results/pilot
+creating cmpath-0.4.0a2/results/public
+creating cmpath-0.4.0a2/scripts
+creating cmpath-0.4.0a2/src/cmpath
+creating cmpath-0.4.0a2/src/cmpath.egg-info
+creating cmpath-0.4.0a2/tests
+copying files to cmpath-0.4.0a2...
+copying CHANGELOG.md -> cmpath-0.4.0a2
+copying CITATION.cff -> cmpath-0.4.0a2
+copying CONTRIBUTING.md -> cmpath-0.4.0a2
+copying LICENSE -> cmpath-0.4.0a2
+copying MANIFEST.in -> cmpath-0.4.0a2
+copying NATIVE_ARCHITECTURE.md -> cmpath-0.4.0a2
+copying NOTICE.md -> cmpath-0.4.0a2
+copying PAPER.md -> cmpath-0.4.0a2
+copying PILOT_RESULTS.md -> cmpath-0.4.0a2
+copying README.md -> cmpath-0.4.0a2
+copying pyproject.toml -> cmpath-0.4.0a2
+copying docs/AGENT_PILOT.md -> cmpath-0.4.0a2/docs
+copying docs/API.md -> cmpath-0.4.0a2/docs
+copying docs/HARNESS.md -> cmpath-0.4.0a2/docs
+copying docs/INTEGRATION.md -> cmpath-0.4.0a2/docs
+copying docs/MIGRATION.md -> cmpath-0.4.0a2/docs
+copying docs/RELEASE.md -> cmpath-0.4.0a2/docs
+copying docs/RETENTION.md -> cmpath-0.4.0a2/docs
+copying examples/native_chat.py -> cmpath-0.4.0a2/examples
+copying examples/native_workflow.py -> cmpath-0.4.0a2/examples
+copying examples/research_agent.py -> cmpath-0.4.0a2/examples
+copying examples/task_workflow.py -> cmpath-0.4.0a2/examples
+copying figures/category_recall.pdf -> cmpath-0.4.0a2/figures
+copying figures/category_recall.png -> cmpath-0.4.0a2/figures
+copying figures/public_recall.pdf -> cmpath-0.4.0a2/figures
+copying figures/public_recall.png -> cmpath-0.4.0a2/figures
+copying figures/search_scale.pdf -> cmpath-0.4.0a2/figures
+copying figures/search_scale.png -> cmpath-0.4.0a2/figures
+copying native/README.md -> cmpath-0.4.0a2/native
+copying native/go.mod -> cmpath-0.4.0a2/native
+copying native/go.sum -> cmpath-0.4.0a2/native
+copying native/cmd/cmpath-bench/main.go -> cmpath-0.4.0a2/native/cmd/cmpath-bench
+copying native/cmd/cmpath-native/main.go -> cmpath-0.4.0a2/native/cmd/cmpath-native
+copying native/engine/base.sql -> cmpath-0.4.0a2/native/engine
+copying native/engine/context.go -> cmpath-0.4.0a2/native/engine
+copying native/engine/engine.go -> cmpath-0.4.0a2/native/engine
+copying native/engine/engine_test.go -> cmpath-0.4.0a2/native/engine
+copying native/engine/harness.go -> cmpath-0.4.0a2/native/engine
+copying native/engine/journal.sql -> cmpath-0.4.0a2/native/engine
+copying native/engine/maintenance.go -> cmpath-0.4.0a2/native/engine
+copying native/engine/maintenance_test.go -> cmpath-0.4.0a2/native/engine
+copying native/engine/model_response.go -> cmpath-0.4.0a2/native/engine
+copying native/engine/model_response_test.go -> cmpath-0.4.0a2/native/engine
+copying native/examples/embedded/main.go -> cmpath-0.4.0a2/native/examples/embedded
+copying native/internal/sqlite/UPSTREAM.json -> cmpath-0.4.0a2/native/internal/sqlite
+copying native/internal/sqlite/sqlite.go -> cmpath-0.4.0a2/native/internal/sqlite
+copying native/internal/sqlite/sqlite3.c -> cmpath-0.4.0a2/native/internal/sqlite
+copying native/internal/sqlite/sqlite3.h -> cmpath-0.4.0a2/native/internal/sqlite
+copying native/third_party/GO_LICENSE -> cmpath-0.4.0a2/native/third_party
+copying native/third_party/GO_PATENTS -> cmpath-0.4.0a2/native/third_party
+copying native/vendor/modules.txt -> cmpath-0.4.0a2/native/vendor
+copying native/vendor/golang.org/x/text/LICENSE -> cmpath-0.4.0a2/native/vendor/golang.org/x/text
+copying native/vendor/golang.org/x/text/PATENTS -> cmpath-0.4.0a2/native/vendor/golang.org/x/text
+copying native/vendor/golang.org/x/text/cases/cases.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/cases
+copying native/vendor/golang.org/x/text/cases/context.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/cases
+copying native/vendor/golang.org/x/text/cases/fold.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/cases
+copying native/vendor/golang.org/x/text/cases/icu.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/cases
+copying native/vendor/golang.org/x/text/cases/info.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/cases
+copying native/vendor/golang.org/x/text/cases/map.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/cases
+copying native/vendor/golang.org/x/text/cases/tables15.0.0.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/cases
+copying native/vendor/golang.org/x/text/cases/tables17.0.0.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/cases
+copying native/vendor/golang.org/x/text/cases/trieval.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/cases
+copying native/vendor/golang.org/x/text/internal/internal.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal
+copying native/vendor/golang.org/x/text/internal/match.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal
+copying native/vendor/golang.org/x/text/internal/language/common.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal/language
+copying native/vendor/golang.org/x/text/internal/language/compact.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal/language
+copying native/vendor/golang.org/x/text/internal/language/compose.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal/language
+copying native/vendor/golang.org/x/text/internal/language/coverage.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal/language
+copying native/vendor/golang.org/x/text/internal/language/language.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal/language
+copying native/vendor/golang.org/x/text/internal/language/lookup.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal/language
+copying native/vendor/golang.org/x/text/internal/language/match.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal/language
+copying native/vendor/golang.org/x/text/internal/language/parse.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal/language
+copying native/vendor/golang.org/x/text/internal/language/tables.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal/language
+copying native/vendor/golang.org/x/text/internal/language/tags.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal/language
+copying native/vendor/golang.org/x/text/internal/language/compact/compact.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal/language/compact
+copying native/vendor/golang.org/x/text/internal/language/compact/language.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal/language/compact
+copying native/vendor/golang.org/x/text/internal/language/compact/parents.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal/language/compact
+copying native/vendor/golang.org/x/text/internal/language/compact/tables.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal/language/compact
+copying native/vendor/golang.org/x/text/internal/language/compact/tags.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal/language/compact
+copying native/vendor/golang.org/x/text/internal/tag/tag.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/internal/tag
+copying native/vendor/golang.org/x/text/language/coverage.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/language
+copying native/vendor/golang.org/x/text/language/doc.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/language
+copying native/vendor/golang.org/x/text/language/language.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/language
+copying native/vendor/golang.org/x/text/language/match.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/language
+copying native/vendor/golang.org/x/text/language/parse.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/language
+copying native/vendor/golang.org/x/text/language/tables.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/language
+copying native/vendor/golang.org/x/text/language/tags.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/language
+copying native/vendor/golang.org/x/text/transform/transform.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/transform
+copying native/vendor/golang.org/x/text/unicode/norm/composition.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/unicode/norm
+copying native/vendor/golang.org/x/text/unicode/norm/forminfo.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/unicode/norm
+copying native/vendor/golang.org/x/text/unicode/norm/input.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/unicode/norm
+copying native/vendor/golang.org/x/text/unicode/norm/iter.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/unicode/norm
+copying native/vendor/golang.org/x/text/unicode/norm/normalize.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/unicode/norm
+copying native/vendor/golang.org/x/text/unicode/norm/readwriter.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/unicode/norm
+copying native/vendor/golang.org/x/text/unicode/norm/tables15.0.0.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/unicode/norm
+copying native/vendor/golang.org/x/text/unicode/norm/tables17.0.0.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/unicode/norm
+copying native/vendor/golang.org/x/text/unicode/norm/transform.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/unicode/norm
+copying native/vendor/golang.org/x/text/unicode/norm/trie.go -> cmpath-0.4.0a2/native/vendor/golang.org/x/text/unicode/norm
+copying research/EXPERIMENT_LOG.md -> cmpath-0.4.0a2/research
+copying research/NATIVE_PROTOCOL.md -> cmpath-0.4.0a2/research
+copying research/NATIVE_SOURCES.md -> cmpath-0.4.0a2/research
+copying research/PILOT_PROTOCOL.md -> cmpath-0.4.0a2/research
+copying research/PROTOCOL.md -> cmpath-0.4.0a2/research
+copying research/SOURCES.md -> cmpath-0.4.0a2/research
+copying research/environment.json -> cmpath-0.4.0a2/research
+copying research/native_environment.json -> cmpath-0.4.0a2/research
+copying research/native_environment_a1.json -> cmpath-0.4.0a2/research
+copying research/sources.json -> cmpath-0.4.0a2/research
+copying results/chart_data.json -> cmpath-0.4.0a2/results
+copying results/validation.txt -> cmpath-0.4.0a2/results
+copying results/baseline_0.3/build.txt -> cmpath-0.4.0a2/results/baseline_0.3
+copying results/baseline_0.3/release_validation.json -> cmpath-0.4.0a2/results/baseline_0.3
+copying results/baseline_0.4.0a1/build.txt -> cmpath-0.4.0a2/results/baseline_0.4.0a1
+copying results/baseline_0.4.0a1/release_validation.json -> cmpath-0.4.0a2/results/baseline_0.4.0a1
+copying results/native/benchmark.json -> cmpath-0.4.0a2/results/native
+copying results/native/benchmark.md -> cmpath-0.4.0a2/results/native
+copying results/native/build_a2.json -> cmpath-0.4.0a2/results/native
+copying results/native/go_tests.txt -> cmpath-0.4.0a2/results/native
+copying results/native/go_tests_a2.txt -> cmpath-0.4.0a2/results/native
+copying results/native/lifecycle_rows.jsonl -> cmpath-0.4.0a2/results/native
+copying results/native/python_tests.txt -> cmpath-0.4.0a2/results/native
+copying results/native/python_tests_a2.txt -> cmpath-0.4.0a2/results/native
+copying results/native/search_rows.jsonl -> cmpath-0.4.0a2/results/native
+copying results/operations/scaling_rows.jsonl -> cmpath-0.4.0a2/results/operations
+copying results/operations/summary.json -> cmpath-0.4.0a2/results/operations
+copying results/operations/task_rows.jsonl -> cmpath-0.4.0a2/results/operations
+copying results/pilot/README.md -> cmpath-0.4.0a2/results/pilot
+copying results/pilot/contracts.jsonl -> cmpath-0.4.0a2/results/pilot
+copying results/pilot/corpus.jsonl -> cmpath-0.4.0a2/results/pilot
+copying results/pilot/labels.jsonl -> cmpath-0.4.0a2/results/pilot
+copying results/pilot/prompts.jsonl -> cmpath-0.4.0a2/results/pilot
+copying results/pilot/queries.jsonl -> cmpath-0.4.0a2/results/pilot
+copying results/pilot/rows.jsonl -> cmpath-0.4.0a2/results/pilot
+copying results/pilot/run_log.json -> cmpath-0.4.0a2/results/pilot
+copying results/pilot/summary.json -> cmpath-0.4.0a2/results/pilot
+copying results/public/ingestion.json -> cmpath-0.4.0a2/results/public
+copying results/public/rows.jsonl -> cmpath-0.4.0a2/results/public
+copying results/public/summary.json -> cmpath-0.4.0a2/results/public
+copying scripts/benchmark_native.py -> cmpath-0.4.0a2/scripts
+copying scripts/benchmark_operations.py -> cmpath-0.4.0a2/scripts
+copying scripts/benchmark_public.py -> cmpath-0.4.0a2/scripts
+copying scripts/build_native.py -> cmpath-0.4.0a2/scripts
+copying scripts/build_release.py -> cmpath-0.4.0a2/scripts
+copying scripts/build_workbook.mjs -> cmpath-0.4.0a2/scripts
+copying scripts/download_benchmarks.py -> cmpath-0.4.0a2/scripts
+copying scripts/evaluate_pilot.py -> cmpath-0.4.0a2/scripts
+copying scripts/render_figures.py -> cmpath-0.4.0a2/scripts
+copying scripts/render_report.py -> cmpath-0.4.0a2/scripts
+copying scripts/run_reader.py -> cmpath-0.4.0a2/scripts
+copying scripts/validate_release.py -> cmpath-0.4.0a2/scripts
+copying src/cmpath/__init__.py -> cmpath-0.4.0a2/src/cmpath
+copying src/cmpath/__main__.py -> cmpath-0.4.0a2/src/cmpath
+copying src/cmpath/agent.py -> cmpath-0.4.0a2/src/cmpath
+copying src/cmpath/agent_cli.py -> cmpath-0.4.0a2/src/cmpath
+copying src/cmpath/cli.py -> cmpath-0.4.0a2/src/cmpath
+copying src/cmpath/harness.py -> cmpath-0.4.0a2/src/cmpath
+copying src/cmpath/maintenance_cli.py -> cmpath-0.4.0a2/src/cmpath
+copying src/cmpath/memory.py -> cmpath-0.4.0a2/src/cmpath
+copying src/cmpath/migrate.py -> cmpath-0.4.0a2/src/cmpath
+copying src/cmpath/py.typed -> cmpath-0.4.0a2/src/cmpath
+copying src/cmpath/request_counter.py -> cmpath-0.4.0a2/src/cmpath
+copying src/cmpath.egg-info/PKG-INFO -> cmpath-0.4.0a2/src/cmpath.egg-info
+copying src/cmpath.egg-info/SOURCES.txt -> cmpath-0.4.0a2/src/cmpath.egg-info
+copying src/cmpath.egg-info/dependency_links.txt -> cmpath-0.4.0a2/src/cmpath.egg-info
+copying src/cmpath.egg-info/entry_points.txt -> cmpath-0.4.0a2/src/cmpath.egg-info
+copying src/cmpath.egg-info/requires.txt -> cmpath-0.4.0a2/src/cmpath.egg-info
+copying src/cmpath.egg-info/top_level.txt -> cmpath-0.4.0a2/src/cmpath.egg-info
+copying tests/test_agent.py -> cmpath-0.4.0a2/tests
+copying tests/test_evaluation.py -> cmpath-0.4.0a2/tests
+copying tests/test_harness.py -> cmpath-0.4.0a2/tests
+copying tests/test_memory.py -> cmpath-0.4.0a2/tests
+copying tests/test_migration.py -> cmpath-0.4.0a2/tests
+copying tests/test_native_maintenance.py -> cmpath-0.4.0a2/tests
+copying tests/test_pilot_evaluation.py -> cmpath-0.4.0a2/tests
+copying tests/test_request_counter.py -> cmpath-0.4.0a2/tests
+Writing cmpath-0.4.0a2/setup.cfg
+Creating tar archive
+removing 'cmpath-0.4.0a2' (and everything under it)
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/setuptools/config/_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated
+!!
+
+        ********************************************************************************
+        Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+        By 2027-Feb-18, you need to update your project and remove deprecated calls
+        or your builds will no longer be supported.
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  corresp(dist, value, root_dir)
+cmpath-0.4.0a2.tar.gz
+running bdist_wheel
+running build
+running build_py
+running egg_info
+writing src/cmpath.egg-info/PKG-INFO
+writing dependency_links to src/cmpath.egg-info/dependency_links.txt
+writing entry points to src/cmpath.egg-info/entry_points.txt
+writing requirements to src/cmpath.egg-info/requires.txt
+writing top-level names to src/cmpath.egg-info/top_level.txt
+reading manifest file 'src/cmpath.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no files found matching '*.bib' under directory 'research'
+warning: no previously-included files found matching 'research/original_cmpath.zip'
+warning: no previously-included files matching '__pycache__' found anywhere in distribution
+warning: no previously-included files matching '*.pyc' found anywhere in distribution
+warning: no previously-included files matching '*.db' found anywhere in distribution
+warning: no previously-included files matching '*.db-wal' found anywhere in distribution
+warning: no previously-included files matching '*.db-shm' found anywhere in distribution
+adding license file 'LICENSE'
+adding license file 'NOTICE.md'
+writing manifest file 'src/cmpath.egg-info/SOURCES.txt'
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/cmpath
+copying build/lib/cmpath/migrate.py -> build/bdist.linux-x86_64/wheel/./cmpath
+copying build/lib/cmpath/harness.py -> build/bdist.linux-x86_64/wheel/./cmpath
+copying build/lib/cmpath/maintenance_cli.py -> build/bdist.linux-x86_64/wheel/./cmpath
+copying build/lib/cmpath/cli.py -> build/bdist.linux-x86_64/wheel/./cmpath
+copying build/lib/cmpath/agent_cli.py -> build/bdist.linux-x86_64/wheel/./cmpath
+copying build/lib/cmpath/py.typed -> build/bdist.linux-x86_64/wheel/./cmpath
+copying build/lib/cmpath/request_counter.py -> build/bdist.linux-x86_64/wheel/./cmpath
+copying build/lib/cmpath/__init__.py -> build/bdist.linux-x86_64/wheel/./cmpath
+copying build/lib/cmpath/__main__.py -> build/bdist.linux-x86_64/wheel/./cmpath
+copying build/lib/cmpath/memory.py -> build/bdist.linux-x86_64/wheel/./cmpath
+copying build/lib/cmpath/agent.py -> build/bdist.linux-x86_64/wheel/./cmpath
+running install_egg_info
+Copying src/cmpath.egg-info to build/bdist.linux-x86_64/wheel/./cmpath-0.4.0a2-py3.12.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/cmpath-0.4.0a2.dist-info/WHEEL
+creating '/workspace/scratch/7bcbf4d97728/cmpath_pilot/dist/.tmp-cy2wsv17/cmpath-0.4.0a2-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'cmpath/__init__.py'
+adding 'cmpath/__main__.py'
+adding 'cmpath/agent.py'
+adding 'cmpath/agent_cli.py'
+adding 'cmpath/cli.py'
+adding 'cmpath/harness.py'
+adding 'cmpath/maintenance_cli.py'
+adding 'cmpath/memory.py'
+adding 'cmpath/migrate.py'
+adding 'cmpath/py.typed'
+adding 'cmpath/request_counter.py'
+adding 'cmpath-0.4.0a2.dist-info/licenses/LICENSE'
+adding 'cmpath-0.4.0a2.dist-info/licenses/NOTICE.md'
+adding 'cmpath-0.4.0a2.dist-info/METADATA'
+adding 'cmpath-0.4.0a2.dist-info/WHEEL'
+adding 'cmpath-0.4.0a2.dist-info/entry_points.txt'
+adding 'cmpath-0.4.0a2.dist-info/top_level.txt'
+adding 'cmpath-0.4.0a2.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+cmpath-0.4.0a2-py3-none-any.whl

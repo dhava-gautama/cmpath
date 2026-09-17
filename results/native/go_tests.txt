@@ -1,0 +1,38 @@
+?   	cmpath.local/native/cmd/cmpath-bench	[no test files]
+?   	cmpath.local/native/cmd/cmpath-native	[no test files]
+=== RUN   TestTaskGraphAndResolution
+--- PASS: TestTaskGraphAndResolution (0.00s)
+=== RUN   TestAppendBatchRollbackAndFullContent
+--- PASS: TestAppendBatchRollbackAndFullContent (0.00s)
+=== RUN   TestScopeSourcePairAndBudget
+--- PASS: TestScopeSourcePairAndBudget (0.00s)
+=== RUN   TestCustomCounterAndMandatorySnapshot
+--- PASS: TestCustomCounterAndMandatorySnapshot (0.00s)
+=== RUN   TestRunReplayAndAtomicSnapshot
+--- PASS: TestRunReplayAndAtomicSnapshot (0.00s)
+=== RUN   TestPendingReplayRequiresRecovery
+--- PASS: TestPendingReplayRequiresRecovery (0.01s)
+=== RUN   TestIndeterminateToolAndReconciliation
+--- PASS: TestIndeterminateToolAndReconciliation (0.01s)
+=== RUN   TestToolFailurePreservesIntent
+--- PASS: TestToolFailurePreservesIntent (0.00s)
+=== RUN   TestCommitRollbackOnInvalidFact
+--- PASS: TestCommitRollbackOnInvalidFact (0.00s)
+=== RUN   TestStaleSnapshotConflict
+--- PASS: TestStaleSnapshotConflict (0.01s)
+=== RUN   TestModelPayloadAuditAndBudget
+--- PASS: TestModelPayloadAuditAndBudget (0.00s)
+=== RUN   TestAbortPreservesHistory
+--- PASS: TestAbortPreservesHistory (0.00s)
+=== RUN   TestReopenKeepsExactContextAndLargeInteger
+--- PASS: TestReopenKeepsExactContextAndLargeInteger (0.00s)
+=== RUN   TestConcurrentBeginAcrossConnections
+--- PASS: TestConcurrentBeginAcrossConnections (0.01s)
+=== RUN   TestSlowCallbackDoesNotHoldTransaction
+--- PASS: TestSlowCallbackDoesNotHoldTransaction (0.00s)
+=== RUN   TestClosedEngine
+--- PASS: TestClosedEngine (0.00s)
+PASS
+ok  	cmpath.local/native/engine	1.099s
+?   	cmpath.local/native/examples/embedded	[no test files]
+?   	cmpath.local/native/internal/sqlite	[no test files]

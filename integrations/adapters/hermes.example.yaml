@@ -1,0 +1,17 @@
+# Merge mcp_servers into the host Hermes configuration.
+# cmp_managed_turn is an adapter-owned template, not a Hermes core schema.
+mcp_servers:
+  cmpath-memory:
+    command: cmpath-mcp
+    args:
+      - --db
+      - /absolute/path/to/hermes.db
+cmp_managed_turn:
+  base_url: https://cmp.example.invalid
+  path: /v1/managed-turn
+  hooks_required:
+    - before-model
+    - after-model
+    - before-tool
+    - after-tool
+    - commit

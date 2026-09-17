@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "cmpath-memory": {
+      "command": "cmpath-mcp",
+      "args": ["--db", "/absolute/path/to/kimi.db"]
+    }
+  },
+  "cmpManagedTurn": {
+    "baseUrl": "https://cmp.example.invalid",
+    "path": "/v1/managed-turn",
+    "hooksRequired": ["before-model", "after-model", "before-tool", "after-tool", "commit"]
+  }
+}

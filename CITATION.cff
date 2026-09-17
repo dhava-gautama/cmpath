@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this software and its accompanying research report when using the released implementation or evaluation."
+title: "Context Memory Path: Durable Task Memory and Harness Integration"
+type: software
+authors:
+  - name: "CMP contributors"
+version: "0.4.0a5"
+date-released: "2026-09-11"
+license: MIT
+abstract: "A SQLite task-memory library and embeddable Go engine with recoverable turn and tool journals, a Python harness bridge, and reproducible retrieval and runtime measurements."

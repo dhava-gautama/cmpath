@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.mypy_cache/
+
+# Build and release outputs
+build/
+dist/
+output/
+*.whl
+*.tar.gz
+
+# Native compiled outputs (rebuilt from native/ source)
+native/bin/
+native/native/
+*.exe
+
+# Runtime state and local databases
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# Local and potentially sensitive execution captures
+results/live/
+.probe-export-*/
+
+# Local editor and OS noise
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# Workspace scratch files
+cc-last-input.c
+=*

@@ -1,0 +1,16 @@
+{
+  "date_utc": "2026-09-10",
+  "python": "3.12.14",
+  "implementation": "CPython",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "sqlite": "3.53.1",
+  "build_and_report_packages": {
+    "setuptools": "84.0.0",
+    "wheel": "0.48.0",
+    "matplotlib": "3.10.8",
+    "reportlab": "4.4.9"
+  },
+  "model_calls": 0,
+  "validation_scope": "Local Linux runtime; no operating-system or Python-version matrix."
+}

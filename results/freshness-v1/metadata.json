@@ -1,0 +1,196 @@
+{
+  "protocol_version": "freshness-v1",
+  "manifest": [
+    {
+      "name": "selected_fact_retraction",
+      "scope": "task",
+      "phase": "before_admission",
+      "semantic_allow": false,
+      "contract_changed": true,
+      "category": "supported_stale"
+    },
+    {
+      "name": "parent_evidence_correction",
+      "scope": "lineage",
+      "phase": "before_admission",
+      "semantic_allow": false,
+      "contract_changed": true,
+      "category": "supported_stale"
+    },
+    {
+      "name": "negative_task_phantom",
+      "scope": "task",
+      "phase": "before_admission",
+      "semantic_allow": false,
+      "contract_changed": true,
+      "category": "supported_stale"
+    },
+    {
+      "name": "negative_all_new_task",
+      "scope": "all",
+      "phase": "before_admission",
+      "semantic_allow": false,
+      "contract_changed": true,
+      "category": "supported_stale"
+    },
+    {
+      "name": "ancestry_addition",
+      "scope": "lineage",
+      "phase": "before_admission",
+      "semantic_allow": false,
+      "contract_changed": true,
+      "category": "supported_stale"
+    },
+    {
+      "name": "selected_snapshot_revision",
+      "scope": "task",
+      "phase": "before_admission",
+      "semantic_allow": false,
+      "contract_changed": true,
+      "category": "supported_stale"
+    },
+    {
+      "name": "source_deletion",
+      "scope": "task",
+      "phase": "before_admission",
+      "semantic_allow": false,
+      "contract_changed": true,
+      "category": "supported_stale"
+    },
+    {
+      "name": "fact_deletion",
+      "scope": "task",
+      "phase": "before_admission",
+      "semantic_allow": false,
+      "contract_changed": true,
+      "category": "supported_stale"
+    },
+    {
+      "name": "fact_aba",
+      "scope": "task",
+      "phase": "before_admission",
+      "semantic_allow": true,
+      "contract_changed": true,
+      "category": "conservative_mismatch"
+    },
+    {
+      "name": "unchanged",
+      "scope": "task",
+      "phase": "before_admission",
+      "semantic_allow": true,
+      "contract_changed": false,
+      "category": "positive_control"
+    },
+    {
+      "name": "outside_scope_write",
+      "scope": "task",
+      "phase": "before_admission",
+      "semantic_allow": true,
+      "contract_changed": false,
+      "category": "positive_control"
+    },
+    {
+      "name": "same_scope_admin",
+      "scope": "task",
+      "phase": "before_admission",
+      "semantic_allow": true,
+      "contract_changed": true,
+      "category": "conservative_mismatch"
+    },
+    {
+      "name": "own_tool_output",
+      "scope": "task",
+      "phase": "before_admission",
+      "semantic_allow": true,
+      "contract_changed": false,
+      "category": "positive_control"
+    },
+    {
+      "name": "after_admission",
+      "scope": "task",
+      "phase": "after_admission",
+      "semantic_allow": false,
+      "contract_changed": true,
+      "category": "toctou_limit"
+    },
+    {
+      "name": "during_tool",
+      "scope": "task",
+      "phase": "during_tool",
+      "semantic_allow": false,
+      "contract_changed": true,
+      "category": "toctou_limit"
+    },
+    {
+      "name": "prior_derived_snapshot",
+      "scope": "lineage",
+      "phase": "before_begin",
+      "semantic_allow": false,
+      "contract_changed": false,
+      "category": "unsupported_semantic"
+    },
+    {
+      "name": "parent_fact_retraction",
+      "scope": "lineage",
+      "phase": "before_admission",
+      "semantic_allow": false,
+      "contract_changed": true,
+      "category": "supported_stale"
+    },
+    {
+      "name": "parent_snapshot_revision",
+      "scope": "lineage",
+      "phase": "before_admission",
+      "semantic_allow": false,
+      "contract_changed": true,
+      "category": "supported_stale"
+    },
+    {
+      "name": "terminal_replay",
+      "scope": "task",
+      "phase": "historical",
+      "semantic_allow": true,
+      "contract_changed": false,
+      "category": "historical_control"
+    }
+  ],
+  "script_sha256": "681f3c79218be6d4c72ccc3a112f753a7d911e29db6223dd49180af7434d4e15",
+  "protocol_sha256": "69074878fb7729013bfd8ea3332f5d06374efb9d5f78f50d0bf0f3a9c1398921",
+  "binaries": {
+    "baseline_a2": {
+      "path": "/workspace/scratch/7bcbf4d97728/cmpath_frontier/native/bin/baseline-0.4.0a2/cmpath-native",
+      "sha256": "0db824c739bee0b758676589b9798b93377a86a339452288947b13ed1400841a"
+    },
+    "scope": {
+      "path": "/workspace/scratch/7bcbf4d97728/cmpath_frontier/native/bin/cmpath-native",
+      "sha256": "367d7826ecd9ac40ab4b31d5a7267996aca881c503dc563a493dd6918f8bcf6b"
+    },
+    "global_change": {
+      "path": "/workspace/scratch/7bcbf4d97728/cmpath_frontier/native/bin/cmpath-native",
+      "sha256": "367d7826ecd9ac40ab4b31d5a7267996aca881c503dc563a493dd6918f8bcf6b"
+    },
+    "always_block": {
+      "path": "/workspace/scratch/7bcbf4d97728/cmpath_frontier/native/bin/cmpath-native",
+      "sha256": "367d7826ecd9ac40ab4b31d5a7267996aca881c503dc563a493dd6918f8bcf6b"
+    }
+  },
+  "runtime_source_sha256": {
+    "native/engine/base.sql": "1c3cc881df1ea13dae6cb787aeb0a6c4300919c72f6fd2fe1f3d09305bcafab1",
+    "native/engine/context.go": "c9d250d9c14f03f37825730b407584f784d8bf6f3eb92814326eb772b08f653a",
+    "native/engine/engine.go": "9fb41c55a1f8a0f5e55202fa2035deb7b05f15dec6b350dcdb9b8483601e311a",
+    "native/engine/engine_test.go": "58f18f82ae29dbb226f053fcc4e60406d99ec97c64e88991bedf4bc2598d34b6",
+    "native/engine/freshness.go": "5fdfe0f41f087ce440fbfaedc07f80d77ac0661e881a694f4614ca53244674d3",
+    "native/engine/freshness_test.go": "578dfc566cf22e6dcebce511671ae6cc916d1baf367edf451ce0a18b635f6dde",
+    "native/engine/harness.go": "776aaaa7efdd3b28da92214e7fab4ba3c1953583d1b97c0bcf07e1ff6e749ad2",
+    "native/engine/journal.sql": "49da0079674bce7305a3ea9abca649e4efa297a63c9c21c902c9bf5e33ddc95c",
+    "native/engine/maintenance.go": "71d7235c1781f87be0cc5bbe051028bf4423eccecb0dfb4a09a9b8ab24feff91",
+    "native/engine/maintenance_test.go": "ee87f44bfd6f2c6ccbb40dbdbe17b8a2996d0eb4b1925bcde34df90b869074b6",
+    "native/engine/model_response.go": "692daaf7c86885a9e90971f14661ca617ed8fe8cff6aa07e8498f9099a40ff40",
+    "native/engine/model_response_test.go": "8c1c4fa385800a194e1e59f975a7eb28a3f83f26eaae67ac728297ec791b8fae"
+  },
+  "writer_source_sha256": "6cb552f0eaa1b1b6c07134fb703a28e18f3b228743905b57bb667d10507e51ba",
+  "bridge_source_sha256": "3e0c5cacd7b1dcd752dcd1119b90a1bb95ff7639d63a7ea183bada8547f4418e",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+  "latency_note": "elapsed_seconds is local full-fixture wall time, not model latency or isolated validator cost"
+}

@@ -1,0 +1,10 @@
+{
+  "cmp": {
+    "baseUrl": "https://cmp.example.invalid",
+    "path": "/v1/managed-turn",
+    "timeoutMs": 30000,
+    "retryMutations": false,
+    "hooksRequired": ["before-model", "after-model", "before-tool", "after-tool", "commit"],
+    "unknownOutcome": "inspect-or-reconcile"
+  }
+}

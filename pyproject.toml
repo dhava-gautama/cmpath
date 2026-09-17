@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cmpath"
+version = "0.4.0a5"
+description = "Durable task memory and recoverable execution hooks for agent harnesses"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "CMP contributors"}]
+keywords = ["agent", "memory", "sqlite", "retrieval", "context"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Database",
+]
+
+[project.scripts]
+cmpath = "cmpath.cli:main"
+cmpath-agent = "cmpath.agent_cli:main"
+cmpath-maintain = "cmpath.maintenance_cli:main"
+cmpath-mcp = "cmpath.mcp_server:main"
+cmpath-control = "cmpath.control_plane_cli:main"
+
+[project.optional-dependencies]
+research = ["matplotlib>=3.7", "reportlab>=4"]
+integrations = ["mcp>=2,<3"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+cmpath = ["py.typed"]

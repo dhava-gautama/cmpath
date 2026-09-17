@@ -1,0 +1,29 @@
+{
+  "release": "0.4.0a5",
+  "python": "3.13.13",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "checks": {
+    "artifact_source_integrity": true,
+    "isolated_wheel_install": true,
+    "installed_import_outside_source_tree": true,
+    "console_entrypoint": true,
+    "cli_persistent_state_fact_context_and_backup": true,
+    "installed_example": true,
+    "reader_help_without_network": true,
+    "installed_native_bridge_and_embedded_real_tool": true,
+    "committed_replay_does_not_reread_changed_input": true,
+    "native_journal_survives_legacy_sqlite_backup": true,
+    "native_chat_help_without_network": true,
+    "installed_agent_inspect_without_provider": true,
+    "installed_maintenance_export_plan_and_retire": true,
+    "source_distribution_rebuild": true,
+    "rebuilt_runtime_identical": true,
+    "vendored_native_source_rebuild_without_dependency_downloads": true,
+    "rebuilt_native_real_tool_replay_and_backup": true
+  },
+  "wheel_sha256": "3e1aea5a5d0058a5882aa4bdbd76fc2585becb4bde24c157ad3d947fd60a2581",
+  "source_sha256": "1733086115c75474ebf8d8b6b7984a3debce232f3a5a1f75f5d59bdd5df009b4",
+  "native_sha256": "50ed907a8c13edd55dc298b98240d5dec80cd34565112b423ba1a282cf4744ba",
+  "embedded_example_sha256": "3221094ce1da1f8c77325dbb9d77bdc7b7e6cd2f2e0a78119b959ccb5a20f13d",
+  "model_calls": 0
+}

@@ -1,0 +1,110 @@
+name: Windows CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    name: Python ${{ matrix.python-version }}
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install package
+        shell: pwsh
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install --no-deps -e .
+      - name: Run Python tests
+        shell: pwsh
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python -m unittest discover -s tests -p "test_*.py" -v
+          python -m unittest discover -s conformance -p "test_*.py" -v
+      - name: Smoke-test module entry points
+        shell: pwsh
+        run: |
+          python -m cmpath.cli --help
+          python -m cmpath.doctor --json --skip-native --skip-mcp
+
+  native-release:
+    name: Native, race and release validation
+    runs-on: windows-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - name: Set up Go from native module
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: native/go.mod
+          cache-dependency-path: native/go.sum
+      - name: Set up MSYS2 UCRT64 GCC
+        uses: msys2/setup-msys2@v2
+        with:
+          msystem: UCRT64
+          update: true
+          install: >-
+            mingw-w64-ucrt-x86_64-gcc
+      - name: Export compiler environment
+        shell: pwsh
+        run: |
+          $roots = @("C:\msys64", "C:\msys2")
+          $root = $roots | Where-Object { Test-Path (Join-Path $_ "ucrt64\bin\gcc.exe") } | Select-Object -First 1
+          if (-not $root) { throw "MSYS2 UCRT64 GCC was not installed" }
+          $cc = Join-Path $root "ucrt64\bin\gcc.exe"
+          Add-Content -Path $env:GITHUB_ENV -Value "MSYS2_ROOT=$root"
+          Add-Content -Path $env:GITHUB_ENV -Value "CC=$cc"
+          Add-Content -Path $env:GITHUB_PATH -Value (Join-Path $root "ucrt64\bin")
+      - name: Install package
+        shell: pwsh
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install --no-deps -e .
+      - name: Validate local toolchains
+        shell: pwsh
+        run: |
+          python scripts/build_native.py --check-only --goos windows --goarch amd64
+      - name: Build Windows native executables
+        shell: pwsh
+        run: |
+          python scripts/build_native.py --goos windows --goarch amd64 --output native/bin/windows
+          $binary = (Resolve-Path native/bin/windows/cmpath-native.exe).Path
+          Add-Content -Path $env:GITHUB_ENV -Value "CMP_NATIVE_BINARY=$binary"
+      - name: Run Go race suite
+        shell: pwsh
+        working-directory: native
+        run: go test -buildvcs=false -race -count=1 ./...
+      - name: Run Python and conformance suites with native bridge
+        shell: pwsh
+        run: |
+          python -m unittest discover -s tests -p "test_*.py" -v
+          python -m unittest discover -s conformance -p "test_*.py" -v
+      - name: Build release artifacts
+        shell: pwsh
+        run: |
+          python scripts/build_release.py
+          python scripts/build_portable_bundle.py --force
+      - name: Validate the isolated release and vendored rebuild
+        shell: pwsh
+        run: python scripts/validate_release.py --go go

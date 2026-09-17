@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "seeds": 40,
+  "task_probe_rows": 320,
+  "scaling_queries": 300,
+  "elapsed_seconds": 7.068668495000566,
+  "scaling": [
+    {
+      "messages": 1000,
+      "query_kind": "selective",
+      "queries": 50,
+      "median_ms": 0.06806349983889959,
+      "p95_ms": 0.09698699977889191,
+      "ingest_seconds": 0.043021370000133174,
+      "database_and_journal_bytes": 555584
+    },
+    {
+      "messages": 1000,
+      "query_kind": "broad",
+      "queries": 50,
+      "median_ms": 1.2118614999963029,
+      "p95_ms": 1.3486380003087106,
+      "ingest_seconds": 0.043021370000133174,
+      "database_and_journal_bytes": 555584
+    },
+    {
+      "messages": 10000,
+      "query_kind": "selective",
+      "queries": 50,
+      "median_ms": 0.13486350007951842,
+      "p95_ms": 0.1865719996203552,
+      "ingest_seconds": 0.4519947110002249,
+      "database_and_journal_bytes": 3913384
+    },
+    {
+      "messages": 10000,
+      "query_kind": "broad",
+      "queries": 50,
+      "median_ms": 12.063629999829573,
+      "p95_ms": 12.975052000001597,
+      "ingest_seconds": 0.4519947110002249,
+      "database_and_journal_bytes": 3913384
+    },
+    {
+      "messages": 50000,
+      "query_kind": "selective",
+      "queries": 50,
+      "median_ms": 0.1909239999804413,
+      "p95_ms": 0.23194000004878035,
+      "ingest_seconds": 2.349233493000611,
+      "database_and_journal_bytes": 40636056
+    },
+    {
+      "messages": 50000,
+      "query_kind": "broad",
+      "queries": 50,
+      "median_ms": 59.65818100003162,
+      "p95_ms": 62.84077700001944,
+      "ingest_seconds": 2.349233493000611,
+      "database_and_journal_bytes": 40636056
+    }
+  ],
+  "model_calls": 0,
+  "task_groups": [
+    {
+      "category": "absent_id",
+      "n": 40,
+      "answerable": 0,
+      "resolved": 0,
+      "correct_resolution": 0,
+      "false_resolution": 0,
+      "state_unchanged": 1
+    },
+    {
+      "category": "ambiguous_alias",
+      "n": 40,
+      "answerable": 0,
+      "resolved": 0,
+      "correct_resolution": 0,
+      "false_resolution": 0,
+      "state_unchanged": 1
+    },
+    {
+      "category": "context_all",
+      "n": 40,
+      "latest_revision_present": 1,
+      "unrelated_evidence": 22,
+      "budget_units": 1277.05,
+      "budget_ok": 1
+    },
+    {
+      "category": "context_task",
+      "n": 40,
+      "latest_revision_present": 1,
+      "unrelated_evidence": 0,
+      "budget_units": 227.275,
+      "budget_ok": 1
+    },
+    {
+      "category": "explicit_id",
+      "n": 40,
+      "answerable": 1,
+      "resolved": 1,
+      "correct_resolution": 1,
+      "false_resolution": 0,
+      "state_unchanged": 1
+    },
+    {
+      "category": "registered_alias",
+      "n": 40,
+      "answerable": 1,
+      "resolved": 1,
+      "correct_resolution": 1,
+      "false_resolution": 0,
+      "state_unchanged": 1
+    },
+    {
+      "category": "resume_snapshot",
+      "n": 40,
+      "success": 1
+    },
+    {
+      "category": "unregistered_paraphrase",
+      "n": 40,
+      "answerable": 1,
+      "resolved": 0,
+      "correct_resolution": 0,
+      "false_resolution": 0,
+      "state_unchanged": 1
+    }
+  ]
+}

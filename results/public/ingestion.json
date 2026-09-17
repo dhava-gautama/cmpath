@@ -1,0 +1,2882 @@
+[
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "e47becba",
+    "messages": 550,
+    "index_seconds": 0.05461021799965238
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "118b2229",
+    "messages": 485,
+    "index_seconds": 0.04609252299997024
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "51a45a95",
+    "messages": 529,
+    "index_seconds": 0.05113352299940743
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "58bf7951",
+    "messages": 616,
+    "index_seconds": 0.06617648199971882
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "1e043500",
+    "messages": 510,
+    "index_seconds": 0.047671319999608386
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "c5e8278d",
+    "messages": 469,
+    "index_seconds": 0.054008367999813345
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "6ade9755",
+    "messages": 513,
+    "index_seconds": 0.04731793500013737
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "6f9b354f",
+    "messages": 500,
+    "index_seconds": 0.051330150000467256
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "58ef2f1c",
+    "messages": 518,
+    "index_seconds": 0.0475746430001891
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "f8c5f88b",
+    "messages": 487,
+    "index_seconds": 0.04621812299956218
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "5d3d2817",
+    "messages": 510,
+    "index_seconds": 0.04314046099989355
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "7527f7e2",
+    "messages": 490,
+    "index_seconds": 0.043221883999649435
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "c960da58",
+    "messages": 504,
+    "index_seconds": 0.04415180900014093
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "3b6f954b",
+    "messages": 470,
+    "index_seconds": 0.04365734200018778
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "726462e0",
+    "messages": 501,
+    "index_seconds": 0.045783656999446976
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "94f70d80",
+    "messages": 510,
+    "index_seconds": 0.045358523000686546
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "66f24dbb",
+    "messages": 507,
+    "index_seconds": 0.0475711830004002
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "ad7109d1",
+    "messages": 466,
+    "index_seconds": 0.05308988100023271
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "af8d2e46",
+    "messages": 495,
+    "index_seconds": 0.04731529099990439
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "dccbc061",
+    "messages": 505,
+    "index_seconds": 0.04778672400061623
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "c8c3f81d",
+    "messages": 487,
+    "index_seconds": 0.046890018000340206
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "8ebdbe50",
+    "messages": 487,
+    "index_seconds": 0.04591310199975851
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "6b168ec8",
+    "messages": 482,
+    "index_seconds": 0.05306102599934093
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "75499fd8",
+    "messages": 491,
+    "index_seconds": 0.04504025200003525
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "21436231",
+    "messages": 512,
+    "index_seconds": 0.04879287599942472
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "95bcc1c8",
+    "messages": 487,
+    "index_seconds": 0.04963609100013855
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "0862e8bf",
+    "messages": 490,
+    "index_seconds": 0.04775155100014672
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "853b0a1d",
+    "messages": 512,
+    "index_seconds": 0.049346461999448366
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "a06e4cfe",
+    "messages": 534,
+    "index_seconds": 0.051575471999967704
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "37d43f65",
+    "messages": 533,
+    "index_seconds": 0.05064464999941265
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "b86304ba",
+    "messages": 456,
+    "index_seconds": 0.04687494700010575
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "d52b4f67",
+    "messages": 479,
+    "index_seconds": 0.045678317999772844
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "25e5aa4f",
+    "messages": 506,
+    "index_seconds": 0.0488090499993632
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "caf9ead2",
+    "messages": 466,
+    "index_seconds": 0.3405898179998985
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "8550ddae",
+    "messages": 453,
+    "index_seconds": 0.05216050600029121
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "60d45044",
+    "messages": 541,
+    "index_seconds": 0.05191271100011363
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "3f1e9474",
+    "messages": 515,
+    "index_seconds": 0.05200739499923657
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "86b68151",
+    "messages": 485,
+    "index_seconds": 0.047908808999636676
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "577d4d32",
+    "messages": 487,
+    "index_seconds": 0.055444870999963314
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "ec81a493",
+    "messages": 495,
+    "index_seconds": 0.04904244299996208
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "15745da0",
+    "messages": 474,
+    "index_seconds": 0.0493540639999992
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "e01b8e2f",
+    "messages": 523,
+    "index_seconds": 0.048268442999869876
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "bc8a6e93",
+    "messages": 537,
+    "index_seconds": 0.05165543200018874
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "ccb36322",
+    "messages": 471,
+    "index_seconds": 0.04696621499988396
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "001be529",
+    "messages": 514,
+    "index_seconds": 0.049057845999413985
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "b320f3f8",
+    "messages": 463,
+    "index_seconds": 0.04648583800008055
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "19b5f2b3",
+    "messages": 482,
+    "index_seconds": 0.046381340000152704
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "4fd1909e",
+    "messages": 554,
+    "index_seconds": 0.04975686299985682
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "545bd2b5",
+    "messages": 461,
+    "index_seconds": 0.04463221599962708
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "8a137a7f",
+    "messages": 512,
+    "index_seconds": 0.047138133999396814
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "76d63226",
+    "messages": 489,
+    "index_seconds": 0.047358427999824926
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "86f00804",
+    "messages": 503,
+    "index_seconds": 0.04855680900072912
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "8e9d538c",
+    "messages": 486,
+    "index_seconds": 0.05118063500049175
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "311778f1",
+    "messages": 500,
+    "index_seconds": 0.052173325999319786
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "c19f7a0b",
+    "messages": 478,
+    "index_seconds": 0.04634862999955658
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "4100d0a0",
+    "messages": 523,
+    "index_seconds": 0.04637079399981303
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "29f2956b",
+    "messages": 496,
+    "index_seconds": 0.04376107999996748
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "1faac195",
+    "messages": 494,
+    "index_seconds": 0.04894681899986608
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "faba32e5",
+    "messages": 473,
+    "index_seconds": 0.04413226999986364
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "f4f1d8a4",
+    "messages": 585,
+    "index_seconds": 0.05104813399975683
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "c14c00dd",
+    "messages": 492,
+    "index_seconds": 0.1048276840001563
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "36580ce8",
+    "messages": 545,
+    "index_seconds": 0.051126303000273765
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "3d86fd0a",
+    "messages": 526,
+    "index_seconds": 0.050766929000019445
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "a82c026e",
+    "messages": 476,
+    "index_seconds": 0.04412764400058222
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "0a995998",
+    "messages": 484,
+    "index_seconds": 0.04478699100036465
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "6d550036",
+    "messages": 505,
+    "index_seconds": 0.04342283799996949
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_59c863d7",
+    "messages": 481,
+    "index_seconds": 0.04775614800018957
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "b5ef892d",
+    "messages": 516,
+    "index_seconds": 0.05279813000015565
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "e831120c",
+    "messages": 481,
+    "index_seconds": 0.04839290100062499
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "3a704032",
+    "messages": 479,
+    "index_seconds": 0.04383913799938455
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_d84a3211",
+    "messages": 495,
+    "index_seconds": 0.04494257500027743
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "aae3761f",
+    "messages": 485,
+    "index_seconds": 0.05092802299986943
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_f2262a51",
+    "messages": 479,
+    "index_seconds": 0.047616747999200015
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "dd2973ad",
+    "messages": 515,
+    "index_seconds": 0.051482752000083565
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "c4a1ceb8",
+    "messages": 488,
+    "index_seconds": 0.05287066899927595
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_a56e767c",
+    "messages": 477,
+    "index_seconds": 0.05144431299959251
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "6cb6f249",
+    "messages": 470,
+    "index_seconds": 0.055647217000114324
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "46a3abf7",
+    "messages": 503,
+    "index_seconds": 0.05150259099991672
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "36b9f61e",
+    "messages": 490,
+    "index_seconds": 0.049066428999140044
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "28dc39ac",
+    "messages": 431,
+    "index_seconds": 0.04751501500049926
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_2f8be40d",
+    "messages": 474,
+    "index_seconds": 0.04677150099996652
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "2e6d26dc",
+    "messages": 494,
+    "index_seconds": 0.08394463100012217
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_15e38248",
+    "messages": 470,
+    "index_seconds": 0.047517687999970804
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "88432d0a",
+    "messages": 479,
+    "index_seconds": 0.054474563999974634
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "80ec1f4f",
+    "messages": 487,
+    "index_seconds": 0.047099145999709435
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "d23cf73b",
+    "messages": 512,
+    "index_seconds": 0.049495328000375594
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_7fce9456",
+    "messages": 493,
+    "index_seconds": 0.045682273999773315
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "d682f1a2",
+    "messages": 469,
+    "index_seconds": 0.045917047999864735
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "7024f17c",
+    "messages": 483,
+    "index_seconds": 0.047113577000345686
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_5501fe77",
+    "messages": 516,
+    "index_seconds": 0.04876659599995037
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_2ba83207",
+    "messages": 502,
+    "index_seconds": 0.04808401500031323
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "2318644b",
+    "messages": 523,
+    "index_seconds": 0.047981099000026006
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "2ce6a0f2",
+    "messages": 480,
+    "index_seconds": 0.05323007900005905
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_d12ceb0e",
+    "messages": 477,
+    "index_seconds": 0.04815722500006814
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "00ca467f",
+    "messages": 486,
+    "index_seconds": 0.04924064300030295
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "b3c15d39",
+    "messages": 502,
+    "index_seconds": 0.04797894500006805
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_31ff4165",
+    "messages": 457,
+    "index_seconds": 0.04671026800042455
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "eeda8a6d",
+    "messages": 513,
+    "index_seconds": 0.049968624000030104
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "2788b940",
+    "messages": 475,
+    "index_seconds": 0.04430893799963087
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "60bf93ed",
+    "messages": 494,
+    "index_seconds": 0.05061357800059341
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "9d25d4e0",
+    "messages": 493,
+    "index_seconds": 0.04549364899958164
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "129d1232",
+    "messages": 451,
+    "index_seconds": 0.04667549500027235
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "60472f9c",
+    "messages": 454,
+    "index_seconds": 0.04297549299917591
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_194be4b3",
+    "messages": 474,
+    "index_seconds": 0.047747304999575135
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "a9f6b44c",
+    "messages": 476,
+    "index_seconds": 0.04976970200004871
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "d851d5ba",
+    "messages": 533,
+    "index_seconds": 0.050320934999945166
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "5a7937c8",
+    "messages": 419,
+    "index_seconds": 0.048980593999658595
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_ab202e7f",
+    "messages": 481,
+    "index_seconds": 0.050248946000465367
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_e05b82a6",
+    "messages": 497,
+    "index_seconds": 0.04804881099971681
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_731e37d7",
+    "messages": 525,
+    "index_seconds": 0.05155563199969038
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "edced276",
+    "messages": 482,
+    "index_seconds": 0.050975084000128845
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "10d9b85a",
+    "messages": 466,
+    "index_seconds": 0.04637106500013033
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "e3038f8c",
+    "messages": 458,
+    "index_seconds": 0.04804615700049908
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "2b8f3739",
+    "messages": 491,
+    "index_seconds": 0.05795799000043189
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "1a8a66a6",
+    "messages": 501,
+    "index_seconds": 0.04784960899996804
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "c2ac3c61",
+    "messages": 528,
+    "index_seconds": 0.0518456600002537
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "bf659f65",
+    "messages": 516,
+    "index_seconds": 0.05196523099948536
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_372c3eed",
+    "messages": 465,
+    "index_seconds": 0.04899127599946951
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_2f91af09",
+    "messages": 515,
+    "index_seconds": 0.05148997200012673
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "81507db6",
+    "messages": 510,
+    "index_seconds": 0.04806277199986653
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "8a2466db",
+    "messages": 508,
+    "index_seconds": 0.04828838400044333
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "06878be2",
+    "messages": 443,
+    "index_seconds": 0.04461779499979457
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "75832dbd",
+    "messages": 474,
+    "index_seconds": 0.046042076999583514
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "0edc2aef",
+    "messages": 475,
+    "index_seconds": 0.04542545499953121
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "35a27287",
+    "messages": 519,
+    "index_seconds": 0.046840703999805555
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "32260d93",
+    "messages": 524,
+    "index_seconds": 0.04765735900036816
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "195a1a1b",
+    "messages": 515,
+    "index_seconds": 0.05090272500001447
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "afdc33df",
+    "messages": 502,
+    "index_seconds": 0.0462412899996707
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "caf03d32",
+    "messages": 493,
+    "index_seconds": 0.04438032799953362
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "54026fce",
+    "messages": 472,
+    "index_seconds": 0.04564036200008559
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "06f04340",
+    "messages": 503,
+    "index_seconds": 0.04677972499939642
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "6b7dfb22",
+    "messages": 471,
+    "index_seconds": 0.04680827700030932
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "1a1907b4",
+    "messages": 532,
+    "index_seconds": 0.051955818999886105
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "09d032c9",
+    "messages": 481,
+    "index_seconds": 0.04555631499988522
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "38146c39",
+    "messages": 538,
+    "index_seconds": 0.04954578599972592
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "d24813b1",
+    "messages": 485,
+    "index_seconds": 0.04424466199998278
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "57f827a0",
+    "messages": 495,
+    "index_seconds": 0.04610499499995058
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "95228167",
+    "messages": 507,
+    "index_seconds": 0.04878213100073481
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "505af2f5",
+    "messages": 501,
+    "index_seconds": 0.04488594100075716
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "75f70248",
+    "messages": 466,
+    "index_seconds": 0.04687086200010526
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "d6233ab6",
+    "messages": 437,
+    "index_seconds": 0.04645112800062634
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "1da05512",
+    "messages": 462,
+    "index_seconds": 0.04878613700020651
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "fca70973",
+    "messages": 442,
+    "index_seconds": 0.041175291999934416
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "b6025781",
+    "messages": 460,
+    "index_seconds": 0.04383725699972274
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "a89d7624",
+    "messages": 496,
+    "index_seconds": 0.04705212599947117
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "b0479f84",
+    "messages": 502,
+    "index_seconds": 0.0524916590002249
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "1d4e3b97",
+    "messages": 474,
+    "index_seconds": 0.04877883600056521
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "07b6f563",
+    "messages": 524,
+    "index_seconds": 0.054536360000383866
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "1c0ddc50",
+    "messages": 548,
+    "index_seconds": 0.05516263700064883
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "0a34ad58",
+    "messages": 485,
+    "index_seconds": 0.046439769999778946
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "d3ab962e",
+    "messages": 530,
+    "index_seconds": 0.0494619490000332
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "2311e44b",
+    "messages": 493,
+    "index_seconds": 0.0483980809995046
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "cc06de0d",
+    "messages": 462,
+    "index_seconds": 0.04699499999969703
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "a11281a2",
+    "messages": 457,
+    "index_seconds": 0.050953373999618634
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "4f54b7c9",
+    "messages": 491,
+    "index_seconds": 0.04335161200015136
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "85fa3a3f",
+    "messages": 493,
+    "index_seconds": 0.04545070499989379
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "9aaed6a3",
+    "messages": 541,
+    "index_seconds": 0.049565174999770534
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "1f2b8d4f",
+    "messages": 522,
+    "index_seconds": 0.048710453000239795
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "e6041065",
+    "messages": 493,
+    "index_seconds": 0.04752554200058512
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "51c32626",
+    "messages": 490,
+    "index_seconds": 0.04508398100006161
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "d905b33f",
+    "messages": 504,
+    "index_seconds": 0.05277948399998422
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "7405e8b1",
+    "messages": 469,
+    "index_seconds": 0.04782932099988102
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "f35224e0",
+    "messages": 515,
+    "index_seconds": 0.052671852000457875
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "6456829e",
+    "messages": 488,
+    "index_seconds": 0.04456454599949211
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "a4996e51",
+    "messages": 512,
+    "index_seconds": 0.04973991799943178
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "3c1045c8",
+    "messages": 542,
+    "index_seconds": 0.05105129100047634
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "60036106",
+    "messages": 483,
+    "index_seconds": 0.044903727999553666
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "681a1674",
+    "messages": 476,
+    "index_seconds": 0.047727627999847755
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "e25c3b8d",
+    "messages": 530,
+    "index_seconds": 0.05153233800047019
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "4adc0475",
+    "messages": 490,
+    "index_seconds": 0.04840540100030921
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "4bc144e2",
+    "messages": 530,
+    "index_seconds": 0.04869677200076694
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "ef66a6e5",
+    "messages": 445,
+    "index_seconds": 0.04688582499966287
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "5025383b",
+    "messages": 446,
+    "index_seconds": 0.048840939999536204
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "a1cc6108",
+    "messages": 492,
+    "index_seconds": 0.04560698200020852
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "9ee3ecd6",
+    "messages": 476,
+    "index_seconds": 0.07786414800011698
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "3fdac837",
+    "messages": 453,
+    "index_seconds": 0.04838545199982036
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "91b15a6e",
+    "messages": 489,
+    "index_seconds": 0.04785532999994757
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "27016adc",
+    "messages": 491,
+    "index_seconds": 0.04821508399982122
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "720133ac",
+    "messages": 466,
+    "index_seconds": 0.047817452999879606
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "77eafa52",
+    "messages": 527,
+    "index_seconds": 0.05110052599957271
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "8979f9ec",
+    "messages": 469,
+    "index_seconds": 0.052403024999875925
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "0100672e",
+    "messages": 486,
+    "index_seconds": 0.049939690999963204
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "a96c20ee",
+    "messages": 489,
+    "index_seconds": 0.047900358000333654
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "92a0aa75",
+    "messages": 455,
+    "index_seconds": 0.04732388699994772
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "3fe836c9",
+    "messages": 449,
+    "index_seconds": 0.04836445899945829
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "1c549ce4",
+    "messages": 462,
+    "index_seconds": 0.050577535000229545
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "6c49646a",
+    "messages": 429,
+    "index_seconds": 0.04527948699978879
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "1192316e",
+    "messages": 467,
+    "index_seconds": 0.05139436999979807
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "0ea62687",
+    "messages": 460,
+    "index_seconds": 0.048792948000482284
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "67e0d0f2",
+    "messages": 510,
+    "index_seconds": 0.047278928000196174
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "bb7c3b45",
+    "messages": 495,
+    "index_seconds": 0.046407951999754005
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "ba358f49",
+    "messages": 409,
+    "index_seconds": 0.04649453300044115
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "61f8c8f8",
+    "messages": 459,
+    "index_seconds": 0.0455564649992084
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "60159905",
+    "messages": 448,
+    "index_seconds": 0.04678375000003143
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "ef9cf60a",
+    "messages": 522,
+    "index_seconds": 0.05040212000039901
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "73d42213",
+    "messages": 516,
+    "index_seconds": 0.0454608410000219
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "bc149d6b",
+    "messages": 467,
+    "index_seconds": 0.044619088000217744
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "099778bb",
+    "messages": 466,
+    "index_seconds": 0.04337805200066214
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "09ba9854",
+    "messages": 479,
+    "index_seconds": 0.04945219499950326
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "d6062bb9",
+    "messages": 532,
+    "index_seconds": 0.05486019900035899
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "157a136e",
+    "messages": 503,
+    "index_seconds": 0.0548489820002942
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "c18a7dc8",
+    "messages": 509,
+    "index_seconds": 0.05596475299989834
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "a3332713",
+    "messages": 467,
+    "index_seconds": 0.05088842500026658
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "55241a1f",
+    "messages": 514,
+    "index_seconds": 0.04800956300005055
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "a08a253f",
+    "messages": 560,
+    "index_seconds": 0.052396549999684794
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "f0e564bc",
+    "messages": 508,
+    "index_seconds": 0.049594909999541414
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "078150f1",
+    "messages": 551,
+    "index_seconds": 0.048695170000428334
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "8cf4d046",
+    "messages": 468,
+    "index_seconds": 0.0507564760000605
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "a346bb18",
+    "messages": 478,
+    "index_seconds": 0.047840547999840055
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "37f165cf",
+    "messages": 567,
+    "index_seconds": 0.047235072999683325
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "8e91e7d9",
+    "messages": 498,
+    "index_seconds": 0.04684782799995446
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "87f22b4a",
+    "messages": 474,
+    "index_seconds": 0.045738731000710686
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "e56a43b9",
+    "messages": 448,
+    "index_seconds": 0.04539159599971754
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "efc3f7c2",
+    "messages": 497,
+    "index_seconds": 0.05583493699941755
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "21d02d0d",
+    "messages": 497,
+    "index_seconds": 0.05755538900029933
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_59149c77",
+    "messages": 484,
+    "index_seconds": 0.049024437999833026
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_f49edff3",
+    "messages": 498,
+    "index_seconds": 0.049673257999529596
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "71017276",
+    "messages": 614,
+    "index_seconds": 0.05778491999990365
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "b46e15ed",
+    "messages": 478,
+    "index_seconds": 0.04617859599966323
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_fa19884c",
+    "messages": 507,
+    "index_seconds": 0.04568469900004857
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "0bc8ad92",
+    "messages": 443,
+    "index_seconds": 0.044591577000574034
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "af082822",
+    "messages": 495,
+    "index_seconds": 0.04719513200052461
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_4929293a",
+    "messages": 486,
+    "index_seconds": 0.045263543000146456
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_b5700ca9",
+    "messages": 537,
+    "index_seconds": 0.04808857300031377
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "9a707b81",
+    "messages": 530,
+    "index_seconds": 0.04811209899980895
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_1d4ab0c9",
+    "messages": 483,
+    "index_seconds": 0.044230581000192615
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_e072b769",
+    "messages": 444,
+    "index_seconds": 0.0441223469997567
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "0db4c65d",
+    "messages": 462,
+    "index_seconds": 0.04497789099968941
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_1d80365e",
+    "messages": 517,
+    "index_seconds": 0.0837835210004414
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_7f6b06db",
+    "messages": 558,
+    "index_seconds": 0.04962362399965059
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_6dc9b45b",
+    "messages": 565,
+    "index_seconds": 0.045997080999768514
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_8279ba02",
+    "messages": 489,
+    "index_seconds": 0.04751729899999191
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_18c2b244",
+    "messages": 495,
+    "index_seconds": 0.048207862999333884
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_a1b77f9c",
+    "messages": 498,
+    "index_seconds": 0.044704548000481736
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_1916e0ea",
+    "messages": 533,
+    "index_seconds": 0.052535284999976284
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_7a0daae1",
+    "messages": 561,
+    "index_seconds": 0.04923494699960429
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_468eb063",
+    "messages": 498,
+    "index_seconds": 0.04776028700052848
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_7abb270c",
+    "messages": 467,
+    "index_seconds": 0.042903595000097994
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_1e4a8aeb",
+    "messages": 479,
+    "index_seconds": 0.04752666400054295
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_4fc4f797",
+    "messages": 472,
+    "index_seconds": 0.04848837800000183
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "4dfccbf7",
+    "messages": 521,
+    "index_seconds": 0.04822193500058347
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_61e13b3c",
+    "messages": 467,
+    "index_seconds": 0.04494973900000332
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_45189cb4",
+    "messages": 501,
+    "index_seconds": 0.04745647799973085
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "2ebe6c90",
+    "messages": 485,
+    "index_seconds": 0.04430308199971478
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_e061b84f",
+    "messages": 467,
+    "index_seconds": 0.042900411000118766
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "370a8ff4",
+    "messages": 498,
+    "index_seconds": 0.04760824799996044
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_d6585ce8",
+    "messages": 491,
+    "index_seconds": 0.04471821899915085
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_4ef30696",
+    "messages": 520,
+    "index_seconds": 0.048268225999891
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_ec93e27f",
+    "messages": 516,
+    "index_seconds": 0.04735750800045935
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "6e984301",
+    "messages": 513,
+    "index_seconds": 0.048387876000560937
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "8077ef71",
+    "messages": 554,
+    "index_seconds": 0.046585101000346185
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_f420262c",
+    "messages": 495,
+    "index_seconds": 0.04696040900034859
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_8e165409",
+    "messages": 480,
+    "index_seconds": 0.046461413999168144
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_74aed68e",
+    "messages": 480,
+    "index_seconds": 0.04689138399953663
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "bcbe585f",
+    "messages": 453,
+    "index_seconds": 0.04337401599968871
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_21adecb5",
+    "messages": 511,
+    "index_seconds": 0.04893915000047855
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "5e1b23de",
+    "messages": 445,
+    "index_seconds": 0.04550850299983722
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_98f46fc6",
+    "messages": 490,
+    "index_seconds": 0.04563549500016961
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_af6db32f",
+    "messages": 476,
+    "index_seconds": 0.044512106999718526
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "eac54adc",
+    "messages": 464,
+    "index_seconds": 0.048246402000586386
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_7ddcf75f",
+    "messages": 480,
+    "index_seconds": 0.04624789100034832
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_a2d1d1f6",
+    "messages": 476,
+    "index_seconds": 0.04668650400071783
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_85da3956",
+    "messages": 505,
+    "index_seconds": 0.045430795999891416
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_b0863698",
+    "messages": 457,
+    "index_seconds": 0.044836797999778355
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_68e94287",
+    "messages": 491,
+    "index_seconds": 0.04429045199958637
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_e414231e",
+    "messages": 507,
+    "index_seconds": 0.045048808000501595
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_7ca326fa",
+    "messages": 516,
+    "index_seconds": 0.048103996999998344
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_7bc6cf22",
+    "messages": 519,
+    "index_seconds": 0.04929944400009845
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "2ebe6c92",
+    "messages": 487,
+    "index_seconds": 0.046279378000690485
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_e061b84g",
+    "messages": 566,
+    "index_seconds": 0.04907902099967032
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "71017277",
+    "messages": 493,
+    "index_seconds": 0.05032997199941747
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "b46e15ee",
+    "messages": 457,
+    "index_seconds": 0.04720308499963721
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_d6585ce9",
+    "messages": 437,
+    "index_seconds": 0.04130866499963304
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_1e4a8aec",
+    "messages": 498,
+    "index_seconds": 0.047654418000092846
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_f420262d",
+    "messages": 454,
+    "index_seconds": 0.05176178600049752
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_59149c78",
+    "messages": 497,
+    "index_seconds": 0.04897376200005965
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_e414231f",
+    "messages": 490,
+    "index_seconds": 0.04473576500004128
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_4929293b",
+    "messages": 469,
+    "index_seconds": 0.044693271000141976
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_468eb064",
+    "messages": 460,
+    "index_seconds": 0.045539199999439006
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_fa19884d",
+    "messages": 556,
+    "index_seconds": 0.049402489000385685
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "9a707b82",
+    "messages": 532,
+    "index_seconds": 0.047494995999841194
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "eac54add",
+    "messages": 476,
+    "index_seconds": 0.04489024899976357
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "4dfccbf8",
+    "messages": 455,
+    "index_seconds": 0.04963579299965204
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "0bc8ad93",
+    "messages": 486,
+    "index_seconds": 0.04444572699958371
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "6e984302",
+    "messages": 460,
+    "index_seconds": 0.0795751220002785
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_8279ba03",
+    "messages": 500,
+    "index_seconds": 0.04608880099931412
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_b5700ca0",
+    "messages": 500,
+    "index_seconds": 0.04591432699999132
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_68e94288",
+    "messages": 459,
+    "index_seconds": 0.04272328299975925
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_2655b836",
+    "messages": 465,
+    "index_seconds": 0.0433571009998559
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_2487a7cb",
+    "messages": 495,
+    "index_seconds": 0.04588713600060146
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_76048e76",
+    "messages": 482,
+    "index_seconds": 0.045836839999537915
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_2312f94c",
+    "messages": 467,
+    "index_seconds": 0.04393880000043282
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "0bb5a684",
+    "messages": 463,
+    "index_seconds": 0.04398712400052318
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "08f4fc43",
+    "messages": 480,
+    "index_seconds": 0.04493993500000215
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "2c63a862",
+    "messages": 529,
+    "index_seconds": 0.04718415699971956
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_385a5000",
+    "messages": 493,
+    "index_seconds": 0.04631166699982714
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "2a1811e2",
+    "messages": 479,
+    "index_seconds": 0.049071359000663506
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "bbf86515",
+    "messages": 487,
+    "index_seconds": 0.046168681000381184
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_5dcc0aab",
+    "messages": 547,
+    "index_seconds": 0.054753918999267626
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_0b2f1d21",
+    "messages": 497,
+    "index_seconds": 0.045481662999918626
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "f0853d11",
+    "messages": 500,
+    "index_seconds": 0.04588881799918454
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_6ed717ea",
+    "messages": 489,
+    "index_seconds": 0.045258014999490115
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_70e84552",
+    "messages": 467,
+    "index_seconds": 0.04407512699981453
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "a3838d2b",
+    "messages": 484,
+    "index_seconds": 0.045183911999629345
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_93159ced",
+    "messages": 444,
+    "index_seconds": 0.043649412999911874
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_2d58bcd6",
+    "messages": 483,
+    "index_seconds": 0.04586689500047214
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_65aabe59",
+    "messages": 452,
+    "index_seconds": 0.04199767599948245
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "982b5123",
+    "messages": 473,
+    "index_seconds": 0.043404001999988395
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "b9cfe692",
+    "messages": 492,
+    "index_seconds": 0.04378298499977973
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_4edbafa2",
+    "messages": 459,
+    "index_seconds": 0.043948405000264756
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "c8090214",
+    "messages": 459,
+    "index_seconds": 0.045553151000603975
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_483dd43c",
+    "messages": 532,
+    "index_seconds": 0.04923290300030203
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "e4e14d04",
+    "messages": 461,
+    "index_seconds": 0.044271232999562926
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "c9f37c46",
+    "messages": 511,
+    "index_seconds": 0.04680654500043602
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_2c50253f",
+    "messages": 591,
+    "index_seconds": 0.053924375999486074
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "dcfa8644",
+    "messages": 470,
+    "index_seconds": 0.0433373619998747
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_b4a80587",
+    "messages": 542,
+    "index_seconds": 0.04823775899967586
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_9a159967",
+    "messages": 470,
+    "index_seconds": 0.04531503099951806
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "cc6d1ec1",
+    "messages": 457,
+    "index_seconds": 0.04412076600056025
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_8c8961ae",
+    "messages": 485,
+    "index_seconds": 0.04611054300039541
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_d9af6064",
+    "messages": 534,
+    "index_seconds": 0.04721011599940539
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_7de946e7",
+    "messages": 533,
+    "index_seconds": 0.04783578199931071
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "d01c6aa8",
+    "messages": 429,
+    "index_seconds": 0.042448838999916916
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "993da5e2",
+    "messages": 486,
+    "index_seconds": 0.04511100299987447
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "a3045048",
+    "messages": 584,
+    "index_seconds": 0.0567094759999236
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_d31cdae3",
+    "messages": 480,
+    "index_seconds": 0.04806175299927418
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_cd90e484",
+    "messages": 508,
+    "index_seconds": 0.05332820400053606
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_88806d6e",
+    "messages": 493,
+    "index_seconds": 0.04622780099998636
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_4cd9eba1",
+    "messages": 500,
+    "index_seconds": 0.047196495000207506
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_93f6379c",
+    "messages": 445,
+    "index_seconds": 0.043043847999797435
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "b29f3365",
+    "messages": 494,
+    "index_seconds": 0.04394715400030691
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_2f56ae70",
+    "messages": 458,
+    "index_seconds": 0.04600724799911404
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "6613b389",
+    "messages": 452,
+    "index_seconds": 0.043772680000074615
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_78cf46a3",
+    "messages": 505,
+    "index_seconds": 0.04562123400046403
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_0a05b494",
+    "messages": 506,
+    "index_seconds": 0.046022341000025335
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_1a1dc16d",
+    "messages": 453,
+    "index_seconds": 0.04307528500066837
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_2f584639",
+    "messages": 472,
+    "index_seconds": 0.04503280400058429
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_213fd887",
+    "messages": 446,
+    "index_seconds": 0.04157542800021474
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_5438fa52",
+    "messages": 513,
+    "index_seconds": 0.05037038299997221
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_c27434e8",
+    "messages": 500,
+    "index_seconds": 0.051782378000098106
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "gpt4_fe651585",
+    "messages": 471,
+    "index_seconds": 0.07353281700034131
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "8c18457d",
+    "messages": 434,
+    "index_seconds": 0.042276617999959853
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "6a1eabeb",
+    "messages": 413,
+    "index_seconds": 0.04189077499995619
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "6aeb4375",
+    "messages": 468,
+    "index_seconds": 0.04499635899992427
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "830ce83f",
+    "messages": 511,
+    "index_seconds": 0.044538236999869696
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "852ce960",
+    "messages": 396,
+    "index_seconds": 0.04431524899973738
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "945e3d21",
+    "messages": 489,
+    "index_seconds": 0.04741654900044523
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "d7c942c3",
+    "messages": 520,
+    "index_seconds": 0.048898933000600664
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "71315a70",
+    "messages": 514,
+    "index_seconds": 0.048061997999866435
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "89941a93",
+    "messages": 528,
+    "index_seconds": 0.04848112299987406
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "ce6d2d27",
+    "messages": 521,
+    "index_seconds": 0.046765969000261975
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "9ea5eabc",
+    "messages": 537,
+    "index_seconds": 0.04931490200033295
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "07741c44",
+    "messages": 513,
+    "index_seconds": 0.05138546200032579
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "a1eacc2a",
+    "messages": 474,
+    "index_seconds": 0.04645212499963236
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "184da446",
+    "messages": 473,
+    "index_seconds": 0.043328452999958245
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "031748ae",
+    "messages": 494,
+    "index_seconds": 0.0514496389996566
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "4d6b87c8",
+    "messages": 516,
+    "index_seconds": 0.04910144000041328
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "0f05491a",
+    "messages": 489,
+    "index_seconds": 0.04591978999997082
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "08e075c7",
+    "messages": 484,
+    "index_seconds": 0.04689939099989715
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "f9e8c073",
+    "messages": 504,
+    "index_seconds": 0.04971337500046502
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "41698283",
+    "messages": 476,
+    "index_seconds": 0.04386775800048781
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "2698e78f",
+    "messages": 478,
+    "index_seconds": 0.046954753999671084
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "b6019101",
+    "messages": 510,
+    "index_seconds": 0.04835616300078982
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "45dc21b6",
+    "messages": 485,
+    "index_seconds": 0.04380232800031081
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "5a4f22c0",
+    "messages": 487,
+    "index_seconds": 0.04506245299944567
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "6071bd76",
+    "messages": 482,
+    "index_seconds": 0.047176970999316836
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "e493bb7c",
+    "messages": 506,
+    "index_seconds": 0.04955509499995969
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "618f13b2",
+    "messages": 506,
+    "index_seconds": 0.052389299999958894
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "72e3ee87",
+    "messages": 496,
+    "index_seconds": 0.08675632600079553
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "c4ea545c",
+    "messages": 490,
+    "index_seconds": 0.0517693629999485
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "01493427",
+    "messages": 487,
+    "index_seconds": 0.04928311500043492
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "6a27ffc2",
+    "messages": 493,
+    "index_seconds": 0.04670700000042416
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "2133c1b5",
+    "messages": 523,
+    "index_seconds": 0.05042404899995745
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "18bc8abd",
+    "messages": 436,
+    "index_seconds": 0.04324458599967329
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "db467c8c",
+    "messages": 475,
+    "index_seconds": 0.045250248000229476
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "7a87bd0c",
+    "messages": 506,
+    "index_seconds": 0.04829389899987291
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "e61a7584",
+    "messages": 496,
+    "index_seconds": 0.046141674999489624
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "1cea1afa",
+    "messages": 485,
+    "index_seconds": 0.04705467599978874
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "ed4ddc30",
+    "messages": 543,
+    "index_seconds": 0.05015514299975621
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "8fb83627",
+    "messages": 485,
+    "index_seconds": 0.051056546000836533
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "b01defab",
+    "messages": 503,
+    "index_seconds": 0.05182387600052607
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "22d2cb42",
+    "messages": 473,
+    "index_seconds": 0.04887768699973094
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "0e4e4c46",
+    "messages": 481,
+    "index_seconds": 0.05161200499969709
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "4b24c848",
+    "messages": 514,
+    "index_seconds": 0.05276303599930543
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "7e974930",
+    "messages": 502,
+    "index_seconds": 0.048504577999665344
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "603deb26",
+    "messages": 472,
+    "index_seconds": 0.05038041300031182
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "59524333",
+    "messages": 528,
+    "index_seconds": 0.04872604200045316
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "5831f84d",
+    "messages": 422,
+    "index_seconds": 0.04240297300020757
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "eace081b",
+    "messages": 489,
+    "index_seconds": 0.051774599999589554
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "affe2881",
+    "messages": 481,
+    "index_seconds": 0.048889269000028435
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "50635ada",
+    "messages": 531,
+    "index_seconds": 0.05153885399977298
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "e66b632c",
+    "messages": 506,
+    "index_seconds": 0.049881519000336993
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "0ddfec37",
+    "messages": 483,
+    "index_seconds": 0.047108976999879815
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "f685340e",
+    "messages": 424,
+    "index_seconds": 0.04396705799990741
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "cc5ded98",
+    "messages": 493,
+    "index_seconds": 0.04888508299973182
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "dfde3500",
+    "messages": 480,
+    "index_seconds": 0.08105910700032837
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "69fee5aa",
+    "messages": 483,
+    "index_seconds": 0.04952433900052711
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "7401057b",
+    "messages": 446,
+    "index_seconds": 0.04588744200009387
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "cf22b7bf",
+    "messages": 550,
+    "index_seconds": 0.05001917699974001
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "a2f3aa27",
+    "messages": 448,
+    "index_seconds": 0.048476153999217786
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "c7dc5443",
+    "messages": 478,
+    "index_seconds": 0.045501378000153636
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "06db6396",
+    "messages": 479,
+    "index_seconds": 0.048886313999901176
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "3ba21379",
+    "messages": 431,
+    "index_seconds": 0.044093288999647484
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "9bbe84a2",
+    "messages": 459,
+    "index_seconds": 0.045561529000224255
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "10e09553",
+    "messages": 472,
+    "index_seconds": 0.04664491700077633
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "dad224aa",
+    "messages": 521,
+    "index_seconds": 0.054623558000457706
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "ba61f0b9",
+    "messages": 454,
+    "index_seconds": 0.04533067000011215
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "42ec0761",
+    "messages": 521,
+    "index_seconds": 0.05452157400031865
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "5c40ec5b",
+    "messages": 479,
+    "index_seconds": 0.05054807700071251
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "c6853660",
+    "messages": 477,
+    "index_seconds": 0.046564985000259185
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "26bdc477",
+    "messages": 498,
+    "index_seconds": 0.048998784000104934
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "0977f2af",
+    "messages": 484,
+    "index_seconds": 0.046055669000452326
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "89941a94",
+    "messages": 523,
+    "index_seconds": 0.05371297500005312
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "07741c45",
+    "messages": 527,
+    "index_seconds": 0.0483780000004117
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "7161e7e2",
+    "messages": 550,
+    "index_seconds": 0.04876304200024606
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "c4f10528",
+    "messages": 485,
+    "index_seconds": 0.04912637100005668
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "89527b6b",
+    "messages": 467,
+    "index_seconds": 0.044900573999257176
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "e9327a54",
+    "messages": 533,
+    "index_seconds": 0.049873529999786115
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "4c36ccef",
+    "messages": 521,
+    "index_seconds": 0.04913700700035406
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "6ae235be",
+    "messages": 454,
+    "index_seconds": 0.047534254000311194
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "7e00a6cb",
+    "messages": 564,
+    "index_seconds": 0.05480557600003522
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "1903aded",
+    "messages": 486,
+    "index_seconds": 0.04837520500041137
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "ceb54acb",
+    "messages": 493,
+    "index_seconds": 0.054394394000155444
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "f523d9fe",
+    "messages": 484,
+    "index_seconds": 0.05245526299950143
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "0e5e2d1a",
+    "messages": 450,
+    "index_seconds": 0.04405682800006616
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "fea54f57",
+    "messages": 527,
+    "index_seconds": 0.04993199899945466
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "cc539528",
+    "messages": 496,
+    "index_seconds": 0.04805839700020442
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "dc439ea3",
+    "messages": 476,
+    "index_seconds": 0.0466434379995917
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "18dcd5a5",
+    "messages": 503,
+    "index_seconds": 0.049569070999496034
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "488d3006",
+    "messages": 509,
+    "index_seconds": 0.04869608100034384
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "58470ed2",
+    "messages": 471,
+    "index_seconds": 0.045260245999998006
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "8cf51dda",
+    "messages": 454,
+    "index_seconds": 0.0480887330004407
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "1d4da289",
+    "messages": 506,
+    "index_seconds": 0.049290488999758963
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "8464fc84",
+    "messages": 484,
+    "index_seconds": 0.049694280000039726
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "8aef76bc",
+    "messages": 492,
+    "index_seconds": 0.05460038499950315
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "71a3fd6b",
+    "messages": 439,
+    "index_seconds": 0.04891326899996784
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "2bf43736",
+    "messages": 478,
+    "index_seconds": 0.05026868799996009
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "70b3e69b",
+    "messages": 495,
+    "index_seconds": 0.049083036000411084
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "8752c811",
+    "messages": 493,
+    "index_seconds": 0.04659915100000944
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "3249768e",
+    "messages": 475,
+    "index_seconds": 0.05350832500062097
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "1b9b7252",
+    "messages": 466,
+    "index_seconds": 0.04850388999966526
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "1568498a",
+    "messages": 478,
+    "index_seconds": 0.05365071999949578
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "6222b6eb",
+    "messages": 497,
+    "index_seconds": 0.04989887900046597
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "e8a79c70",
+    "messages": 483,
+    "index_seconds": 0.049950466999689525
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "d596882b",
+    "messages": 474,
+    "index_seconds": 0.049399733999962336
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "e3fc4d6e",
+    "messages": 519,
+    "index_seconds": 0.06394145700051013
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "51b23612",
+    "messages": 481,
+    "index_seconds": 0.04966583700024785
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "3e321797",
+    "messages": 490,
+    "index_seconds": 0.054397629000050074
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "e982271f",
+    "messages": 589,
+    "index_seconds": 0.0911979379998229
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "352ab8bd",
+    "messages": 539,
+    "index_seconds": 0.05626345000018773
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "fca762bc",
+    "messages": 459,
+    "index_seconds": 0.05148981399997865
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "7a8d0b71",
+    "messages": 489,
+    "index_seconds": 0.06135376499969425
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "a40e080f",
+    "messages": 529,
+    "index_seconds": 0.04842074399948615
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "8b9d4367",
+    "messages": 537,
+    "index_seconds": 0.05833589099984238
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "5809eb10",
+    "messages": 606,
+    "index_seconds": 0.057851008999932674
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "41275add",
+    "messages": 530,
+    "index_seconds": 0.05289224300031492
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "4388e9dd",
+    "messages": 477,
+    "index_seconds": 0.05499041399980342
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "4baee567",
+    "messages": 514,
+    "index_seconds": 0.05557390600006329
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "561fabcd",
+    "messages": 495,
+    "index_seconds": 0.05381355500048812
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "b759caee",
+    "messages": 516,
+    "index_seconds": 0.05409361900001386
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "ac031881",
+    "messages": 529,
+    "index_seconds": 0.054145312000400736
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "28bcfaac",
+    "messages": 500,
+    "index_seconds": 0.05063057499955903
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "16c90bf4",
+    "messages": 509,
+    "index_seconds": 0.0519728129993382
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "c8f1aeed",
+    "messages": 504,
+    "index_seconds": 0.05220532500061381
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "eaca4986",
+    "messages": 513,
+    "index_seconds": 0.05049948700070672
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "c7cf7dfd",
+    "messages": 520,
+    "index_seconds": 0.05045143300048949
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "e48988bc",
+    "messages": 530,
+    "index_seconds": 0.05855863800024963
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "1de5cff2",
+    "messages": 473,
+    "index_seconds": 0.04450357199948485
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "65240037",
+    "messages": 489,
+    "index_seconds": 0.046472469000036654
+  },
+  {
+    "dataset": "longmemeval_s",
+    "cluster": "778164c6",
+    "messages": 542,
+    "index_seconds": 0.05250576800062845
+  },
+  {
+    "dataset": "locomo10",
+    "cluster": "conv-26",
+    "messages": 419,
+    "index_seconds": 0.023993569000595016
+  },
+  {
+    "dataset": "locomo10",
+    "cluster": "conv-30",
+    "messages": 369,
+    "index_seconds": 0.020099172000300314
+  },
+  {
+    "dataset": "locomo10",
+    "cluster": "conv-41",
+    "messages": 663,
+    "index_seconds": 0.03809477499999048
+  },
+  {
+    "dataset": "locomo10",
+    "cluster": "conv-42",
+    "messages": 629,
+    "index_seconds": 0.03138400099942373
+  },
+  {
+    "dataset": "locomo10",
+    "cluster": "conv-43",
+    "messages": 680,
+    "index_seconds": 0.03973913099980564
+  },
+  {
+    "dataset": "locomo10",
+    "cluster": "conv-44",
+    "messages": 675,
+    "index_seconds": 0.042441027999302605
+  },
+  {
+    "dataset": "locomo10",
+    "cluster": "conv-47",
+    "messages": 689,
+    "index_seconds": 0.04007570800058602
+  },
+  {
+    "dataset": "locomo10",
+    "cluster": "conv-48",
+    "messages": 681,
+    "index_seconds": 0.037861570000131906
+  },
+  {
+    "dataset": "locomo10",
+    "cluster": "conv-49",
+    "messages": 509,
+    "index_seconds": 0.030764282999371062
+  },
+  {
+    "dataset": "locomo10",
+    "cluster": "conv-50",
+    "messages": 568,
+    "index_seconds": 0.029918264999651
+  }
+]
