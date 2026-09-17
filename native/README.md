@@ -37,7 +37,7 @@ require cmpath.local/native v0.0.0
 replace cmpath.local/native => ../cmpath/native
 ```
 
-The directory layout is significant; point `replace` at the actual extracted `native` directory. An external host manages its own dependency graph and vendoring. The archive's vendor directory makes standalone builds of this module offline; Go does not automatically use a replaced dependency's vendor directory in the host module. The host must make `golang.org/x/text v0.42.0` available through its normal module cache/vendor workflow. Assign a real repository module path before public Go-module publication.
+The directory layout is significant; point `replace` at the actual extracted `native` directory. An external host manages its own dependency graph and vendoring. The archive's vendor directory makes standalone builds of this module offline; Go does not automatically use a replaced dependency's vendor directory in the host module. The host must make `golang.org/x/text v0.42.0` available through its normal module cache/vendor workflow. The source repository is <https://github.com/dhava-gautama/cmpath>; the current internal module path remains compatibility-scoped until a tagged Go-module release is published.
 
 Import `cmpath.local/native/engine`. Open a database with `engine.Open(path)` and close the returned engine when the host shuts down. Opening a new path through this direct API creates it; the stdio command separately requires `--create` for a new database.
 

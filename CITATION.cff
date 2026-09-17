@@ -3,8 +3,11 @@ message: "Please cite this software and its accompanying research report when us
 title: "Context Memory Path: Durable Task Memory and Harness Integration"
 type: software
 authors:
-  - name: "CMP contributors"
+  - family-names: "Gautama"
+    given-names: "Dhava"
 version: "0.4.0a5"
-date-released: "2026-09-11"
+date-released: "2026-09-17"
+repository-code: "https://github.com/dhava-gautama/cmpath"
+url: "https://github.com/dhava-gautama/cmpath"
 license: MIT
 abstract: "A SQLite task-memory library and embeddable Go engine with recoverable turn and tool journals, a Python harness bridge, and reproducible retrieval and runtime measurements."

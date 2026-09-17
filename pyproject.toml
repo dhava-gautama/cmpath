@@ -19,6 +19,12 @@ classifiers = [
   "Topic :: Database",
 ]
 
+[project.urls]
+Homepage = "https://github.com/dhava-gautama/cmpath"
+Repository = "https://github.com/dhava-gautama/cmpath"
+Issues = "https://github.com/dhava-gautama/cmpath/issues"
+Documentation = "https://github.com/dhava-gautama/cmpath/tree/main/docs"
+
 [project.scripts]
 cmpath = "cmpath.cli:main"
 cmpath-agent = "cmpath.agent_cli:main"

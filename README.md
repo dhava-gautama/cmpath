@@ -2,11 +2,16 @@
 
 Durable task memory and recoverable execution hooks for agent harnesses.
 
+[GitHub](https://github.com/dhava-gautama/cmpath) ·
+[Python API](docs/API.md) · [Harness guide](docs/HARNESS.md) ·
+[Release guide](docs/RELEASE.md)
+
 **0.4.0a5 — integration and release-integrity consolidation.** This alpha
 builds on 0.4.0a4's scope-validated provenance and short-lived pre-effect
 eligibility certificate, and consolidates the MCP adapter, authenticated
 control-plane API, dependency-free SDKs, offline conformance suite, portable
-Kimi/Hermes bundle, and local doctor diagnostics. Read
+Kimi/Hermes bundle, local doctor diagnostics, and the bounded hybrid memory
+router. Read
 [BREAKTHROUGH_REPORT.md](BREAKTHROUGH_REPORT.md) for the bounded safety result;
 it remains explicit about residual TOCTOU limits.
 
@@ -23,11 +28,45 @@ retained as historical evidence.
 Python 3.10+ with SQLite FTS5. The runtime has no external Python dependencies. Native executables are validated on Linux x86-64 with glibc 2.39 and Windows AMD64 with MSYS2 UCRT64 GCC. Document tools preserve root confinement on both platforms, including Windows reparse-point rejection. Rebuild native code for other targets; they have not been validated.
 
 ```bash
-python -m pip install --no-index --no-deps dist/cmpath-0.4.0a5-py3-none-any.whl
+git clone https://github.com/dhava-gautama/cmpath.git
+cd cmpath
+python -m pip install -e .
 cmpath-agent --help
 cmpath-maintain --help
 python examples/native_workflow.py --binary native/bin/cmpath-native --file README.md --db checksum.db --request-id readme-1
 ```
+
+For an offline release artifact, replace the editable install with
+`python -m pip install --no-index --no-deps dist/cmpath-0.4.0a5-py3-none-any.whl`
+after building or downloading that wheel. This project is not currently
+published on PyPI.
+
+## Lean hybrid memory routing
+
+`MemoryRouter` keeps ordinary turns small and retrieves deeper CMP evidence
+only when needed. It supports `none`, `pinned`, `task`, `lineage`, and `deep`
+routes. Pinned state is bounded, retrieved memory remains quoted data, and task
+ambiguity fails closed rather than selecting a candidate. `RoutedHarness`
+combines the router with the durable model/tool lifecycle journal.
+
+```python
+from cmpath import MemoryRouter, NativeHarness, RoutedHarness, TaskMemory
+
+memory = TaskMemory("cmpath.db")
+router = MemoryRouter(memory)
+router.pin(1)
+context = router.retrieve("continue the release work", task_id=1, requested_route="task")
+print(context.citations, context.used_units, context.as_messages())
+```
+
+The equivalent read-only CLI is:
+
+```bash
+cmpath --db cmpath.db route "continue the release work" --task 1 --route task --budget 500
+```
+
+See [docs/API.md](docs/API.md) for routing and budget contracts and
+[docs/HARNESS.md](docs/HARNESS.md) for checkpointed model/tool execution.
 
 The checksum example executes a real local tool and records its result. Repeating the same logical request returns the recorded reply. Use a new ID when you intend a new execution. The wheel contains Python code; the complete archive also contains the native executables and vendored source.
 
@@ -37,6 +76,7 @@ The checksum example executes a real local tool and records its result. Repeatin
 | --- | --- |
 | Go executor | Import `cmpath.local/native/engine`; call lifecycle hooks directly |
 | Python executor | `NativeHarness` or its low-level session methods |
+| Token-lean Python host | `MemoryRouter` plus `RoutedHarness` |
 | Local document research agent | Installed `cmpath-agent` command with your configured model endpoint |
 | Codex, Kimi Code, Cursor, Hermes, MCP clients | `cmpath-mcp` stdio server with 10 source-preserving tools |
 | Managed host control plane | `cmpath-control` authenticated HTTP lifecycle API |
@@ -90,10 +130,10 @@ and [raw results](results/pilot/summary.json) are included. The separate
 its provider responses and recovery checks must not be conflated with this
 historical local comparison.
 
-The 0.4.0a4 safety release recorded 93 Python integration tests and a Go
-race-tested suite; the a5 consolidation adds focused packaging, doctor,
-control-plane, MCP and conformance checks. Run the commands below for the
-current checkout rather than treating historical result logs as current counts.
+The current Windows integration run passes 139 Python tests with four
+intentional platform/optional-dependency skips, plus the Go race-tested suite
+and all 17 isolated release checks. Run the commands below for the current
+checkout rather than treating historical result logs as current counts.
 Earlier native timings remain in `results/native/benchmark.json`: Go showed no
 search-speed advantage in that run. The earlier public-data paper and workbook
 are the 0.3 Python baseline. Historical results are not relabeled as new native
@@ -105,8 +145,8 @@ or live-model results.
 python scripts/build_native.py
 CMP_NATIVE_BINARY="$PWD/native/bin/cmpath-native" python -m unittest discover -s tests -v
 python scripts/build_release.py
-python scripts/build_portable_bundle.py
 python scripts/verify_artifacts.py
+python scripts/validate_release.py
 python scripts/evaluate_pilot.py --output results/pilot-reproduction
 ```
 

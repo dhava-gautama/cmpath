@@ -11,10 +11,18 @@ portable-bundle, and optional Codex plugin payloads with canonical source and
 validates wheel RECORD hashes. The portable bundle is now included in source
 distributions.
 
-The live SumoPod run is documented separately in LIVE_RESULTS.md and remains a
+On 2026-09-17 this alpha added Windows AMD64 validation, automatic MSYS2 UCRT64
+GCC discovery, deterministic release bundles and checksums, Windows CI, and a
+bounded hybrid memory router with `none`, `pinned`, `task`, `lineage`, and
+`deep` routes. `RoutedHarness` connects selected context to the existing
+five-boundary recovery journal. The integrated Windows run passes 139 Python
+tests with four intentional skips and all 17 isolated release checks.
+
+The source is public at <https://github.com/dhava-gautama/cmpath>. The live
+SumoPod run is documented separately in LIVE_RESULTS.md and remains a
 bounded synthetic workflow, not a general quality or profitability claim.
-Native binaries still require a target-specific rebuild; package and source
-artifacts are not published by this repository.
+Native binaries still require a target-specific rebuild; PyPI and hosted
+service publication are not claimed.
 
 ## Live validation supplement — 2026-09-11
 

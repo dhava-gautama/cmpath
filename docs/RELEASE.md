@@ -3,8 +3,9 @@
 The current alpha consolidates the 0.4.0a4 provenance and action-eligibility
 controls with the MCP adapter, authenticated managed-turn control plane,
 dependency-free SDKs, explicit adapter guides, offline conformance runner,
-Kimi/Hermes bundle, and local doctor diagnostics. No package-index upload,
-public repository publication, or hosted service is part of this release.
+Kimi/Hermes bundle, local doctor diagnostics, and bounded hybrid memory router.
+The source is published at <https://github.com/dhava-gautama/cmpath>. No
+package-index upload or hosted service is part of this release.
 
 ## Artifacts and platform scope
 
@@ -52,7 +53,8 @@ pass `--plugin-root PATH --plugin-cache PATH`; pass `--plugin-artifact PATH`
 for a plugin ZIP or directory. Compatibility cache entries are checked for
 their stable `SKILL.md` entrypoint.
 
-```python scripts/verify_artifacts.py \
+```bash
+python scripts/verify_artifacts.py \
   --checksums dist/SHA256SUMS \
   --plugin-root /path/to/cmpath-memory \
   --plugin-cache ~/.codex/plugins/cache/personal/cmpath-memory
@@ -133,10 +135,10 @@ answer-quality measurement.
 
 ## Publication handoff
 
-No package-index publication, Go-module publication, deployment, or hosted
-service is claimed. Before external distribution, a maintainer must establish
-the repository/module path, confirm the package name, build each supported
-platform, regenerate checksums, and run the complete validator in each target
+The public source repository is `dhava-gautama/cmpath`. No package-index
+publication, tagged Go-module release, deployment, or hosted service is
+claimed. Before publishing release assets, build each supported platform,
+regenerate checksums, and run the complete validator in each target
 environment. A checksum authenticates bytes against a manifest; it does not
 establish publisher identity. A detached signature adds publisher-key
 verification only when the recipient separately validates its trusted public
