@@ -53,6 +53,71 @@ operation. Inspect/reconcile an indeterminate model or tool outcome before
 continuing, and supply explicit provenance when committing a derived scoped
 snapshot.
 
+### External Python host recipe
+
+`RoutedHarness` is for an executor that owns the provider and tool callbacks.
+It is an adapter over a `Harness` backend, not a model client. The host keeps
+the same logical request ID and executes the five boundaries explicitly:
+
+```python
+from cmpath import MemoryRouter, NativeHarness, RoutedHarness, TaskMemory
+
+memory = TaskMemory("cmpath.db")
+router = MemoryRouter(memory)
+native = NativeHarness("native/bin/cmpath-native", "cmpath.db")
+host = RoutedHarness(native, router)
+
+turn = host.prepare_turn(
+    "release-42", 3, "What budget was approved?",
+    requested_route="lineage", budget=1600, reserve=300,
+)
+request_bytes = turn.before_model(
+    "model-1", {"model": "provider-model"},
+)
+provider_response = provider.complete(request_bytes)       # host-owned call
+turn.after_model("model-1", response=provider_response)
+
+intent = turn.before_tool("tool-1", "publish", {"task": 3})
+result = publish_to_external_system(intent)                 # host-owned call
+turn.after_tool("tool-1", result=result,
+                lease_token=intent["eligibility"]["token"])
+turn.commit({"text": "Published", "snapshot": {"phase": "done"}})
+```
+
+`before_model` only journals the complete provider payload and returns bytes;
+`after_model` records a confirmed response or known error. `before_tool`
+records exact intent and returns a fresh local eligibility lease but never calls
+the tool. The host invokes the external effect and then supplies its confirmed
+result to `after_tool`; `commit` is the fifth boundary. A missing, expired or
+mismatched lease blocks reconciliation. These local checks cannot make an
+arbitrary remote API atomic, so keep provider/tool idempotency keys and retain
+the request ID for external reconciliation.
+
+On a committed replay, `host.prepare_turn(...)` returns the saved native turn
+without retrieving a new route context. Do not dispatch a provider or invoke a
+tool in that branch:
+
+```python
+replay = host.prepare_turn(
+    "release-42", 3, "What budget was approved?",
+    requested_route="lineage", budget=1600, reserve=300,
+)
+if replay.turn["status"] == "committed":
+    reply = replay.turn["reply"]
+```
+
+An identical pending replay raises `HarnessError` with code `in_progress` and
+requires inspection plus deliberate `recover(request_id, generation)` before
+continuing. A recovered started tool is an uncertain external outcome and must
+be reconciled; `RoutedHarness` never silently replays it.
+
+An MCP-only host can use `cmp_route` to prepare a bounded prompt package, but
+that tool does not install the five lifecycle boundaries. Use the returned
+`messages` and `citations` as input to the host, then use `RoutedHarness`, the
+authenticated control plane, or an SDK client to checkpoint the provider and
+tool loop. `cmp_codex_event` records Codex hook evidence; it is not a substitute
+for `before-model`, `after-model`, `before-tool`, `after-tool`, and `commit`.
+
 Options include `system`, `model_key`, `budget`, `reserve`, `scope`, `retrieval_limit`, `recent` and `counting`. The Python default recent-message count is four; the Go `Request` zero value for `Recent` means none. An omitted Go budget defaults to 2,000, retrieval limit to 24 and scope to the selected task plus three ancestor hops.
 
 Use a globally unique logical `request_id` within the database, supplied by the application's request dispatcher. Reuse it only for the same task, query, system text, model configuration key and packing options. Wire transport IDs are separate and generated automatically. Changing the meaning of a logical request while reusing its ID raises a conflict.

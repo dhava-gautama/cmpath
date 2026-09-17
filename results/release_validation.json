@@ -21,8 +21,8 @@
     "vendored_native_source_rebuild_without_dependency_downloads": true,
     "rebuilt_native_real_tool_replay_and_backup": true
   },
-  "wheel_sha256": "3e1aea5a5d0058a5882aa4bdbd76fc2585becb4bde24c157ad3d947fd60a2581",
-  "source_sha256": "1733086115c75474ebf8d8b6b7984a3debce232f3a5a1f75f5d59bdd5df009b4",
+  "wheel_sha256": "f9a0a8950c415ca27185c8b1ca2e281c958479e83a3270a9c0ad1a41427f3804",
+  "source_sha256": "17210295d6da788539d61eade8e7f516fef9631e0375dbde151d1e6653eebb8c",
   "native_sha256": "50ed907a8c13edd55dc298b98240d5dec80cd34565112b423ba1a282cf4744ba",
   "embedded_example_sha256": "3221094ce1da1f8c77325dbb9d77bdc7b7e6cd2f2e0a78119b959ccb5a20f13d",
   "model_calls": 0

@@ -8,6 +8,11 @@ from .router import (
     TaskResolutionError, RoutedContext, MemoryRouter, HybridMemoryRouter,
     QUOTED_EVIDENCE_GUARD,
 )
+from .codex_memory import (
+    CODEX_ROUTES, CODEX_EVIDENCE_GUARD, CodexRouterConfig,
+    CodexMemoryConfig, CodexRouteDecision, CodexRoutedContext,
+    CodexMemoryRouter, CodexMemory, CodexRouter, AutomaticCodexRouter,
+)
 
 __version__ = "0.4.0a5"
 __all__ = ["TaskMemory", "Task", "Evidence", "Resolution", "ContextPackage",
@@ -16,4 +21,7 @@ __all__ = ["TaskMemory", "Task", "Evidence", "Resolution", "ContextPackage",
            "RoutedTurn", "RoutedHarness", "HybridHarness",
            "MemoryRoute", "Route", "RouterConfig", "PinnedTask", "RouteDecision",
            "TaskResolutionError", "RoutedContext", "MemoryRouter",
-           "HybridMemoryRouter", "QUOTED_EVIDENCE_GUARD"]
+           "HybridMemoryRouter", "QUOTED_EVIDENCE_GUARD", "CODEX_ROUTES",
+           "CODEX_EVIDENCE_GUARD", "CodexRouterConfig", "CodexMemoryConfig",
+           "CodexRouteDecision", "CodexRoutedContext", "CodexMemoryRouter",
+           "CodexMemory", "CodexRouter", "AutomaticCodexRouter"]

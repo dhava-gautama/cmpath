@@ -50,6 +50,22 @@ authoritative, while an ambiguous title or alias returns a `none` decision with
 its candidates instead of guessing. The result's `as_dict()` form includes the
 selected route, task ID, resolution, counted payload metadata and citations.
 
+The five route modes are deliberately small and deterministic:
+
+| Route | What is read | Selection and safety contract |
+| --- | --- | --- |
+| `none` | No stored evidence | Returns the guard, an empty envelope and the caller's query. |
+| `pinned` | The router's explicit in-memory task-ID pins | Does not search; pin count and evidence count remain bounded. |
+| `task` | Evidence and facts from the selected task | Requires an explicit or uniquely resolved task. |
+| `lineage` | The selected task and its ancestors | Keeps retrieval inside the selected task lineage. |
+| `deep` | All searchable evidence | Still requires an anchored selected task; it is not an unanchored guess. |
+
+Every route counts the complete message payload against `budget - reserve`,
+keeps admitted evidence paired with its source metadata, and returns its
+`Tn:Mm` citations. Route retrieval does not append evidence, resume a task,
+change active state, call a model or execute a tool. Treat the returned memory
+as quoted data rather than instructions.
+
 The CLI exposes the same operation:
 
 ```text
@@ -72,6 +88,52 @@ the installed router; omitted values leave the router/config defaults intact.
 Routing does not append evidence, resume or archive tasks, switch active state,
 call a model, or make network requests. The CLI remains JSON-first even when
 `--json` is omitted.
+
+### Codex and MCP prompt routes
+
+The Codex plugin records lifecycle events through the `cmp_codex_event` MCP
+tool. That hook is an explicit write of one event. For a read-only prompt
+context, call `cmp_route` with one of the five route modes:
+
+```json
+{
+  "task_id": 3,
+  "query": "What budget was approved?",
+  "route": "lineage",
+  "budget": 1600,
+  "reserve": 300,
+  "retrieval_limit": 12,
+  "recent": 3
+}
+```
+
+`cmp_route` accepts `none`, `pinned`, `task`, `lineage`, and `deep`, and returns
+the serialized `decision` alongside `messages`, `used_units`,
+`input_allowance`, and `citations`. `pinned_input` and `pinned_config` apply
+only to that call; recognized pins are not persisted or leaked to the next
+MCP request. The lower-level `cmp_context` tool remains available with
+`scope=task`, `lineage`, or `all` (the Python `task`, `lineage`, and `deep`
+routes). Send a returned payload only after checking
+`used_units <= input_allowance`, and preserve each citation next to claims in
+the answer.
+
+Useful Codex prompts are explicit about scope and provenance:
+
+```text
+Use task scope for T3. Answer only from returned evidence and cite every claim.
+Use lineage scope for T3, including parent release decisions, and abstain if
+the cited evidence is insufficient. Do not append memory for this question.
+```
+
+The hook's `UserPromptSubmit` accepts the same route/task/budget options and
+uses the bounded Codex router; its response includes routing diagnostics and
+may include prior cited task evidence as `hookSpecificOutput.additionalContext`.
+Without an explicit route, ordinary prompts stay on the tiny current-session
+`pinned` working set; recall/continue language or an explicit task address opts
+into `task`, `lineage`, or `deep`. Ambiguous or unknown addresses return
+`none` with the resolution rather than guessing. It is still quoted context,
+not a permission to execute a model or external tool. Other hook events write
+evidence but do not receive prompt context.
 
 ## Transactions and recovery
 

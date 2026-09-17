@@ -65,6 +65,29 @@ The equivalent read-only CLI is:
 cmpath --db cmpath.db route "continue the release work" --task 1 --route task --budget 500
 ```
 
+The five route modes are `none` (empty quoted envelope), `pinned` (bounded
+explicit IDs), `task` (one task), `lineage` (that task and its ancestors), and
+`deep` (all evidence anchored by the selected task). Every admitted source
+retains a `Tn:Mm` citation and every complete message payload fits within the
+configured input allowance. Routing is read-only: it does not append, resume,
+call a model, or execute a tool.
+
+For the Codex MCP adapter, ask for an explicit scope and provenance:
+
+```text
+Use lineage scope for T3. Answer only from returned CMP evidence, cite every
+claim, and say when the sources are insufficient. Do not write memory.
+```
+
+The MCP `cmp_route` call accepts the same five modes and returns `citations`
+plus `used_units`/`input_allowance` and a serialized route decision. The
+lower-level `cmp_context` call uses `scope: "task"`, `"lineage"`, or `"all"`
+(the Python `task`, `lineage`, and `deep` routes). The Codex plugin's
+`cmp_codex_event` hook is an explicit event write; it does not fence unrelated
+model or tool effects. For `UserPromptSubmit`, ordinary prompts remain on the
+small current-session working set while explicit recall/task/lineage signals
+opt into broader, still bounded routes; ambiguous addresses abstain.
+
 See [docs/API.md](docs/API.md) for routing and budget contracts and
 [docs/HARNESS.md](docs/HARNESS.md) for checkpointed model/tool execution.
 
