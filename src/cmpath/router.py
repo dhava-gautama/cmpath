@@ -145,7 +145,11 @@ class RouterConfig:
             raise BudgetError("reserve leaves no input allowance")
         _positive(self.retrieval_limit, "retrieval_limit")
         _positive(self.recent, "recent", zero=True)
-        _as_route(self.default_route)
+        # Keep the immutable config in the same canonical vocabulary used by
+        # ``MemoryRouter``'s route decisions and retrieval scope map.  Merely
+        # validating aliases here would leave values such as ``"all"`` in the
+        # dataclass and cause a later ``scope_map[decision.route]`` KeyError.
+        object.__setattr__(self, "default_route", _as_route(self.default_route))
         if not isinstance(self.use_active_task, bool):
             raise ValueError("use_active_task must be boolean")
 

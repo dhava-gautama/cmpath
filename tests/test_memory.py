@@ -1,5 +1,6 @@
 from __future__ import annotations
 import json
+import os
 from pathlib import Path
 import random
 import sqlite3
@@ -7,6 +8,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from cmpath import TaskMemory, BudgetError, ConflictError, estimated_message_units
 
@@ -244,6 +246,31 @@ class MemoryTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.m.backup(self.path)
 
+    def test_backup_refuses_existing_destination_without_overwriting(self):
+        self.seed()
+        backup = Path(self.temp.name)/"backup.db"
+        original = b"caller-owned backup"
+        backup.write_bytes(original)
+        with self.assertRaises(FileExistsError):
+            self.m.backup(backup)
+        self.assertEqual(backup.read_bytes(),original)
+
+    def test_backup_closes_destination_race_without_overwriting(self):
+        self.seed()
+        backup = Path(self.temp.name)/"backup.db"
+        original_link = os.link
+
+        def competing_creator(source, destination, *args, **kwargs):
+            if Path(destination) == backup:
+                backup.write_bytes(b"competing backup")
+            return original_link(source,destination,*args,**kwargs)
+
+        with patch("cmpath.memory.os.link",side_effect=competing_creator):
+            with self.assertRaises(FileExistsError):
+                self.m.backup(backup)
+        self.assertEqual(backup.read_bytes(),b"competing backup")
+        self.assertFalse(list(Path(self.temp.name).glob("backup.db.*")))
+
     def test_two_connections_see_committed_writes(self):
         t,_ = self.seed()
         with TaskMemory(self.path) as second:
@@ -314,7 +341,7 @@ class MemoryTests(unittest.TestCase):
         path = Path(self.temp.name)/"open-destination.db"
         with TaskMemory(path) as other:
             other.create_task("Keep this database")
-            with self.assertRaises(ValueError):
+            with self.assertRaises(FileExistsError):
                 self.m.backup(path)
             self.assertEqual(other.task(1).title,"Keep this database")
 

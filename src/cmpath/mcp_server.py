@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 from dataclasses import asdict
+import ipaddress
 import json
 import os
 from pathlib import Path
@@ -12,6 +13,43 @@ from typing import Any
 from .codex_memory import CodexMemoryRouter
 from .memory import TaskMemory
 from .router import MemoryRouter
+
+
+def _is_loopback_host(host: str) -> bool:
+    """Return whether *host* names a loopback address or localhost.
+
+    Do not resolve arbitrary hostnames here.  A DNS result can change between
+    validation and socket creation, and accepting a name that happens to
+    resolve to loopback would make the remote-binding guard depend on DNS.
+    """
+
+    if not isinstance(host, str):
+        return False
+    candidate = host.strip().rstrip(".").lower()
+    if candidate == "localhost":
+        return True
+    try:
+        return ipaddress.ip_address(candidate).is_loopback
+    except ValueError:
+        return False
+
+
+def validate_streamable_http_host(host: str) -> None:
+    """Reject unauthenticated remote streamable-HTTP bindings.
+
+    ``cmpath-mcp`` currently has no configured MCP authentication provider or
+    bearer-token verifier.  Until an authenticated mechanism is wired into the
+    adapter, exposing its tools outside the local machine would be
+    unauthenticated access to the caller's database.  Keep this check small and
+    explicit so adding remote support later requires adding authentication at
+    the same boundary rather than an ``--allow-remote`` bypass.
+    """
+
+    if not _is_loopback_host(host):
+        raise ValueError(
+            "streamable-http transport only supports loopback hosts; "
+            "no authenticated remote MCP transport is configured"
+        )
 
 
 def _task_record(task) -> dict[str, Any]:
@@ -111,13 +149,29 @@ def create_server(database: str | Path | None = None):
             "MCP support is optional; install cmpath[integrations]"
         ) from exc
 
+    class _LoopbackOnlyMCPServer(MCPServer):
+        """MCP SDK server with a transport-level remote-binding guard."""
+
+        def run(self, transport="stdio", **kwargs):
+            if transport == "streamable-http":
+                validate_streamable_http_host(
+                    kwargs.get("host", "127.0.0.1")
+                )
+            return super().run(transport, **kwargs)
+
+        async def run_streamable_http_async(self, **kwargs):
+            validate_streamable_http_host(
+                kwargs.get("host", "127.0.0.1")
+            )
+            return await super().run_streamable_http_async(**kwargs)
+
     db_path = str(database or os.environ.get("CMP_DB_PATH", "cmpath.db"))
     memory = TaskMemory(db_path)
     # Codex prompt routing is deliberately separate from the generic
     # caller-driven MemoryRouter.  Pins/session IDs are ephemeral to this
     # server instance and are never persisted as authorization state.
     codex_router = CodexMemoryRouter(memory)
-    server = MCPServer(
+    server = _LoopbackOnlyMCPServer(
         "cmpath-memory",
         title="CMP Scope-Consistent Memory",
         description="Local task memory with source citations, scoped retrieval, and versioned facts.",
@@ -440,9 +494,17 @@ def main() -> None:
     parser.add_argument(
         "--transport", choices=("stdio", "streamable-http"), default="stdio"
     )
-    parser.add_argument("--host", default="127.0.0.1")
+    parser.add_argument(
+        "--host",
+        default="127.0.0.1",
+        help="streamable-http bind host (loopback only; default: 127.0.0.1)",
+    )
     parser.add_argument("--port", type=int, default=8765)
     args = parser.parse_args()
+    if args.transport == "streamable-http":
+        # Validate before opening the database so a rejected remote request has
+        # no observable side effect and cannot briefly expose a server.
+        validate_streamable_http_host(args.host)
     server = create_server(args.db)
     try:
         if args.transport == "stdio":

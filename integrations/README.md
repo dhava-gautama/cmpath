@@ -16,6 +16,16 @@ cmpath-mcp --db ~/.local/share/cmpath/memory.db
 For development, use `uv run --project /path/to/cmpath --extra integrations
 cmpath-mcp --db /path/to/memory.db`. `mcp-stdio.json` is a generic config template.
 
+### Optional HTTP transport
+
+`cmpath-mcp` has no configured MCP authentication provider or bearer-token
+verifier, so its `streamable-http` transport is deliberately restricted to
+loopback hosts. The CLI rejects a non-loopback `--host` before opening the
+database, and the in-process server applies the same guard. There is no
+unauthenticated remote or `--allow-remote` mode. Keep using stdio for local MCP
+clients; use the authenticated `cmpath-control` service below when a separate
+host process needs an HTTP boundary.
+
 ## Client adapters
 
 - Codex: the personal `cmpath-memory` marketplace plugin launches this server

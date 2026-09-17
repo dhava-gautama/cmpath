@@ -1,7 +1,91 @@
 import json
 from pathlib import Path
+import sys
 import tempfile
 import unittest
+from unittest.mock import Mock, patch
+
+
+class MCPTransportSecurityTests(unittest.TestCase):
+    def test_loopback_streamable_http_hosts_are_allowed(self):
+        from cmpath.mcp_server import validate_streamable_http_host
+
+        for host in ("127.0.0.1", "127.0.0.42", "::1", "localhost"):
+            with self.subTest(host=host):
+                self.assertIsNone(validate_streamable_http_host(host))
+
+    def test_non_loopback_streamable_http_hosts_are_rejected(self):
+        from cmpath.mcp_server import validate_streamable_http_host
+
+        for host in ("0.0.0.0", "::", "192.168.1.10", "example.test"):
+            with self.subTest(host=host):
+                with self.assertRaisesRegex(
+                    ValueError, "only supports loopback hosts"
+                ):
+                    validate_streamable_http_host(host)
+
+    def test_cli_rejects_remote_binding_before_creating_server(self):
+        import cmpath.mcp_server as mcp_server
+
+        with patch.object(mcp_server, "create_server") as create_server:
+            with patch.object(
+                sys,
+                "argv",
+                [
+                    "cmpath-mcp",
+                    "--transport",
+                    "streamable-http",
+                    "--host",
+                    "0.0.0.0",
+                ],
+            ):
+                with self.assertRaisesRegex(
+                    ValueError, "only supports loopback hosts"
+                ):
+                    mcp_server.main()
+            create_server.assert_not_called()
+
+    def test_cli_keeps_loopback_binding_functional(self):
+        import cmpath.mcp_server as mcp_server
+
+        server = Mock()
+        with patch.object(mcp_server, "create_server", return_value=server):
+            with patch.object(
+                sys,
+                "argv",
+                [
+                    "cmpath-mcp",
+                    "--transport",
+                    "streamable-http",
+                    "--host",
+                    "127.0.0.1",
+                ],
+            ):
+                mcp_server.main()
+        server.run.assert_called_once_with(
+            "streamable-http", host="127.0.0.1", port=8765
+        )
+        server._cmp_memory.close.assert_called_once_with()
+
+    def test_in_process_server_guard_cannot_be_bypassed(self):
+        try:
+            from mcp import Client  # noqa: F401
+        except ImportError:
+            self.skipTest("optional mcp dependency is not installed")
+
+        from cmpath.mcp_server import create_server
+
+        with tempfile.TemporaryDirectory() as root:
+            server = create_server(Path(root) / "memory.db")
+            try:
+                with self.assertRaisesRegex(
+                    ValueError, "only supports loopback hosts"
+                ):
+                    server.run(
+                        "streamable-http", host="0.0.0.0", port=8765
+                    )
+            finally:
+                server._cmp_memory.close()
 
 
 class MCPServerTests(unittest.TestCase):

@@ -39,6 +39,16 @@ _MSYS2_ROOT_ENV_VARS = (
 )
 
 
+def _is_windows() -> bool:
+    """Return whether native Windows toolchain discovery should be enabled.
+
+    Kept behind a helper so platform-specific discovery can be tested on
+    non-Windows hosts without mutating ``os.name`` (which also changes how
+    ``pathlib.Path`` constructs paths globally).
+    """
+    return os.name == "nt"
+
+
 def _msys2_roots(environment: dict[str, str] | None = None) -> list[Path]:
     """Return likely MSYS2 roots in deterministic, duplicate-free order.
 
@@ -56,7 +66,7 @@ def _msys2_roots(environment: dict[str, str] | None = None) -> list[Path]:
         if configured:
             roots.append(Path(configured).expanduser())
 
-    if os.name == "nt":
+    if _is_windows():
         system_drive = str(environment.get("SystemDrive", "C:")).rstrip("\\/") or "C:"
         roots.extend(
             [
@@ -115,7 +125,7 @@ def _discover_msys2_ucrt64(environment: dict[str, str]) -> str | None:
     to work.  The returned absolute path is suitable for both ``CC`` and
     runtime-DLL lookup by child processes.
     """
-    if os.name != "nt":
+    if not _is_windows():
         return None
 
     for candidate in _msys2_ucrt64_candidates(environment):
@@ -250,7 +260,7 @@ def _require_compiler(environment: dict[str, str], target_os: str) -> str:
     user's machine or shell PATH.
     """
     raw = environment.get("CC", "").strip()
-    if not raw and os.name == "nt" and target_os.casefold() == "windows":
+    if not raw and _is_windows() and target_os.casefold() == "windows":
         discovered = _discover_msys2_ucrt64(environment)
         if discovered is not None:
             raw = discovered
@@ -260,14 +270,14 @@ def _require_compiler(environment: dict[str, str], target_os: str) -> str:
     try:
         resolved = _resolve_executable(head, "C compiler", path=environment.get("PATH"))
     except ValueError as error:
-        if os.name == "nt" and target_os.casefold() == "windows":
+        if _is_windows() and target_os.casefold() == "windows":
             raise ValueError(
                 f"{error}. Install MSYS2 UCRT64 GCC or pass --cc to an existing "
                 "GCC-compatible compiler."
             ) from error
         raise
     compiler_name = Path(resolved).name.lower()
-    if os.name == "nt" and compiler_name in {"cl", "cl.exe"}:
+    if _is_windows() and compiler_name in {"cl", "cl.exe"}:
         raise ValueError(
             "Go cgo requires a GCC-compatible C compiler; MSVC cl.exe is not "
             f"supported for the {target_os} target. Set --cc to a native "

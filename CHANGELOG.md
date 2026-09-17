@@ -15,8 +15,12 @@ On 2026-09-17 this alpha added Windows AMD64 validation, automatic MSYS2 UCRT64
 GCC discovery, deterministic release bundles and checksums, Windows CI, and a
 bounded hybrid memory router with `none`, `pinned`, `task`, `lineage`, and
 `deep` routes. `RoutedHarness` connects selected context to the existing
-five-boundary recovery journal. The integrated Windows run passes 139 Python
-tests with four intentional skips and all 17 isolated release checks.
+five-boundary recovery journal. Subsequent hardening makes streamable HTTP
+loopback-only until an authenticated remote provider exists, makes backup
+publication atomically no-replace, canonicalizes route aliases, and adds a
+matching Linux CI matrix. The integrated Windows run passes 168 Python tests
+with three intentional skips and all 17 isolated release checks; the Linux/WSL
+run passes the same 168 tests with platform-specific skips.
 
 The source is public at <https://github.com/dhava-gautama/cmpath>. The live
 SumoPod run is documented separately in LIVE_RESULTS.md and remains a

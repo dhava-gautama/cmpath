@@ -580,11 +580,19 @@ class TaskMemory:
             return {"ok":integrity == ["ok"] and not foreign_keys,"sqlite":integrity,"foreign_keys":foreign_keys,"fts":"ok"}
 
     def backup(self, destination: str | Path) -> None:
-        """Atomically replace a standalone, consistent SQLite backup file."""
+        """Create a standalone, consistent SQLite backup at a new path.
+
+        The temporary snapshot is published with a same-directory hard link,
+        which is an atomic no-replace operation.  In particular, do not use
+        ``os.replace`` here: a destination may appear after the preflight
+        checks, and replacing it would destroy a caller-owned backup.
+        """
         dest = Path(destination)
         if self.path != ":memory:" and dest.resolve() == Path(self.path).resolve():
             raise ValueError("Backup destination must differ from the live database")
-        if any(Path(str(dest)+suffix).exists() for suffix in ("-wal","-shm")):
+        if os.path.lexists(dest):
+            raise FileExistsError("Backup destination already exists; use a new path")
+        if any(os.path.lexists(Path(str(dest)+suffix)) for suffix in ("-wal","-shm")):
             raise ValueError("Backup destination has SQLite journal files; use a new path")
         dest.parent.mkdir(parents=True,exist_ok=True)
         fd, temporary = tempfile.mkstemp(prefix=dest.name+".",dir=dest.parent)
@@ -607,7 +615,13 @@ class TaskMemory:
                 os.fsync(sync_fd)
             finally:
                 os.close(sync_fd)
-            os.replace(temporary,dest)
+            # A hard link publishes the already-complete inode without
+            # replacing an existing destination.  The source and destination
+            # are in the same directory, so this remains atomic and does not
+            # depend on cross-filesystem rename behavior.  If a competing
+            # writer wins after the preflight check, os.link raises
+            # FileExistsError and leaves that writer's file untouched.
+            os.link(temporary,dest)
         finally:
             if os.path.exists(temporary):
                 os.unlink(temporary)

@@ -153,7 +153,7 @@ and [raw results](results/pilot/summary.json) are included. The separate
 its provider responses and recovery checks must not be conflated with this
 historical local comparison.
 
-The current Windows integration run passes 160 Python tests with three
+The current Windows integration run passes 168 Python tests with three
 intentional platform/optional-dependency skips, plus the Go race-tested suite
 and all 17 isolated release checks. Run the commands below for the current
 checkout rather than treating historical result logs as current counts.

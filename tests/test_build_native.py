@@ -20,7 +20,7 @@ class NativeToolchainTests(unittest.TestCase):
             compiler = prefix / "gcc.exe"
             compiler.write_bytes(b"test compiler marker")
             environment = {"MSYS2_ROOT": root, "PATH": ""}
-            with mock.patch.object(build_native.os, "name", "nt"):
+            with mock.patch.object(build_native, "_is_windows", return_value=True):
                 discovered = build_native._discover_msys2_ucrt64(environment)
             self.assertEqual(Path(discovered), compiler.resolve())
 
@@ -30,7 +30,7 @@ class NativeToolchainTests(unittest.TestCase):
             compiler.parent.mkdir(parents=True)
             compiler.write_bytes(b"test compiler marker")
             environment = {"MSYS2_ROOT": root, "PATH": "C:\\Windows\\System32"}
-            with mock.patch.object(build_native.os, "name", "nt"):
+            with mock.patch.object(build_native, "_is_windows", return_value=True):
                 resolved = build_native._require_compiler(environment, "windows")
             self.assertEqual(Path(resolved), compiler.resolve())
             self.assertEqual(environment["CC"], str(compiler.resolve()))
@@ -41,7 +41,7 @@ class NativeToolchainTests(unittest.TestCase):
             compiler = Path(root) / "cl.exe"
             compiler.write_bytes(b"test compiler marker")
             environment = {"CC": str(compiler), "PATH": ""}
-            with mock.patch.object(build_native.os, "name", "nt"):
+            with mock.patch.object(build_native, "_is_windows", return_value=True):
                 with self.assertRaisesRegex(ValueError, "GCC-compatible"):
                     build_native._require_compiler(environment, "windows")
 

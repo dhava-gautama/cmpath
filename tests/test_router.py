@@ -145,6 +145,18 @@ class RouterTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.router.route("child", mode="task", requested_route="deep")
 
+    def test_default_route_aliases_are_stored_canonically(self):
+        for alias, canonical in (("all", "deep"), ("full", "deep"), ("related", "lineage")):
+            with self.subTest(alias=alias):
+                config = RouterConfig(default_route=alias)
+                self.assertEqual(config.default_route, canonical)
+
+                router = MemoryRouter(self.memory, config=config)
+                decision = router.route("child", use_active=False)
+                self.assertEqual(decision.route, canonical)
+                context = router.retrieve("budget", task_id=self.child.id, use_active=False)
+                self.assertEqual(context.route, canonical)
+
 
 if __name__ == "__main__":
     unittest.main()

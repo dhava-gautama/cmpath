@@ -95,6 +95,14 @@ The Codex plugin records lifecycle events through the `cmp_codex_event` MCP
 tool. That hook is an explicit write of one event. For a read-only prompt
 context, call `cmp_route` with one of the five route modes:
 
+The packaged MCP adapter is local by default. Its optional
+`streamable-http` transport accepts only loopback bind hosts because the
+adapter does not configure an MCP authentication provider or bearer-token
+verifier; non-loopback binds fail before the database is opened. Do not expose
+this adapter remotely without adding a reviewed authenticated transport
+mechanism. For authenticated separate-process HTTP, use `cmpath-control` as
+described in [integrations/README.md](../integrations/README.md).
+
 ```json
 {
   "task_id": 3,
