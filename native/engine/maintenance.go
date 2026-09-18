@@ -295,6 +295,74 @@ func retentionCutoff(cutoff string) (time.Time, error) {
 	return t, nil
 }
 
+// retentionChildTables are the six journal tables holding a turn's child rows.
+// Rows counts and the plan hash read them in this order; ApplyRetention and
+// retentionConverged cover their rows plus the parent turn row.
+var retentionChildTables = []string{"cmp_tool_calls", "cmp_model_calls", "cmp_model_responses", "cmp_turn_basis", "cmp_turn_provenance", "cmp_action_leases"}
+
+// retentionCorpusTables is the order the plan hash reads a candidate in: the
+// turn row first, then its child tables. The order is part of the hash, which
+// is otherwise opaque.
+var retentionCorpusTables = append([]string{"cmp_turns"}, retentionChildTables...)
+
+// retentionApplyTables is the deletion order: child rows before the parent turn
+// row, as the journal's foreign keys require. It is a separate list from
+// retentionCorpusTables because that one is read-only and hashed.
+var retentionApplyTables = []string{"cmp_model_responses", "cmp_model_calls", "cmp_tool_calls", "cmp_turn_basis", "cmp_turn_provenance", "cmp_action_leases", "cmp_turns"}
+
+// retentionConverged reports whether id reached the exact post-apply state: no
+// journal row survives anywhere (a surviving child row would otherwise be
+// unreachable, because its parent turn is gone) and the tombstone exists
+// exactly once. The plan hash covers each of these rows, so a surviving row is
+// evidence that some delete did not converge rather than a change to the plan.
+// Must run inside the apply transaction, after the deletes.
+func retentionConverged(e *Engine, id string) (bool, error) {
+	for _, table := range retentionCorpusTables {
+		rows, err := e.db.Query("SELECT request_id FROM "+table+" WHERE request_id=?", id)
+		if err != nil {
+			return false, err
+		}
+		if len(rows) != 0 {
+			return false, nil
+		}
+	}
+	rows, err := e.db.Query("SELECT request_id FROM cmp_retired_turns WHERE request_id=?", id)
+	if err != nil {
+		return false, err
+	}
+	return len(rows) == 1, nil
+}
+
+// retentionCorpus fingerprints, under the already-open encoder, every row that
+// ApplyRetention may remove or leave behind for the candidate IDs. It reads each
+// candidate's turn and child rows in one fixed order so the plan hash describes
+// the pre-apply state regardless of the order in which SQLite evaluates the
+// deletes; it also reads the existing tombstones for those IDs, so one inserted
+// between dry run and apply is visible to the stale-plan check. Must run inside
+// a transaction, before the deletes.
+func retentionCorpus(e *Engine, enc *json.Encoder, ids []string) error {
+	if err := enc.Encode([]any{"cmpath-retention-corpus-v1", ids}); err != nil {
+		return err
+	}
+	for _, id := range ids {
+		for _, table := range retentionCorpusTables {
+			if err := e.eachRow(table, " WHERE request_id=?", []any{id}, func(row sqlite.Row) error {
+				return enc.Encode([]any{table, row})
+			}); err != nil {
+				return err
+			}
+		}
+	}
+	for _, id := range ids {
+		if err := e.eachRow("cmp_retired_turns", " WHERE request_id=?", []any{id}, func(row sqlite.Row) error {
+			return enc.Encode([]any{"cmp_retired_turns", row})
+		}); err != nil {
+			return err
+		}
+	}
+	return nil
+}
+
 // retention computes a bounded-output plan fingerprint from every candidate's
 // full journal contents. Must run inside a transaction.
 func (e *Engine) retention(cutoff time.Time) (out RetentionReport, ids []string, err error) {
@@ -330,7 +398,7 @@ func (e *Engine) retention(cutoff time.Time) (out RetentionReport, ids []string,
 		if er = enc.Encode(row); er != nil {
 			return er
 		}
-		for _, table := range []string{"cmp_tool_calls", "cmp_model_calls", "cmp_model_responses", "cmp_turn_basis", "cmp_turn_provenance", "cmp_action_leases"} {
+		for _, table := range retentionChildTables {
 			if er = e.eachRow(table, " WHERE request_id=?", []any{id}, func(child sqlite.Row) error {
 				out.Rows[table]++
 				return enc.Encode([]any{table, child})
@@ -343,6 +411,9 @@ func (e *Engine) retention(cutoff time.Time) (out RetentionReport, ids []string,
 		ids = append(ids, id)
 		return nil
 	})
+	if err == nil {
+		err = retentionCorpus(e, enc, ids)
+	}
 	out.PlanHash = hex.EncodeToString(h.Sum(nil))
 	return
 }
@@ -360,6 +431,8 @@ func (e *Engine) RetentionPlan(cutoff string) (out RetentionReport, err error) {
 
 // ApplyRetention rejects a changed candidate set or changed journal contents.
 // Tombstones and deletes commit together; base evidence and facts are untouched.
+// A tombstone that already exists for a candidate is left exactly as it is, so
+// a row that was retired out of band still converges instead of failing.
 func (e *Engine) ApplyRetention(cutoff, planHash string) (out RetentionReport, err error) {
 	t, err := retentionCutoff(cutoff)
 	if err != nil {
@@ -380,13 +453,20 @@ func (e *Engine) ApplyRetention(cutoff, planHash string) (out RetentionReport, e
 		}
 		retiredAt := now()
 		for _, id := range ids {
-			if er = e.db.Exec("INSERT INTO cmp_retired_turns(request_id,fingerprint,status,retired_at) SELECT request_id,fingerprint,status,? FROM cmp_turns WHERE request_id=?", retiredAt, id); er != nil {
+			if er = e.db.Exec("INSERT OR IGNORE INTO cmp_retired_turns(request_id,fingerprint,status,retired_at) SELECT request_id,fingerprint,status,? FROM cmp_turns WHERE request_id=?", retiredAt, id); er != nil {
 				return er
 			}
-			for _, table := range []string{"cmp_model_responses", "cmp_model_calls", "cmp_tool_calls", "cmp_turn_basis", "cmp_turn_provenance", "cmp_action_leases", "cmp_turns"} {
+			for _, table := range retentionApplyTables {
 				if er = e.db.Exec("DELETE FROM "+table+" WHERE request_id=?", id); er != nil {
 					return er
 				}
+			}
+			converged, er := retentionConverged(e, id)
+			if er != nil {
+				return er
+			}
+			if !converged {
+				return problem("integrity", "retention did not remove every journal row for a retired request ID")
 			}
 		}
 		return nil

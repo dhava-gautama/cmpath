@@ -67,16 +67,36 @@ an external effect occurred. Timestamp comparison parses fractional seconds and
 timezone offsets rather than comparing strings.
 
 Report `rows` counts describe journal rows to remove, except
-`cmp_retired_turns`, which counts tombstones to create. `protected_pending` and
+`cmp_retired_turns`, which counts tombstones to create. It does not distinguish
+a tombstone that will be created from one that already exists: both dry run and
+apply report one per candidate. A candidate whose tombstone already exists is an
+idempotent case, not a second tombstone. `protected_pending` and
 `protected_unresolved` count protected turns regardless of age. `applied` becomes
 true only after successful commit. Candidate IDs are not returned, keeping
-protocol output bounded; the hash binds complete eligible parent/child rows.
+protocol output bounded; the hash binds the complete turn and child rows for
+every candidate, plus any tombstone those IDs already have.
 
 Apply recomputes the plan under the same write transaction as deletion. It
 inserts permanent request-ID/fingerprint/status tombstones before deleting model
-responses, model requests, tool calls, and turns. Begin rejects a retired ID
-with `retired` for matching input or `conflict` for different input. Tombstones
-are never pruned, preserving durable deduplication against replayed execution.
+responses, model requests, tool calls, and turns. A tombstone for a candidate
+that already exists is left exactly as it is -- `INSERT OR IGNORE` treats it as
+an idempotent conflict, so an out-of-band retirement no longer wedges the apply
+in a UNIQUE violation. A pre-existing tombstone therefore keeps its own
+fingerprint, status and `retired_at`; the write path never silently rewrites
+them. After the deletes, each candidate is re-read inside the same transaction:
+every one of the seven journal tables must be empty for that ID and exactly one
+tombstone must exist. If any row survives, apply returns the coded error
+`integrity` and the transaction rolls back rather than reporting `applied=true`.
+The plan hash covers the candidate parent/child rows and their existing
+tombstones, so a surviving row after a matching plan hash is evidence that a
+delete did not converge rather than a change to the plan.
+
+Begin rejects a retired ID with `retired` for matching input or `conflict` for
+different input. The engine's retention path only inserts tombstones; it never
+deletes one. This is engine behavior, not an enforced invariant: a caller that
+issues its own SQL can still remove a tombstone, and no trigger prevents that.
+Tombstones are never pruned by the engine, preserving durable deduplication
+against replayed execution.
 
 The engine matches a turn by its `request_id` value, so that column must be
 stored as SQL text. A row whose `request_id` has any other storage class cannot
@@ -99,4 +119,8 @@ compaction and backup lifecycle management are separate. No automatic VACUUM or
 evidence deletion occurs. Export and retention hold a transaction and serialize
 this engine connection throughout; schedule large maintenance accordingly.
 
-The installed `cmpath-maintain` command exposes `info`, `export`, `plan` and explicit `apply` operations. Python equivalents are `harness.export_journal(path)`, `harness.retention_plan(cutoff)` and `harness.apply_retention(cutoff, plan_hash)`. Increase the configured native deadline for a large export; an interrupted operation may leave a private temporary export file or, on the POSIX fallback, a reservation marker, but never publishes a partial archive. A database trigger protects retired request IDs even if an older engine connection remains open during an upgrade.
+The installed `cmpath-maintain` command exposes `info`, `export`, `plan` and explicit `apply` operations. Python equivalents are `harness.export_journal(path)`, `harness.retention_plan(cutoff)` and `harness.apply_retention(cutoff, plan_hash)`. Increase the configured native deadline for a large export; an interrupted operation may leave a private temporary export file or, on the POSIX fallback, a reservation marker, but never publishes a partial archive. A plan hash is not a durable token: it describes one journal state, so a caller that retries hours later should repeat the dry run rather than reuse an old hash.
+
+The journal tables carry `BEFORE INSERT` and `BEFORE UPDATE OF request_id` triggers on `cmp_turns` that abort with `retired request ID cannot be reused`. A turn can therefore neither be inserted with nor renamed onto a retired ID, even by an older engine connection that predates tombstones or by direct SQL. That covers `cmp_turns` only: the six child journal tables have no retired-ID trigger of their own. They are held in place by ordinary foreign keys onto `cmp_turns`, which SQLite enforces only on connections that set `PRAGMA foreign_keys=ON`. The engine sets it on every connection it opens, so the residual write path is an external connection that leaves it off.
+
+A native `ApplyRetention` holds one write transaction while it issues `1 + 7n` statements for `n` candidates. At 20,000 candidates that is roughly 11 seconds of write-lock time on a warm local database, and `RetentionPlan` needs roughly 8 seconds to recompute the same hash. Both exceed a short busy timeout on a contended database; callers should treat a `busy`/timeout failure as retryable after the competing writer finishes, and schedule large maintenance when nothing else writes. The operation is not chunked, so a failed or `stale_plan` apply still deletes nothing.

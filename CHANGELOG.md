@@ -2,6 +2,28 @@
 
 ## Unreleased
 
+Native retention now converges instead of wedging on a request ID that already
+has a tombstone: `ApplyRetention` inserts the tombstone with `INSERT OR IGNORE`,
+so a row retired out of band is an idempotent conflict rather than a
+`UNIQUE constraint failed` that made every apply fail while `Turn()` still
+returned the live row. An existing tombstone is never rewritten -- its
+fingerprint, status and `retired_at` are preserved. Each candidate is re-read
+after its deletes in the same transaction, and apply returns the new coded error
+`integrity` -- rolling the whole transaction back -- if any of the seven journal
+tables still holds a row or the tombstone is not exactly one. The plan hash now
+also covers the tombstones that already exist for the candidate IDs, so one
+inserted between dry run and apply is a `stale_plan` rather than an invisible
+change.
+
+A second `BEFORE UPDATE OF request_id` trigger on `cmp_turns` closes the reuse
+hole the INSERT-only guard left open: renaming a live turn onto a retired ID is
+now aborted with the same `retired request ID cannot be reused` message, so a
+retired ID can neither be inserted nor renamed back into execution. Both triggers
+are created with `IF NOT EXISTS` from the journal DDL that every `Open` runs, so
+the guard applies to fresh and existing databases alike. The engine still never
+prunes a tombstone; that remains engine behavior rather than an enforced
+invariant, and the docs now say so.
+
 `check()` now reports database damage as a verdict instead of raising: the
 `PRAGMA` reads, the FTS5 integrity-check command and the closing commit each
 fold their `sqlite3.DatabaseError` into the returned `sqlite` or `fts` fields,
