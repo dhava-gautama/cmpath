@@ -71,5 +71,9 @@ jobs:
         run: |
           python -m unittest discover -s tests -p "test_*.py" -v
           python -m unittest discover -s conformance -p "test_*.py" -v
+      - name: Build release artifacts
+        run: |
+          python scripts/build_release.py
+          python scripts/build_portable_bundle.py --force
       - name: Validate isolated release and vendored rebuild
         run: python scripts/validate_release.py --go go
