@@ -27,7 +27,10 @@ import subprocess
 import sys
 import tarfile
 import tempfile
-import tomllib
+try:
+    import tomllib
+except ModuleNotFoundError:  # Python 3.10
+    tomllib = None
 from typing import Mapping, Sequence
 import zipfile
 
@@ -54,8 +57,24 @@ class ArtifactMismatch(RuntimeError):
 def project_version(root: Path = ROOT) -> str:
     """Return the version declared by canonical pyproject.toml."""
 
-    with (root / "pyproject.toml").open("rb") as stream:
-        return str(tomllib.load(stream)["project"]["version"])
+    project_file = root / "pyproject.toml"
+    if tomllib is not None:
+        with project_file.open("rb") as stream:
+            return str(tomllib.load(stream)["project"]["version"])
+    # Python 3.10 has no stdlib TOML reader and the core package deliberately
+    # has no runtime dependencies.  Parse only the simple, required field used
+    # by this verifier rather than silently adding a packaging dependency.
+    section = None
+    for line in project_file.read_text(encoding="utf-8").splitlines():
+        stripped = line.strip()
+        if stripped.startswith("[") and stripped.endswith("]"):
+            section = stripped[1:-1].strip()
+            continue
+        if section == "project":
+            match = re.fullmatch(r"version\s*=\s*(['\"])([^'\"]+)\1\s*", stripped)
+            if match:
+                return match.group(2)
+    raise ValueError(f"project.version is missing from {project_file}")
 
 
 def source_date_epoch(value: int | str | None = None) -> int:

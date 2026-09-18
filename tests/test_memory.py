@@ -331,7 +331,10 @@ class MemoryTests(unittest.TestCase):
             with self.assertRaises(sqlite3.DatabaseError):
                 self.m.append(t.id,"user","Uncommitted zircon marker")
         finally:
-            self.m._db.set_authorizer(None)
+            # Python 3.10 may retain the last denied transaction decision even
+            # after set_authorizer(None).  Installing an explicit permissive
+            # callback makes the reset deterministic across supported versions.
+            self.m._db.set_authorizer(lambda *_: sqlite3.SQLITE_OK)
         self.assertEqual(before,self.m.export())
         self.assertFalse(self.m.search("zircon"))
         self.assertTrue(self.m.check()["ok"])

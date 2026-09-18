@@ -56,8 +56,9 @@ def main():
     source = ROOT / "dist" / f"cmpath-{VERSION}.tar.gz"
     portable = ROOT / "dist" / f"cmpath-kimi-hermes-{VERSION}.zip"
     native_dir = ROOT / "native" / "bin"
-    if os.name == "nt" and (native_dir / "windows").is_dir():
-        native_dir = native_dir / "windows"
+    platform_dir = native_dir / ("windows" if os.name == "nt" else "linux")
+    if platform_dir.is_dir():
+        native_dir = platform_dir
     native = native_dir / "cmpath-native"
     embedded = native_dir / "cmpath-embedded-example"
     if os.name == "nt":
