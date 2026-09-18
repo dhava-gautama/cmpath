@@ -1767,7 +1767,15 @@ class DoctorHookDetectionTests(unittest.TestCase):
         self.assertEqual(found["command"], f"python3 {HOOK}")
         self.assertEqual(found["timeout"], 10)
         self.assertTrue(found["timeout_sane"])
-        self.assertEqual(found["parse"], "toml")
+        # ``parse`` is "toml" only where tomllib exists (3.11+); on 3.10 the
+        # doctor falls back to the regex reader and reports "text". Both parse
+        # the same hook, so assert the value the interpreter can produce.
+        try:
+            import tomllib  # noqa: F401
+            expected_parse = "toml"
+        except ImportError:
+            expected_parse = "text"
+        self.assertEqual(found["parse"], expected_parse)
         self.assertEqual(found["events"], {"TurnStarted": True, "Stop": False,
                                            "SessionEnd": False})
         self.assertEqual(found["missing_events"], ["Stop", "SessionEnd"])
