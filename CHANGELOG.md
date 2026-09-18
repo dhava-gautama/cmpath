@@ -1,5 +1,25 @@
 # Changelog
 
+## Unreleased
+
+The native schema is no longer platform-dependent. `engine` embeds `base.sql` and
+`journal.sql`, and SQLite stores a `CREATE` statement exactly as it was given, so
+a checkout that converted those files to CRLF created a database whose stored
+schema differed by line endings from the one the NOT NULL rebuild writes out of
+the frozen target DDL. That difference is cosmetic -- both spellings declare the
+same table, and a table's identity is its declaration, not its whitespace -- but
+it made the embedded schema a property of the build host, which the release
+machinery's byte-for-byte source comparisons cannot tolerate. The root
+`.gitattributes` now pins `*.sql` to LF while leaving it text, so the checkout is
+the same everywhere. Independently of that, the embedded scripts are normalized to
+LF before execution by `lineEndingsToLF`, which leaves a carriage return inside a
+string literal untouched because that one is stored data rather than layout; the
+engine's behavior no longer depends on the attribute rule being in effect. The
+drift test now compares a rebuilt definition with a fresh one as declarations
+rather than as bytes, which is the invariant the migration actually owes: it still
+fails on any difference that changes the table, and the schema is exercised from a
+CRLF spelling in the test so the property holds on every platform.
+
 ## 0.4.0a6 — 2026-09-18
 
 Adds the autosave subsystem for automatic Kimi Code session capture, turns

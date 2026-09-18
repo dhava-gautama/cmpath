@@ -127,6 +127,18 @@ func turnRequestIDNotNull(t *testing.T, db *sqlite.DB) bool {
 	return kind == "TEXT" && notNull
 }
 
+// ddlDefinition reduces a stored definition to the declaration it makes. SQLite
+// stores the CREATE text exactly as it was given, so two statements that declare
+// the same object differ textually when one came from a file that ended its
+// lines differently. The migration owes the database the target shape, not a
+// particular spelling of it, so comparisons of two stored definitions go through
+// here. Anything that changes the declared table -- a column, a type, a
+// constraint, a default, an extra or missing token -- survives it and still
+// fails the comparison.
+func ddlDefinition(sql string) string {
+	return strings.TrimSpace(lineEndingsToLF(sql))
+}
+
 // objectSQL reads the definition SQLite keeps for one named object. A rebuild
 // renames its replacement table into place, which makes SQLite quote the table
 // name, so callers compare with the quotes removed.
@@ -316,8 +328,12 @@ func TestTurnRequestIDMigrationRebuildsExistingDatabase(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	// The rebuilt definition is the one a new database is created with, so the
-	// frozen target DDL cannot drift away from journal.sql unnoticed.
+	// The rebuilt objects must declare what a new database is created with, so
+	// the frozen target DDL cannot drift away from journal.sql unnoticed. Both
+	// sides go through ddlDefinition because the fresh definitions are whatever
+	// journal.sql spelled in this checkout, and only the declaration is the
+	// migration's obligation; the byte-exact comparison it replaces was really a
+	// comparison of the two files' line endings.
 	fresh, err := Open(filepath.Join(t.TempDir(), "fresh.db"))
 	if err != nil {
 		t.Fatal(err)
@@ -326,7 +342,7 @@ func TestTurnRequestIDMigrationRebuildsExistingDatabase(t *testing.T) {
 	if migrated, created := turnShape(t, e.db), turnShape(t, fresh.db); !slices.Equal(migrated, created) {
 		t.Fatalf("rebuilt cmp_turns differs from a fresh one:\nrebuilt %v\nfresh   %v", migrated, created)
 	}
-	if rebuilt, created := objectSQL(t, e.db, "table", "cmp_turns"), objectSQL(t, fresh.db, "table", "cmp_turns"); rebuilt != created {
+	if rebuilt, created := objectSQL(t, e.db, "table", "cmp_turns"), objectSQL(t, fresh.db, "table", "cmp_turns"); ddlDefinition(rebuilt) != ddlDefinition(created) {
 		t.Fatalf("rebuilt DDL differs from a fresh one:\nrebuilt %q\nfresh   %q", rebuilt, created)
 	}
 	for _, object := range [][2]string{
@@ -334,7 +350,7 @@ func TestTurnRequestIDMigrationRebuildsExistingDatabase(t *testing.T) {
 		{"trigger", "cmp_turns_retired_guard"},
 		{"trigger", "cmp_turns_retired_update_guard"},
 	} {
-		if rebuilt, created := objectSQL(t, e.db, object[0], object[1]), objectSQL(t, fresh.db, object[0], object[1]); rebuilt != created {
+		if rebuilt, created := objectSQL(t, e.db, object[0], object[1]), objectSQL(t, fresh.db, object[0], object[1]); ddlDefinition(rebuilt) != ddlDefinition(created) {
 			t.Fatalf("rebuilt %s %s differs from a fresh one:\nrebuilt %q\nfresh   %q", object[0], object[1], rebuilt, created)
 		}
 	}

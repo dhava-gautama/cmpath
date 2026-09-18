@@ -24,10 +24,26 @@ import (
 )
 
 //go:embed base.sql
-var baseSchema string
+var baseSchemaText string
 
 //go:embed journal.sql
-var journalSchema string
+var journalSchemaText string
+
+// baseSchema and journalSchema are the embedded scripts with LF line endings.
+//
+// An embedded text file arrives with whatever line endings the checkout used,
+// and until .gitattributes pinned `*.sql` those were the platform's native ones.
+// SQLite keeps a CREATE statement as it was textually given, so a database
+// created from a CRLF checkout stored a schema whose line endings did not match
+// the one the NOT NULL rebuild writes from the frozen cmpTurnsRebuildDDL -- a
+// Go raw string literal, which the compiler always hands over with LF. The
+// schema a database is created with must be a property of the source file, not
+// of the machine that checked it out, so the scripts are normalized once here
+// and every statement the engine executes is a statement from the LF form.
+var (
+	baseSchema    = lineEndingsToLF(baseSchemaText)
+	journalSchema = lineEndingsToLF(journalSchemaText)
+)
 
 const Version = "0.4.0a6"
 
@@ -489,4 +505,88 @@ func (e *Engine) Info() (info map[string]any, err error) {
 		return nil
 	})
 	return
+}
+
+// lineEndingsToLF returns sql with CRLF and lone CR line endings replaced by LF,
+// leaving single-quoted literals byte for byte as they were. A literal is data,
+// not layout: a carriage return inside one is a value the caller asked to store,
+// whereas a carriage return between tokens is only how the file was checked out.
+// Comments are rewritten because they are not stored anywhere a comparison
+// looks, and normalizing them keeps the normalization total for the statement
+// text. The scan tracks literals and both comment forms so that an apostrophe
+// inside a comment cannot be mistaken for the start of a literal and leave a
+// statement's line endings half-converted.
+func lineEndingsToLF(sql string) string {
+	if !strings.Contains(sql, "\r") {
+		return sql
+	}
+	var out strings.Builder
+	out.Grow(len(sql))
+	for i := 0; i < len(sql); {
+		switch {
+		case sql[i] == '\'':
+			end := literalEnd(sql[i:])
+			out.WriteString(sql[i : i+end])
+			i += end
+		case strings.HasPrefix(sql[i:], "--"):
+			end := lineCommentEnd(sql[i:])
+			out.WriteString(lfNewlines(sql[i : i+end]))
+			i += end
+		case strings.HasPrefix(sql[i:], "/*"):
+			end := blockCommentEnd(sql[i:])
+			out.WriteString(lfNewlines(sql[i : i+end]))
+			i += end
+		default:
+			end := i + 1
+			for end < len(sql) && sql[end] != '\'' && !strings.HasPrefix(sql[end:], "--") && !strings.HasPrefix(sql[end:], "/*") {
+				end++
+			}
+			out.WriteString(lfNewlines(sql[i:end]))
+			i = end
+		}
+	}
+	return out.String()
+}
+
+// literalEnd returns the length of the single-quoted literal at the start of
+// sql, including both quotes. A doubled quote is an escaped one and stays
+// inside the literal.
+func literalEnd(sql string) int {
+	for i := 1; i < len(sql); i++ {
+		if sql[i] != '\'' {
+			continue
+		}
+		if i+1 < len(sql) && sql[i+1] == '\'' {
+			i++
+			continue
+		}
+		return i + 1
+	}
+	return len(sql)
+}
+
+// lineCommentEnd returns the length of the line comment at the start of sql,
+// including the newline that ends it when there is one.
+func lineCommentEnd(sql string) int {
+	if i := strings.IndexByte(sql, '\n'); i >= 0 {
+		return i + 1
+	}
+	return len(sql)
+}
+
+// blockCommentEnd returns the length of the block comment at the start of sql,
+// including its closing marker when there is one.
+func blockCommentEnd(sql string) int {
+	if i := strings.Index(sql, "*/"); i >= 0 {
+		return i + 2
+	}
+	return len(sql)
+}
+
+// lfNewlines replaces CRLF and lone CR line endings with LF.
+func lfNewlines(text string) string {
+	if !strings.Contains(text, "\r") {
+		return text
+	}
+	return strings.ReplaceAll(strings.ReplaceAll(text, "\r\n", "\n"), "\r", "\n")
 }

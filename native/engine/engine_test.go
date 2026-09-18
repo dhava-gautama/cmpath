@@ -10,6 +10,8 @@ import (
 	"sync/atomic"
 	"testing"
 	"time"
+
+	"cmpath.local/native/internal/sqlite"
 )
 
 func fresh(t *testing.T) (*Engine, Task) {
@@ -431,4 +433,96 @@ func TestClosedEngine(t *testing.T) {
 	e.Close()
 	_, err := e.Task(task.ID)
 	mustCode(t, err, "closed")
+}
+
+// TestLineEndingsToLFNormalizesStatements covers the normalization the embedded
+// schemas go through. A checkout may hand the file over with any line ending, and
+// the schema a database is created with must not depend on that, so CRLF and
+// lone CR are reduced to LF while a carriage return inside a string literal --
+// data the caller asked to store -- is left alone.
+func TestLineEndingsToLFNormalizesStatements(t *testing.T) {
+	for _, tc := range []struct {
+		name, in, want string
+	}{
+		{"already LF", "a\nb\n", "a\nb\n"},
+		{"CRLF", "a\r\nb\r\n", "a\nb\n"},
+		{"lone CR", "a\rb\r", "a\nb\n"},
+		{"mixed", "a\r\nb\nc\rd", "a\nb\nc\nd"},
+		{"literal kept", "SELECT 'a\r\nb'\r\n", "SELECT 'a\r\nb'\n"},
+		{"escaped quote in literal kept", "SELECT 'it''s\r\nhere'\r\n", "SELECT 'it''s\r\nhere'\n"},
+		{"apostrophe in a comment does not open a literal", "-- task's history\r\nSELECT 'a\r\nb'\r\n", "-- task's history\nSELECT 'a\r\nb'\n"},
+		{"comment normalized", "-- one\r\n-- two\r\nSELECT 1", "-- one\n-- two\nSELECT 1"},
+		{"block comment normalized", "/* one\r\ntwo */\r\nSELECT 1", "/* one\ntwo */\nSELECT 1"},
+		{"unterminated literal", "SELECT 'a\r\nb", "SELECT 'a\r\nb"},
+	} {
+		if got := lineEndingsToLF(tc.in); got != tc.want {
+			t.Errorf("%s: lineEndingsToLF(%q) = %q, want %q", tc.name, tc.in, got, tc.want)
+		}
+	}
+}
+
+// TestEmbeddedSchemasCarryNoCarriageReturn pins the property the normalization
+// exists to guarantee. The compiler hands a raw string literal over with LF, so
+// the frozen cmpTurnsRebuildDDL is LF whatever the checkout did; the embedded
+// scripts must be too, or a fresh database and a rebuilt one would store
+// definitions that differ by line endings.
+func TestEmbeddedSchemasCarryNoCarriageReturn(t *testing.T) {
+	if strings.Contains(cmpTurnsRebuildDDL, "\r") {
+		t.Fatal("the frozen rebuild DDL carries a carriage return")
+	}
+	for name, schema := range map[string]string{"base.sql": baseSchema, "journal.sql": journalSchema} {
+		if strings.Contains(schema, "\r") {
+			t.Fatalf("%s still carries a carriage return after normalization", name)
+		}
+		if strings.TrimSpace(schema) == "" {
+			t.Fatalf("%s normalized to nothing", name)
+		}
+	}
+	// The scripts have to stay loadable: normalization must not leave a
+	// statement split in a way SQLite rejects. journal.sql references the base
+	// tables, so the two go on in the order Open applies them.
+	db := rawOpen(t, filepath.Join(t.TempDir(), "normalized.db"))
+	legacyBase(t, db)
+	if err := db.Script(journalSchema); err != nil {
+		t.Fatalf("the normalized schemas no longer parse: %v", err)
+	}
+}
+
+// TestEmbeddedSchemasSurviveACRLFCheckout is the regression the Windows job
+// caught: the schema a database is created with must be the same declaration
+// whichever line endings the checkout used. Both spellings of journal.sql are
+// applied here -- the checkout is simulated in the test so the property is
+// exercised on every platform -- and the definitions they store must agree even
+// though SQLite keeps the bytes it was given.
+func TestEmbeddedSchemasSurviveACRLFCheckout(t *testing.T) {
+	windows := strings.ReplaceAll(journalSchema, "\n", "\r\n")
+	if windows == journalSchema {
+		t.Fatal("the CRLF spelling is identical to the embedded schema; this test would prove nothing")
+	}
+	if got := lineEndingsToLF(windows); got != journalSchema {
+		t.Fatal("a CRLF copy of journal.sql did not normalize back to the embedded schema")
+	}
+	// The engine executes the normalized form, so a checkout cannot reach it.
+	unix, dos := rawOpen(t, filepath.Join(t.TempDir(), "unix.db")), rawOpen(t, filepath.Join(t.TempDir(), "windows.db"))
+	for _, db := range []*sqlite.DB{unix, dos} {
+		legacyBase(t, db)
+	}
+	if err := unix.Script(journalSchema); err != nil {
+		t.Fatal(err)
+	}
+	if err := dos.Script(windows); err != nil {
+		t.Fatal(err)
+	}
+	storedUnix, storedDos := objectSQL(t, unix, "table", "cmp_turns"), objectSQL(t, dos, "table", "cmp_turns")
+	if storedUnix == storedDos {
+		t.Fatal("SQLite did not store the CRLF script as written; this test no longer exercises the difference")
+	}
+	if ddlDefinition(storedUnix) != ddlDefinition(storedDos) {
+		t.Fatalf("the two checkouts declare different tables:\nunix    %q\nwindows %q", storedUnix, storedDos)
+	}
+	for _, stored := range []string{storedUnix, storedDos} {
+		if strings.Contains(ddlDefinition(stored), "\r") {
+			t.Fatal("ddlDefinition left a carriage return behind")
+		}
+	}
 }

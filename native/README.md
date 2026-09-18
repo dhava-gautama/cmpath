@@ -28,6 +28,8 @@ go run -buildvcs=false ./examples/embedded --input README.md --request-id demo-1
 
 The Go test suite needs the race detector's supported compiler/platform. The run command uses this directory's README and writes `checksum-memory.db` in the current directory.
 
+`engine` embeds `base.sql` and `journal.sql`, and the schema a database is created with must not depend on the machine that checked the code out. The root `.gitattributes` keeps `*.sql` at LF on every platform, and `lineEndingsToLF` converts any CRLF or lone CR back to LF before the scripts are executed, so the checkout style cannot reach SQLite. A `.sql` file is still recognized as text (`text=auto`): normalizing is what keeps the two behaviours consistent, and it is why a `.sql` payload is never marked binary.
+
 ## Import into an existing Go harness
 
 `cmpath.local/native` is a local module name, not a registered download location. For a project whose sibling directory is the extracted `cmpath` archive, add the following to that host's `go.mod`:
