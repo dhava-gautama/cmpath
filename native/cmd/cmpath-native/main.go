@@ -229,6 +229,24 @@ func dispatch(e *engine.Engine, r request) (any, error) {
 		return nil, &engine.Error{Code: "operation", Message: "unknown operation"}
 	}
 }
+
+// dispatchRecovered converts a panic from a single operation into a coded
+// response. A panic raised inside Engine.transaction has already rolled that
+// transaction back before it propagated, so the connection is consistent; the
+// panic text travels in the error message so the failure is visible rather
+// than silently converted into a retryable one. Without this boundary one
+// malformed row would terminate the process and the host's persistent channel
+// with it.
+func dispatchRecovered(e *engine.Engine, r request) (result any, err error) {
+	defer func() {
+		if p := recover(); p != nil {
+			result = nil
+			err = &engine.Error{Code: "internal_error", Message: fmt.Sprintf("operation %s panicked: %v", r.Operation, p)}
+		}
+	}()
+	return dispatch(e, r)
+}
+
 func serve(e *engine.Engine, input io.Reader, output io.Writer) error {
 	scanner := bufio.NewScanner(input)
 	scanner.Buffer(make([]byte, 64*1024), 16*1024*1024)
@@ -239,7 +257,7 @@ func serve(e *engine.Engine, input io.Reader, output io.Writer) error {
 		r, err := decode[request](scanner.Bytes())
 		out := response{Version: 1, ID: r.ID}
 		if err == nil {
-			out.Result, err = dispatch(e, r)
+			out.Result, err = dispatchRecovered(e, r)
 		}
 		if err != nil {
 			out.Result = nil
@@ -257,6 +275,7 @@ func serve(e *engine.Engine, input io.Reader, output io.Writer) error {
 func main() {
 	path := flag.String("db", "", "SQLite database path, or :memory:")
 	create := flag.Bool("create", false, "Allow creation of a new database")
+	busyTimeout := flag.Int("busy-timeout-ms", 0, "Milliseconds to wait for a competing writer (raised to the 10000 ms floor)")
 	version := flag.Bool("version", false, "Print the engine version")
 	flag.Parse()
 	if *version {
@@ -273,7 +292,7 @@ func main() {
 			os.Exit(2)
 		}
 	}
-	e, err := engine.Open(*path)
+	e, err := engine.Open(*path, engine.WithBusyTimeoutMS(*busyTimeout))
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
 		os.Exit(2)

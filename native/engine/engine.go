@@ -38,13 +38,38 @@ type Error struct {
 
 func (e *Error) Error() string           { return e.Code + ": " + e.Message }
 func problem(code, message string) error { return &Error{code, message} }
+
+// Code classifies a storage or operation failure for the wire protocol.
 func Code(err error) string {
 	var e *Error
 	if errors.As(err, &e) {
 		return e.Code
 	}
+	// A locked database is contention, not damage: the caller can retry after
+	// the competing writer commits. It must not be reported as storage_error,
+	// which a caller reads as corruption or an unusable file.
+	var busy *sqlite.Error
+	if errors.As(err, &busy) && busy.Busy() {
+		return "busy"
+	}
+	// A column that cannot be represented faithfully means the stored row does
+	// not match the schema the engine depends on.
+	var mismatch *sqlite.TypeError
+	if errors.As(err, &mismatch) {
+		return "integrity"
+	}
 	return "storage_error"
 }
+
+// Option adjusts an Engine at Open time.
+type Option func(*config)
+
+type config struct{ busyTimeoutMS int }
+
+// WithBusyTimeoutMS raises the SQLite lock wait above the driver floor. A
+// request below the floor is ignored; the floor covers the measured write
+// horizon of one export, batch append or retention transaction.
+func WithBusyTimeoutMS(ms int) Option { return func(c *config) { c.busyTimeoutMS = ms } }
 
 type Engine struct {
 	mu     sync.Mutex
@@ -52,11 +77,15 @@ type Engine struct {
 	closed bool
 }
 
-func Open(path string) (*Engine, error) {
+func Open(path string, opts ...Option) (*Engine, error) {
 	if strings.ContainsRune(path, 0) {
 		return nil, problem("invalid", "invalid database path")
 	}
-	db, err := sqlite.Open(path)
+	cfg := config{}
+	for _, opt := range opts {
+		opt(&cfg)
+	}
+	db, err := sqlite.Open(path, sqlite.WithBusyTimeoutMS(cfg.busyTimeoutMS))
 	if err != nil {
 		return nil, err
 	}

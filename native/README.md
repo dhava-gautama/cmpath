@@ -57,3 +57,44 @@ release verifier checks the PE/COFF symbol table and debug directory and
 rejects an unstripped executable. `scripts/build_release.py` records the ZIP
 alongside the wheel, sdist and portable bundle in `dist/SHA256SUMS` when it is
 present.
+
+## Storage classes, error codes and lock contention
+
+`internal/sqlite` decodes each column by its SQLite storage class: `NULL` to
+nil, `INTEGER` to `int64`, `REAL` to `float64`, `TEXT` to `string` and `BLOB`
+to `[]byte`. A blob is never handed back as text. That coercion made a blob
+request ID indistinguishable from a text one, and SQLite never compares a blob
+equal to text, so rebinding the coerced value matched no row and the affected
+maintenance statement looked like a successful no-op. A column whose class the
+driver cannot represent fails the query instead of being guessed.
+
+`Row.Text`, `Row.Int`, `Row.Float` and `Row.Blob` read one column and return a
+coded `*sqlite.TypeError` for a NULL, absent or wrongly-typed column. Prefer
+them over a bare type assertion on a column that is not NOT NULL in the schema.
+`Engine.Code` classifies an unrepresentable column as `integrity`.
+
+`Engine.Code` keeps lock contention separate from storage damage: a
+`SQLITE_BUSY` result, including the extended `SQLITE_BUSY_SNAPSHOT` and
+`SQLITE_BUSY_RECOVERY` variants, is `busy`, which a caller may retry. Any other
+failure that is not an `engine.Error` remains `storage_error`. Nothing retries
+automatically, and the stdio bridge answers a recovered panic as
+`internal_error` so one bad row cannot end the host's persistent channel.
+
+Every connection installs a busy-timeout floor of 10000 ms. WAL readers never
+block, but two writers serialize on one file, and a single maintenance
+transaction exceeds the 5 s default this wrapper installed earlier: a
+160k-message export measured about 5.2 s, a 50k-row `AppendBatch` about 12.0 s,
+a 20k-turn `RetentionPlan` about 8.4 s, a 20k-turn `ApplyRetention` about
+10.8 s, and a throttled export held the write lock for 311 s. Below the floor
+the collided writer returns "database is locked" rather than waiting. Raise the
+floor where a larger transaction is routine; a caller may ask for a longer
+wait, never a shorter one:
+
+```go
+memory, err := engine.Open(path, engine.WithBusyTimeoutMS(60_000))
+```
+
+`cmpath-native --busy-timeout-ms` sets the same value for the stdio command.
+`DB.Changes()` reports the rows modified by the last statement on a connection,
+for a caller that must tell an effective statement from one that matched
+nothing.

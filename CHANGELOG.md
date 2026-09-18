@@ -22,6 +22,26 @@ digest-audits every recorded cursor against the stored evidence. A thin
 `scripts/autosave_session.py` shim remains the installable hook command. The
 suite grows by 154 autosave tests.
 
+Native row decoding is now type-faithful. `BLOB` decodes to `[]byte` instead of
+through the text interface, which had made a blob `request_id` indistinguishable
+from a text one; SQLite never compares a blob equal to text, so a retention
+apply matched no rows in its tombstone insert or its seven deletes yet reported
+`applied: true`, and two different blobs produced one plan fingerprint. Values
+the driver cannot represent faithfully fail closed: `Row.Text`, `Row.Int`,
+`Row.Float` and `Row.Blob` return a coded `*sqlite.TypeError` for a NULL,
+absent or wrongly-typed column rather than coercing it, and `Engine.Code`
+classifies that as `integrity`. The stdio bridge contains a panic in a single
+operation as a coded `internal_error`, its transaction already rolled back, so a
+malformed row can no longer terminate the host's persistent channel as it did
+before this change (`panic: interface conversion: interface {} is nil, not
+string`, process exit code 2). The Go connection now installs a documented
+10000 ms busy-timeout floor, matching the Python connection, raisable through
+`engine.WithBusyTimeoutMS` or `--busy-timeout-ms` and never lowerable; a
+`SQLITE_BUSY` result, including `SQLITE_BUSY_SNAPSHOT`, is reported as `busy`
+instead of `storage_error`, so a caller can retry contention rather than read it
+as damage. The Go suite gains storage-class, timeout-floor and held-write-lock
+tests.
+
 ## 0.4.0a5 — 2026-09-14
 
 Consolidates the 0.4.0a4 safety controls with the portable MCP integration,

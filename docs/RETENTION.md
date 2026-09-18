@@ -40,9 +40,12 @@ One transaction provides a coherent snapshot. Ordering is deterministic for an
 unchanged database, with no current timestamp added. JSON-valued text columns
 remain strings, preserving exact whitespace, large integer spellings, Unicode,
 NULs, and original provider content. SQLite integers are emitted as exact JSON
-integer tokens; consumers must avoid converting them to floating point. Export
-streams one row at a time, bounding buffering to the largest row. Use file
-output for large archives instead of including their contents in stdio replies.
+integer tokens; consumers must avoid converting them to floating point. A
+column holding a SQL BLOB is emitted as base64 rather than being coerced into
+text, so its storage class is not silently changed into a form that would no
+longer compare equal to the stored value. Export streams one row at a time,
+bounding buffering to the largest row. Use file output for large archives
+instead of including their contents in stdio replies.
 
 **No archive importer exists. This is not a resumable backup format.** Use
 SQLite's online backup API or a SQLite-aware backup tool for recovery. Copying
@@ -74,6 +77,21 @@ inserts permanent request-ID/fingerprint/status tombstones before deleting model
 responses, model requests, tool calls, and turns. Begin rejects a retired ID
 with `retired` for matching input or `conflict` for different input. Tombstones
 are never pruned, preserving durable deduplication against replayed execution.
+
+The engine matches a turn by its `request_id` value, so that column must be
+stored as SQL text. A row whose `request_id` has any other storage class cannot
+be read as a request ID: the plan fails with a coded error instead of reporting
+a success that deleted nothing, because SQLite never compares a blob equal to
+text. Check for such rows with
+`SELECT rowid, typeof(request_id) FROM cmp_turns WHERE typeof(request_id) IS NOT 'text'`
+before applying retention.
+
+Retention and export wait for a competing writer for up to the busy-timeout
+floor (10000 ms; see [../native/README.md](../native/README.md) to raise it) and
+then fail with `busy`, which is retryable. They do not retry by themselves, and
+a large export or retention can exceed the floor while it holds the write lock,
+so a caller that collides with maintenance should treat `busy` as contention
+rather than damage and retry after the maintenance operation finishes.
 
 Deletion frees SQLite pages for reuse; it does not promise smaller database/WAL
 files, secure erasure, or deletion from previous backups or exports. Physical
