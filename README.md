@@ -142,6 +142,10 @@ cmpath-maintain --binary native/bin/cmpath-native --db checksum.db plan --before
 
 The plan is read-only. The explicit `apply` command requires its exact cutoff and plan hash. Retention removes eligible terminal journals while preserving evidence and retired-ID protection. JSONL export is for inspection; use a complete SQLite backup for recovery. [Retention contracts](docs/RETENTION.md).
 
+## Autosave (Kimi Code hook)
+
+`cmpath-autosave` captures Kimi Code session evidence into a cmpath database with no agent discipline: the turn prompt is saved on `TurnStarted`/`Stop`/`SessionEnd`, and the `wire.jsonl` transcripts Kimi Code already writes are ingested idempotently (redacted, deduplicated, parser-stamped cursors). `--heal` re-ingests recorded wires from line 0, `--doctor` is a read-only health check, and `--doctor --deep` digest-audits every recorded cursor. Install the hook with `python3 scripts/install_autosave.py` (managed block in `~/.kimi-code/config.toml`). [Autosave guide](docs/AUTOSAVE.md).
+
 ## What the comparison found
 
 Forty synthetic cases over 240 source messages produced eighty condition observations. CMP and a simple SQLite/BM25 baseline each recovered the required source in **32/40 cases**. Both respected the same estimated input allowance, preserved selected evidence and maintained task isolation in **40/40 cases**. Both missed all eight paraphrases without matching vocabulary. Eight separate CMP recovery contracts passed; the baseline has no journal and was not scored on those contracts.

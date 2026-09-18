@@ -11,6 +11,17 @@ constructor argument (WAL readers never block, but two writers serialize, and
 5 s is shorter than the maintenance/hook write horizon); a caller may ask for
 longer, never less.
 
+Adds the autosave subsystem (`cmpath.autosave`, console script
+`cmpath-autosave`): automatic, redacted, deduplicated capture of Kimi Code
+session evidence. Hook mode captures the turn prompt and ingests `wire.jsonl`
+transcripts idempotently behind parser-stamped per-path cursors, with
+`save_turn()` committing its message row and dedup state in one atomic batch.
+`--heal` re-ingests every recorded wire from line 0 to close holes the cursors
+skipped, `--doctor` is a strictly read-only health check, and `--doctor --deep`
+digest-audits every recorded cursor against the stored evidence. A thin
+`scripts/autosave_session.py` shim remains the installable hook command. The
+suite grows by 154 autosave tests.
+
 ## 0.4.0a5 — 2026-09-14
 
 Consolidates the 0.4.0a4 safety controls with the portable MCP integration,
