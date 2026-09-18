@@ -28,6 +28,7 @@ Documentation = "https://github.com/dhava-gautama/cmpath/tree/main/docs"
 [project.scripts]
 cmpath = "cmpath.cli:main"
 cmpath-agent = "cmpath.agent_cli:main"
+cmpath-autosave = "cmpath.autosave_cli:main"
 cmpath-maintain = "cmpath.maintenance_cli:main"
 cmpath-mcp = "cmpath.mcp_server:main"
 cmpath-control = "cmpath.control_plane_cli:main"
