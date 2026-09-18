@@ -40,6 +40,14 @@ WHEN EXISTS(SELECT 1 FROM cmp_retired_turns WHERE request_id=NEW.request_id)
 BEGIN
  SELECT RAISE(ABORT,'retired request ID cannot be reused');
 END;
+-- An UPDATE can move a live turn onto a retired ID just as an INSERT can
+-- reintroduce it. Both are blocked; the tombstone still wins.
+CREATE TRIGGER IF NOT EXISTS cmp_turns_retired_update_guard
+BEFORE UPDATE OF request_id ON cmp_turns
+WHEN EXISTS(SELECT 1 FROM cmp_retired_turns WHERE request_id=NEW.request_id)
+BEGIN
+ SELECT RAISE(ABORT,'retired request ID cannot be reused');
+END;
 -- Clocks deliberately have no task foreign key: deletion and ID reuse must
 -- never reset a task's history. Key zero is the whole-database clock.
 CREATE TABLE IF NOT EXISTS cmp_scope_epochs (
