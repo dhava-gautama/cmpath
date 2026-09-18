@@ -178,6 +178,14 @@ COMMIT;
 """
 
 
+# Floor for the SQLite busy timeout, in milliseconds, applied over the
+# ``timeout`` constructor argument: a caller may ask for longer, never less.
+# WAL readers never block, but two writers serialize, and the 5 s sqlite3
+# default is shorter than the maintenance/hook write horizon -- a collided
+# writer would fail with "database is locked" instead of waiting.
+BUSY_TIMEOUT_MS = 10_000
+
+
 class TaskMemory:
     """A single SQLite memory database.
 
@@ -208,6 +216,7 @@ class TaskMemory:
                 raise ValueError("Incomplete CMP database schema")
             self._db.execute("PRAGMA journal_mode=WAL")
             self._db.execute("PRAGMA synchronous=FULL")
+            self._db.execute(f"PRAGMA busy_timeout={max(int(timeout*1000),BUSY_TIMEOUT_MS)}")
         except Exception:
             self._db.close()
             self._closed = True
@@ -573,11 +582,21 @@ class TaskMemory:
             return {**counts,**self.state(),"schema_version":1,"sqlite_version":sqlite3.sqlite_version}
 
     def check(self) -> dict:
-        with self.batch():
-            integrity = [r[0] for r in self._db.execute("PRAGMA integrity_check")]
-            foreign_keys = [tuple(r) for r in self._db.execute("PRAGMA foreign_key_check")]
-            self._db.execute("INSERT INTO evidence_index(evidence_index,rank) VALUES('integrity-check',1)")
-            return {"ok":integrity == ["ok"] and not foreign_keys,"sqlite":integrity,"foreign_keys":foreign_keys,"fts":"ok"}
+        """Report file, foreign-key and FTS health as a verdict, not an exception."""
+        integrity,foreign_keys,fts = [],[],"not checked"
+        try:
+            with self.batch():
+                integrity = [r[0] for r in self._db.execute("PRAGMA integrity_check")]
+                foreign_keys = [tuple(r) for r in self._db.execute("PRAGMA foreign_key_check")]
+                try:
+                    self._db.execute("INSERT INTO evidence_index(evidence_index,rank) VALUES('integrity-check',1)")
+                    fts = "ok"
+                except sqlite3.DatabaseError as exc:
+                    fts = f"error: {exc}"
+        except sqlite3.DatabaseError as exc:
+            integrity = [*integrity,f"error: {exc}"]
+        return {"ok":integrity == ["ok"] and not foreign_keys and fts == "ok",
+                "sqlite":integrity,"foreign_keys":foreign_keys,"fts":fts}
 
     def backup(self, destination: str | Path) -> None:
         """Create a standalone, consistent SQLite backup at a new path.

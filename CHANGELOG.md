@@ -1,5 +1,16 @@
 # Changelog
 
+## Unreleased
+
+`check()` now reports database damage as a verdict instead of raising: the
+`PRAGMA` reads, the FTS5 integrity-check command and the closing commit each
+fold their `sqlite3.DatabaseError` into the returned `sqlite` or `fts` fields,
+with `fts` reporting `not checked` when the pragmas fail first. SQLite
+connections apply a 10000 ms `PRAGMA busy_timeout` floor over the `timeout`
+constructor argument (WAL readers never block, but two writers serialize, and
+5 s is shorter than the maintenance/hook write horizon); a caller may ask for
+longer, never less.
+
 ## 0.4.0a5 — 2026-09-14
 
 Consolidates the 0.4.0a4 safety controls with the portable MCP integration,

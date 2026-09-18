@@ -339,6 +339,57 @@ class MemoryTests(unittest.TestCase):
         self.assertFalse(self.m.search("zircon"))
         self.assertTrue(self.m.check()["ok"])
 
+    def test_check_reports_a_healthy_database(self):
+        self.seed()
+        result = self.m.check()
+        self.assertTrue(result["ok"])
+        self.assertEqual(result["sqlite"],["ok"])
+        self.assertEqual(result["foreign_keys"],[])
+        self.assertEqual(result["fts"],"ok")
+
+    def test_check_reports_a_damaged_fts_index_instead_of_raising(self):
+        _,e = self.seed()
+        row = self.m._db.execute("SELECT id FROM evidence_index_data WHERE id=?",(e.id,)).fetchone()
+        self.assertIsNotNone(row)
+        self.m._db.execute("DELETE FROM evidence_index_data WHERE id=?",(row[0],))
+        result = self.m.check()
+        self.assertFalse(result["ok"])
+        self.assertEqual(result["sqlite"],["ok"])
+        self.assertEqual(result["foreign_keys"],[])
+        self.assertIn("error",result["fts"])
+
+    def test_check_reports_a_failing_pragma_instead_of_raising(self):
+        self.seed()
+        self.m.close()
+        with sqlite3.connect(self.path) as raw:
+            raw.execute("UPDATE evidence_index_config SET v='999999' WHERE k='version'")
+        with TaskMemory(self.path) as damaged:
+            result = damaged.check()
+        self.assertEqual(set(result),{"ok","sqlite","foreign_keys","fts"})
+        self.assertFalse(result["ok"])
+        self.assertEqual(len(result["sqlite"]),1)
+        self.assertIn("error",result["sqlite"][0])
+        self.assertEqual(result["foreign_keys"],[])
+        self.assertEqual(result["fts"],"not checked")
+
+    def test_check_reports_a_failing_commit_instead_of_raising(self):
+        self.seed()
+        self.m._db.execute("DROP TABLE evidence_index_docsize")
+        result = self.m.check()
+        self.assertEqual(set(result),{"ok","sqlite","foreign_keys","fts"})
+        self.assertFalse(result["ok"])
+        self.assertEqual(result["sqlite"][0],"ok")
+        self.assertIn("error",result["sqlite"][-1])
+        self.assertEqual(result["foreign_keys"],[])
+        self.assertIn("error",result["fts"])
+
+    def test_busy_timeout_defaults_to_a_ten_second_floor(self):
+        self.assertEqual(self.m._db.execute("PRAGMA busy_timeout").fetchone()[0],10000)
+
+    def test_explicit_timeout_above_the_floor_is_respected(self):
+        with TaskMemory(self.path,timeout=30) as widened:
+            self.assertEqual(widened._db.execute("PRAGMA busy_timeout").fetchone()[0],30000)
+
     def test_backup_refuses_a_destination_with_live_journals(self):
         self.seed()
         path = Path(self.temp.name)/"open-destination.db"
