@@ -1,8 +1,12 @@
 BEGIN IMMEDIATE;
 CREATE TABLE IF NOT EXISTS cmp_harness_meta (singleton INTEGER PRIMARY KEY CHECK(singleton=1), version INTEGER NOT NULL);
 INSERT OR IGNORE INTO cmp_harness_meta VALUES(1,1);
+-- request_id is declared NOT NULL, not just PRIMARY KEY: a TEXT primary key on
+-- a rowid table is nullable in SQLite, and a NULL request_id reached the
+-- retention scan. migrateTurnRequestID rebuilds a database written before the
+-- constraint; this statement gives every new one the corrected definition.
 CREATE TABLE IF NOT EXISTS cmp_turns (
- request_id TEXT PRIMARY KEY,
+ request_id TEXT PRIMARY KEY NOT NULL,
  task_id INTEGER NOT NULL REFERENCES tasks(id) ON DELETE RESTRICT,
  fingerprint TEXT NOT NULL, request_json TEXT NOT NULL,
  status TEXT NOT NULL CHECK(status IN ('pending','committed','aborted')),

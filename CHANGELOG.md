@@ -2,6 +2,28 @@
 
 ## Unreleased
 
+`cmp_turns.request_id` is now declared `NOT NULL` in the journal schema. A
+`TEXT PRIMARY KEY` on a rowid table is nullable in SQLite, which is what let a
+NULL request ID be stored on the column that every child journal table
+references and every retention statement matches on. `Engine.Open` rebuilds a
+database written before the constraint with the documented
+create/copy/drop/rename procedure: the replacement table is the frozen target
+definition rather than a reference to the current journal DDL, every row must be
+copied before the commit, the partial index and both retired-ID guards are
+recreated in the same transaction, foreign key enforcement is switched off
+before `BEGIN` because the pragma is inert inside a transaction, and
+`PRAGMA foreign_key_check` must be clean before the commit. A database whose
+column already carries the constraint is probed with `PRAGMA table_info` and left
+alone, so the journal DDL that runs on every open neither rebuilds repeatedly nor
+accumulates an index or a trigger. The harness schema version stays 4: the
+constraint only removes states the schema already admitted, so a rebuilt database
+is still read correctly by an older binary, and a bump would turn that compatible
+tightening into a hard refusal; `info` reports `cmp_turns_request_id_not_null` to
+tell the two states apart instead. A database that already contains a NULL
+request ID is refused on open with `integrity` naming the affected row count --
+the engine never deletes journal evidence on its own, so those rows are retired or
+repaired explicitly before the database opens again.
+
 Native retention now converges instead of wedging on a request ID that already
 has a tombstone: `ApplyRetention` inserts the tombstone with `INSERT OR IGNORE`,
 so a row retired out of band is an idempotent conflict rather than a

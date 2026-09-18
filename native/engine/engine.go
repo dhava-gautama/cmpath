@@ -133,6 +133,12 @@ func Open(path string, opts ...Option) (*Engine, error) {
 	if err = db.Script("PRAGMA journal_mode=WAL; PRAGMA synchronous=FULL;"); err != nil {
 		return fail(err)
 	}
+	// Before the journal DDL, so that a fresh database is created with the
+	// constraint rather than rebuilt into it, and an existing one is rebuilt
+	// once and then no longer matches the probe.
+	if err = migrateTurnRequestID(db); err != nil {
+		return fail(err)
+	}
 	if err = db.Script(journalSchema); err != nil {
 		return fail(err)
 	}
@@ -464,6 +470,15 @@ func (e *Engine) Resolve(query string) (out Resolution, err error) {
 func (e *Engine) Info() (info map[string]any, err error) {
 	err = e.locked(func() error {
 		info = map[string]any{"version": Version, "sqlite": e.db.Version(), "harness_schema": 4, "base_schema": 1}
+		// The column's nullability is reported separately because it is not a
+		// schema version: the constraint is strictly stricter, so an older
+		// reader stays correct and the version stays 4. This is how an operator
+		// tells a rebuilt database from one that still admits a NULL.
+		_, kind, notNull, er := turnRequestIDColumn(e.db)
+		if er != nil {
+			return er
+		}
+		info["cmp_turns_request_id_not_null"] = kind == "TEXT" && notNull
 		for _, name := range []string{"tasks", "messages", "cmp_turns", "cmp_tool_calls", "cmp_model_calls", "cmp_model_responses", "cmp_retired_turns"} {
 			rows, er := e.db.Query("SELECT count(*) AS n FROM " + name)
 			if er != nil {

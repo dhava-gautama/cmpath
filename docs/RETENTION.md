@@ -106,6 +106,25 @@ text. Check for such rows with
 `SELECT rowid, typeof(request_id) FROM cmp_turns WHERE typeof(request_id) IS NOT 'text'`
 before applying retention.
 
+`cmp_turns.request_id` is declared `NOT NULL` as well. A `TEXT PRIMARY KEY` on a
+rowid table is nullable in SQLite, which is how a NULL request ID could be
+stored at all; the constraint removes the state rather than relying on every
+reader to cope with it. `Engine.Open` rebuilds a database written before the
+constraint with the documented create/copy/drop/rename procedure and skips the
+rebuild once the column carries it, so the journal DDL that runs on every open
+stays a no-op and no index or trigger accumulates. The rebuild switches foreign
+key enforcement off before it begins -- the pragma is inert inside a transaction
+-- because `DROP TABLE cmp_turns` would otherwise run the implicit delete that
+the child tables' `ON DELETE RESTRICT` refuses, and it re-inserts every row
+before committing, so no child row is lost or orphaned. A database that already
+holds a NULL request ID is refused with `integrity` instead of migrated, because
+the engine treats removal as an explicit audited operation: the refusal names
+how many rows are affected, and
+`SELECT rowid, typeof(request_id) FROM cmp_turns WHERE request_id IS NULL`
+finds them. Retire or repair those rows yourself and reopen. `info` reports
+`cmp_turns_request_id_not_null`, which distinguishes a rebuilt database from one
+that still admits a NULL while the harness schema version stays 4.
+
 Retention and export wait for a competing writer for up to the busy-timeout
 floor (10000 ms; see [../native/README.md](../native/README.md) to raise it) and
 then fail with `busy`, which is retryable. They do not retry by themselves, and
@@ -121,6 +140,6 @@ this engine connection throughout; schedule large maintenance accordingly.
 
 The installed `cmpath-maintain` command exposes `info`, `export`, `plan` and explicit `apply` operations. Python equivalents are `harness.export_journal(path)`, `harness.retention_plan(cutoff)` and `harness.apply_retention(cutoff, plan_hash)`. Increase the configured native deadline for a large export; an interrupted operation may leave a private temporary export file or, on the POSIX fallback, a reservation marker, but never publishes a partial archive. A plan hash is not a durable token: it describes one journal state, so a caller that retries hours later should repeat the dry run rather than reuse an old hash.
 
-The journal tables carry `BEFORE INSERT` and `BEFORE UPDATE OF request_id` triggers on `cmp_turns` that abort with `retired request ID cannot be reused`. A turn can therefore neither be inserted with nor renamed onto a retired ID, even by an older engine connection that predates tombstones or by direct SQL. That covers `cmp_turns` only: the six child journal tables have no retired-ID trigger of their own. They are held in place by ordinary foreign keys onto `cmp_turns`, which SQLite enforces only on connections that set `PRAGMA foreign_keys=ON`. The engine sets it on every connection it opens, so the residual write path is an external connection that leaves it off.
+The journal tables carry `BEFORE INSERT` and `BEFORE UPDATE OF request_id` triggers on `cmp_turns` that abort with `retired request ID cannot be reused`. A turn can therefore neither be inserted with nor renamed onto a retired ID, even by an older engine connection that predates tombstones or by direct SQL. Both guards, and the partial index that keeps one pending turn per task, are dropped with the table when `Engine.Open` rebuilds it for the `NOT NULL` upgrade, so the rebuild recreates all three in the same transaction and commits only after `PRAGMA foreign_key_check` is clean. That covers `cmp_turns` only: the six child journal tables have no retired-ID trigger of their own. They are held in place by ordinary foreign keys onto `cmp_turns`, which SQLite enforces only on connections that set `PRAGMA foreign_keys=ON`. The engine sets it on every connection it opens, so the residual write path is an external connection that leaves it off.
 
 A native `ApplyRetention` holds one write transaction while it issues `1 + 7n` statements for `n` candidates. At 20,000 candidates that is roughly 11 seconds of write-lock time on a warm local database, and `RetentionPlan` needs roughly 8 seconds to recompute the same hash. Both exceed a short busy timeout on a contended database; callers should treat a `busy`/timeout failure as retryable after the competing writer finishes, and schedule large maintenance when nothing else writes. The operation is not chunked, so a failed or `stale_plan` apply still deletes nothing.
