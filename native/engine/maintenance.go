@@ -75,7 +75,10 @@ func (e *Engine) eachRow(table, where string, args []any, fn func(sqlite.Row) er
 		if len(rows) == 0 {
 			return nil
 		}
-		last = rows[0]["__cmp_export_rowid"].(int64)
+		last, err = rows[0].Int("__cmp_export_rowid")
+		if err != nil {
+			return err
+		}
 		first = false
 		delete(rows[0], "__cmp_export_rowid")
 		if err = fn(rows[0]); err != nil {
@@ -371,7 +374,10 @@ func (e *Engine) retention(cutoff time.Time) (out RetentionReport, ids []string,
 	enc := json.NewEncoder(h)
 	_ = enc.Encode([]any{"cmpath-retention-v1", out.Cutoff})
 	err = e.eachRow("cmp_turns", "", nil, func(row sqlite.Row) error {
-		status := row["status"].(string)
+		status, er := row.Text("status")
+		if er != nil {
+			return problem("integrity", "turn has an unrepresentable status")
+		}
 		if status == "pending" {
 			out.ProtectedPending++
 			return nil
@@ -379,16 +385,27 @@ func (e *Engine) retention(cutoff time.Time) (out RetentionReport, ids []string,
 		if status != "committed" && status != "aborted" {
 			return nil
 		}
-		id := row["request_id"].(string)
+		id, er := row.Text("request_id")
+		if er != nil {
+			return problem("integrity", "turn has an unrepresentable request_id")
+		}
 		unresolved, er := e.db.Query("SELECT count(*) AS n FROM cmp_tool_calls WHERE request_id=? AND status='started'", id)
 		if er != nil {
 			return er
 		}
-		if unresolved[0]["n"].(int64) > 0 {
+		unresolvedCount, er := unresolved[0].Int("n")
+		if er != nil {
+			return problem("integrity", "unresolved-tool count is not an integer")
+		}
+		if unresolvedCount > 0 {
 			out.ProtectedUnresolved++
 			return nil
 		}
-		updated, er := time.Parse(time.RFC3339Nano, row["updated_at"].(string))
+		updatedText, er := row.Text("updated_at")
+		if er != nil {
+			return problem("integrity", "turn has an unrepresentable updated_at")
+		}
+		updated, er := time.Parse(time.RFC3339Nano, updatedText)
 		if er != nil {
 			return problem("invalid", "turn has an invalid updated_at timestamp")
 		}
