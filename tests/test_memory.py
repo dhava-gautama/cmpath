@@ -374,14 +374,24 @@ class MemoryTests(unittest.TestCase):
 
     def test_check_reports_a_failing_commit_instead_of_raising(self):
         self.seed()
-        self.m._db.execute("DROP TABLE evidence_index_docsize")
-        result = self.m.check()
+        # Deny COMMIT through an authorizer: deterministic on every SQLite
+        # version, unlike dropping an FTS shadow table, which fails the commit
+        # only on some builds and silently succeeds on others.
+        def deny_commit(action,a1,a2,dbn,trig):
+            if action == sqlite3.SQLITE_TRANSACTION and a1 == "COMMIT":
+                return sqlite3.SQLITE_DENY
+            return sqlite3.SQLITE_OK
+        self.m._db.set_authorizer(deny_commit)
+        try:
+            result = self.m.check()
+        finally:
+            self.m._db.set_authorizer(None)
         self.assertEqual(set(result),{"ok","sqlite","foreign_keys","fts"})
         self.assertFalse(result["ok"])
         self.assertEqual(result["sqlite"][0],"ok")
         self.assertIn("error",result["sqlite"][-1])
         self.assertEqual(result["foreign_keys"],[])
-        self.assertIn("error",result["fts"])
+        self.assertEqual(result["fts"],"ok")
 
     def test_busy_timeout_defaults_to_a_ten_second_floor(self):
         self.assertEqual(self.m._db.execute("PRAGMA busy_timeout").fetchone()[0],10000)
