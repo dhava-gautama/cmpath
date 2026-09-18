@@ -29,7 +29,7 @@ var baseSchema string
 //go:embed journal.sql
 var journalSchema string
 
-const Version = "0.4.0a5"
+const Version = "0.4.0a6"
 
 type Error struct {
 	Code    string `json:"code"`

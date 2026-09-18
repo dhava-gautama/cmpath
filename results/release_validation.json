@@ -1,7 +1,7 @@
 {
-  "release": "0.4.0a5",
-  "python": "3.13.13",
-  "platform": "Windows-11-10.0.26200-SP0",
+  "release": "0.4.0a6",
+  "python": "3.13.12",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
   "checks": {
     "artifact_source_integrity": true,
     "isolated_wheel_install": true,
@@ -21,9 +21,9 @@
     "vendored_native_source_rebuild_without_dependency_downloads": true,
     "rebuilt_native_real_tool_replay_and_backup": true
   },
-  "wheel_sha256": "a08e0248e93a37b08e8b7fbe3f32244fddd64ba7f7c9c1bf7ee5f83fc589e5fb",
-  "source_sha256": "0df2318523909a96c1c8f0d464e2e5b36c11e8cef4dd599f410d04cd7b2f29ee",
-  "native_sha256": "50ed907a8c13edd55dc298b98240d5dec80cd34565112b423ba1a282cf4744ba",
-  "embedded_example_sha256": "3221094ce1da1f8c77325dbb9d77bdc7b7e6cd2f2e0a78119b959ccb5a20f13d",
+  "wheel_sha256": "9f6fd752c865985d27a17cb6c46cbc9a1a68e24d6d8cfd20ac883984f6e8fedf",
+  "source_sha256": "967b578b6d7083d38ad6884b227c41d9187deb9f4242d7ee9811eb989eee65d1",
+  "native_sha256": "f05526ed067029dbbb1a1226f0f72ca81a8ab62d396283bae7962db0a56c0f1e",
+  "embedded_example_sha256": "cb2ed9594496d7b28886dab258b092e34c9a1aedfe2b1e1dea76ecd75a47fe26",
   "model_calls": 0
 }

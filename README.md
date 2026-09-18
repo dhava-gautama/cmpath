@@ -6,12 +6,16 @@ Durable task memory and recoverable execution hooks for agent harnesses.
 [Python API](docs/API.md) · [Harness guide](docs/HARNESS.md) ·
 [Release guide](docs/RELEASE.md)
 
-**0.4.0a5 — integration and release-integrity consolidation.** This alpha
-builds on 0.4.0a4's scope-validated provenance and short-lived pre-effect
-eligibility certificate, and consolidates the MCP adapter, authenticated
-control-plane API, dependency-free SDKs, offline conformance suite, portable
-Kimi/Hermes bundle, local doctor diagnostics, and the bounded hybrid memory
-router. Read
+**0.4.0a6 — autosave, memory integrity, and native hardening.** This alpha
+builds on 0.4.0a5's MCP adapter, authenticated control-plane API,
+dependency-free SDKs, offline conformance suite, portable Kimi/Hermes bundle,
+local doctor diagnostics, and bounded hybrid memory router. It adds the
+autosave subsystem (`cmpath.autosave`, console script `cmpath-autosave`) for
+automatic, redacted, deduplicated Kimi Code session capture; makes `check()`
+report database damage as a verdict instead of raising and applies a 10000 ms
+`busy_timeout` floor to Python connections; and hardens the native engine with
+type-faithful row decoding, coded `busy`/`integrity` errors, converging
+retention, and a `NOT NULL` constraint on `cmp_turns.request_id`. Read
 [BREAKTHROUGH_REPORT.md](BREAKTHROUGH_REPORT.md) for the bounded safety result;
 it remains explicit about residual TOCTOU limits.
 
@@ -37,7 +41,7 @@ python examples/native_workflow.py --binary native/bin/cmpath-native --file READ
 ```
 
 For an offline release artifact, replace the editable install with
-`python -m pip install --no-index --no-deps dist/cmpath-0.4.0a5-py3-none-any.whl`
+`python -m pip install --no-index --no-deps dist/cmpath-0.4.0a6-py3-none-any.whl`
 after building or downloading that wheel. This project is not currently
 published on PyPI.
 

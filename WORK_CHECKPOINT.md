@@ -1,9 +1,14 @@
-# CMP 0.4.0a5 consolidation checkpoint
+# CMP 0.4.0a6 consolidation checkpoint
 
-The source version is now 0.4.0a5. The a4 validation evidence and hashes
-described below are retained as historical evidence; build target-specific
-native binaries and current a5 distributions before calling the release
-validated.
+The source version is now 0.4.0a6. The a4 and a5 validation evidence and
+hashes described below are retained as historical evidence; build
+target-specific native binaries and current a6 distributions before calling the
+release validated. The a6 change set is the autosave subsystem, the
+`check()`/`busy_timeout` memory fixes, and the native hardening (type-faithful
+row decoding, coded `busy` and `integrity` errors, converging retention apply,
+and the `NOT NULL` `cmp_turns.request_id` migration). The 13 September live
+SumoPod run described below remains the last live evaluation; no live model run
+was made for a6.
 
 Continuation on 13 September 2026: configured the bounded live runner for
 `https://ai.sumopod.com/v1/chat/completions` and `glm-5.3-flash`. The WSL suite

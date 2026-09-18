@@ -1,29 +1,39 @@
-# Release 0.4.0a5
+# Release 0.4.0a6
 
-The current alpha consolidates the 0.4.0a4 provenance and action-eligibility
-controls with the MCP adapter, authenticated managed-turn control plane,
-dependency-free SDKs, explicit adapter guides, offline conformance runner,
-Kimi/Hermes bundle, local doctor diagnostics, and bounded hybrid memory router.
-The source is published at <https://github.com/dhava-gautama/cmpath>. No
-package-index upload or hosted service is part of this release.
+The current alpha adds the autosave subsystem (`cmpath.autosave`, console
+script `cmpath-autosave`) for automatic, redacted, deduplicated capture of Kimi
+Code session evidence, with idempotent `wire.jsonl` ingestion, atomic turn
+commits, `--heal` re-ingestion, and read-only `--doctor` health checks. It
+makes `check()` report database damage as a verdict rather than raising and
+applies a 10000 ms `busy_timeout` floor to Python connections. The native
+engine now decodes columns by SQLite storage class, reports `SQLITE_BUSY` as a
+coded `busy` error, converges retention apply instead of wedging on an existing
+tombstone, and declares `cmp_turns.request_id` `NOT NULL` with an idempotent
+rebuild on open. It builds on 0.4.0a5's MCP adapter, authenticated managed-turn
+control plane, dependency-free SDKs, explicit adapter guides, offline
+conformance runner, Kimi/Hermes bundle, local doctor diagnostics, and bounded
+hybrid memory router. The source is published at
+<https://github.com/dhava-gautama/cmpath>. No package-index upload or hosted
+service is part of this release.
 
 ## Artifacts and platform scope
 
 The release artifacts are:
 
-- `dist/cmpath-0.4.0a5-py3-none-any.whl`
-- `dist/cmpath-0.4.0a5.tar.gz`
-- `dist/cmpath-kimi-hermes-0.4.0a5.zip`
-- `dist/cmpath-native-0.4.0a5-windows-amd64.zip`
+- `dist/cmpath-0.4.0a6-py3-none-any.whl`
+- `dist/cmpath-0.4.0a6.tar.gz`
+- `dist/cmpath-kimi-hermes-0.4.0a6.zip`
+- `dist/cmpath-native-0.4.0a6-windows-amd64.zip`
 
 The wheel contains Python code and no platform-specific native executable. The
 source distribution contains the vendored native source, integration examples,
 conformance suite, and portable adapter. The Kimi/Hermes ZIP is a focused
-bundle containing the Python package source, launcher, and installer. Supplied
-native executables include validated Linux x86-64 and Windows AMD64 builds;
-rebuild them for macOS or another libc/toolchain. Do not pair an old native executable
-with a newer Python package: both report their release version through
-`--version`.
+bundle containing the Python package source, launcher, and installer. The a6
+cut validated a Linux x86-64 native build in place (glibc 2.39); a Windows
+AMD64 set must be built in a Windows environment with MSYS2 UCRT64 GCC, and
+macOS or another libc/toolchain needs its own rebuild. Do not pair an old
+native executable with a newer Python package: both report their release
+version through `--version`.
 
 ## Build and validate
 
@@ -130,7 +140,7 @@ guides are documented in [integrations/README.md](../integrations/README.md).
 `PILOT_RESULTS.md`, `results/pilot`, the baseline PDF/workbook,
 `NATIVE_ARCHITECTURE.md`, and `results/native` retain earlier
 measurements. Their release labels and test counts are historical evidence and
-must not be presented as fresh a5 runs. The 0.3 public-data study has no model
+must not be presented as fresh a6 runs. The 0.3 public-data study has no model
 answer-quality measurement.
 
 ## Publication handoff

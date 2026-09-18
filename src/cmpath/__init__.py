@@ -14,7 +14,7 @@ from .codex_memory import (
     CodexMemoryRouter, CodexMemory, CodexRouter, AutomaticCodexRouter,
 )
 
-__version__ = "0.4.0a5"
+__version__ = "0.4.0a6"
 __all__ = ["TaskMemory", "Task", "Evidence", "Resolution", "ContextPackage",
            "BudgetError", "ConflictError", "estimated_message_units", "Harness",
            "NativeHarness", "NativeBackend", "HarnessError", "RunSession",

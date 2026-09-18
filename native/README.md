@@ -52,7 +52,7 @@ SQLite's amalgamation is in `internal/sqlite`, with exact upstream hashes in `UP
 The base schema remains version 1 and the native journal is version 4. Journal schema 4 declares `cmp_turns.request_id` `NOT NULL`, because a `TEXT PRIMARY KEY` on a rowid table is nullable in SQLite; `Open` rebuilds a database written before that constraint, and `info` reports `cmp_turns_request_id_not_null` so the two states can be told apart. The version is unchanged because the constraint only removes states the schema already admitted: an older reader remains correct, and a bump would make every older binary refuse a database it can still read. The wire protocol is version 1. Scoped derived snapshots carry immutable provenance edges, and `ActionEligible` issues short-lived pre-effect certificates. These certificates do not make arbitrary remote effects atomic. Changes to protocol, schema or recovery semantics require compatibility tests before a stable release. Historical 0.4.0a1 measured binaries are retained in `bin/measured-0.4.0a1`; their exact hashes are recorded in `results/native/benchmark.json`; a rebuild with different compiler/build flags can produce a different hash.
 
 For a Windows release, place the three `.exe` files in a target-specific ZIP
-under `dist/` (for example, `cmpath-native-0.4.0a5-windows-amd64.zip`). The
+under `dist/` (for example, `cmpath-native-0.4.0a6-windows-amd64.zip`). The
 release verifier checks the PE/COFF symbol table and debug directory and
 rejects an unstripped executable. `scripts/build_release.py` records the ZIP
 alongside the wheel, sdist and portable bundle in `dist/SHA256SUMS` when it is

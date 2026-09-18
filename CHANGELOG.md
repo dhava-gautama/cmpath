@@ -1,6 +1,12 @@
 # Changelog
 
-## Unreleased
+## 0.4.0a6 — 2026-09-18
+
+Adds the autosave subsystem for automatic Kimi Code session capture, turns
+database damage and write contention into reported verdicts instead of
+exceptions, and hardens the native engine's decoding, error codes, retention
+apply and journal schema. No package-index upload, hosted service, or
+independent benchmark is claimed.
 
 `cmp_turns.request_id` is now declared `NOT NULL` in the journal schema. A
 `TEXT PRIMARY KEY` on a rowid table is nullable in SQLite, which is what let a
